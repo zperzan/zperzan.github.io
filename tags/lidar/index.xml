@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lidar | Zach Perzan</title>
+    <link>https://zperzan.github.io/tags/lidar/</link>
+      <atom:link href="https://zperzan.github.io/tags/lidar/index.xml" rel="self" type="application/rss+xml" />
+    <description>Lidar</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jan 2015 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://zperzan.github.io/img/icon-192.png</url>
+      <title>Lidar</title>
+      <link>https://zperzan.github.io/tags/lidar/</link>
+    </image>
+    
+    <item>
+      <title>Mapping lava tube caves with LiDAR</title>
+      <link>https://zperzan.github.io/projects/lidar-caves/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/projects/lidar-caves/</guid>
+      <description>&lt;p&gt;In 2015, I worked for the Bureau of Land Management in Shoshone, Idaho, as part of the Geological Society of America&amp;rsquo;s GeoCorps program. Most of my time was spent driving around the desert, dodging rattlesnakes and exploring lava tube caves. In collaboration with researchers from Idaho State University, we used a tripod-mounted LiDAR system to map the interior of several caves.&lt;/p&gt;
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;MazeCave_Side.png&#34; &gt;
+
+&lt;img src=&#34;MazeCave_Side.png&#34; &gt;
+&lt;/a&gt;
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Full map of Maze Cave, viewed from the side. A single map consists of several (20-50) different individual scans from the LiDAR unit that are then merged together during post-processing.&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+&lt;p&gt;The BLM was interested in detailed cave maps for practical reasons &amp;ndash; in case of a rescue, for example &amp;ndash; as well as for basic research purposes. Precise cross-sections of lava tubes can be used to infer the velocity and viscocity of lava that once flowed through the caves, while a time series of LiDAR scans can be used to better understand cave wall deformation and cave collapse.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

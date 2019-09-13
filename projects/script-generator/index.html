@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.4.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Zach Perzan">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Can a character-level recurrent neural net learn to write movie scripts?">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://zperzan.github.io/projects/script-generator/">
+
+  
+
+
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.min.89c159036fd5fc85df286f54aed8999a.css">
+
+  
+
+  
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon-32.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://zperzan.github.io/projects/script-generator/">
+
+  
+  
+  
+  
+    
+  
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="Zach Perzan">
+  <meta property="og:url" content="https://zperzan.github.io/projects/script-generator/">
+  <meta property="og:title" content="Teaching an RNN to write Movie Scripts | Zach Perzan">
+  <meta property="og:description" content="Can a character-level recurrent neural net learn to write movie scripts?"><meta property="og:image" content="https://zperzan.github.io/projects/script-generator/featured.jpg">
+  <meta property="twitter:image" content="https://zperzan.github.io/projects/script-generator/featured.jpg"><meta property="og:locale" content="en-us">
+  
+    
+    
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>Teaching an RNN to write Movie Scripts | Zach Perzan</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0 compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Zach Perzan</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav mr-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#research"><span>Research</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Side Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/files/cv.pdf"><span>CV</span></a>
+        </li>
+
+        
+        
+
+      
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  <article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+<div class="article-container pt-3">
+  <h1 itemprop="name">Teaching an RNN to write Movie Scripts</h1>
+
+  
+
+  
+
+
+
+<meta content="" itemprop="datePublished">
+<meta content="" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time></time>
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://zperzan.github.io/projects/script-generator/&amp;text=Teaching%20an%20RNN%20to%20write%20Movie%20Scripts" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://zperzan.github.io/projects/script-generator/&amp;t=Teaching%20an%20RNN%20to%20write%20Movie%20Scripts" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Teaching%20an%20RNN%20to%20write%20Movie%20Scripts&amp;body=https://zperzan.github.io/projects/script-generator/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://zperzan.github.io/projects/script-generator/&amp;title=Teaching%20an%20RNN%20to%20write%20Movie%20Scripts" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=Teaching%20an%20RNN%20to%20write%20Movie%20Scripts%20https://zperzan.github.io/projects/script-generator/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://zperzan.github.io/projects/script-generator/&amp;title=Teaching%20an%20RNN%20to%20write%20Movie%20Scripts" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 541px;">
+  <div style="position: relative">
+    <img src="/projects/script-generator/featured_hu7726ace16c9775bfcf2ebe8e9c53d723_49094_720x0_resize_q90_lanczos.jpg" alt="" class="featured-image">
+    <span class="article-header-caption">Royale with cheese scene from <em>Pulp Fiction</em>.</span>
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      <p>Around Christmas, I was home visiting family and sat through an overload of Hallmark Channel holiday movies. To me, Hallmark holiday movies all have the same plot and same characters with different names, so I joked that a well-trained neural net could easily write one and no one would know the difference.<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup> That joke made me wonder how hard it would be to train an RNN to write movie scripts, so I set out to try.</p>
+
+<p>It turns out scripts for movies on the Hallmark Channel are hard to find, so I decided to use screenplays written by Quentin Tarantino instead. I couldn&rsquo;t find a usable copy of <em>Grindhouse: Death Proof</em>, but I got vector PDFs for everything else &ndash;
+12 out of 13 isn&rsquo;t bad.</p>
+
+<p>I converted the PDFs to text, cleaned up the text using a combination of <code>sed</code> and <code>awk</code>, embedded the characters as one-hot vectors, and fed that into a bidirectional LSTM. Words in all caps have special meaning in screenplays (names of characters, camera directions), so I embedded upper and lower case letters separately.</p>
+
+<p>The finished model consists of 2 bidirectional LSTM layers &ndash; each with 512 nodes and 20% recurrent dropout &ndash; topped off by fully-connected Softmax layer with 82 nodes (there are 82 total characters in the model). The full details and all the code is available in the repo. For now, let&rsquo;s see some sample output:</p>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<div class="gallery">
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+    
+      
+    
+  
+  <a data-fancybox="gallery-gallery" data-caption="Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) result from the model itself." href="/img/TextSample6.jpg">
+    <img src="/img/TextSample6.jpg" alt="">
+  </a>
+  
+  
+  
+  
+    
+      
+    
+  
+  <a data-fancybox="gallery-gallery" data-caption="Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) result from the model itself." href="/img/TextSample5.jpg">
+    <img src="/img/TextSample5.jpg" alt="">
+  </a>
+  
+  
+  
+  
+    
+      
+    
+  
+  <a data-fancybox="gallery-gallery" data-caption="Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) result from the model itself." href="/img/TextSample9.jpg">
+    <img src="/img/TextSample9.jpg" alt="">
+  </a>
+  
+  
+  
+  
+    
+      
+    
+  
+  <a data-fancybox="gallery-gallery" data-caption="Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) result from the model itself." href="/img/TextSample2.jpg">
+    <img src="/img/TextSample2.jpg" alt="">
+  </a>
+  
+  
+  
+  
+    
+      
+    
+  
+  <a data-fancybox="gallery-gallery" data-caption="Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) result from the model itself." href="/img/TextSample7.jpg">
+    <img src="/img/TextSample7.jpg" alt="">
+  </a>
+  
+  
+  
+  
+    
+      
+    
+  
+  <a data-fancybox="gallery-gallery" data-caption="Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) result from the model itself." href="/img/TextSample8.jpg">
+    <img src="/img/TextSample8.jpg" alt="">
+  </a>
+  
+  
+  
+  
+    
+      
+    
+  
+  <a data-fancybox="gallery-gallery" data-caption="Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) result from the model itself." href="/img/TextSample3.jpg">
+    <img src="/img/TextSample3.jpg" alt="">
+  </a>
+  
+  
+  
+  
+    
+      
+    
+  
+  <a data-fancybox="gallery-gallery" data-caption="Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) result from the model itself." href="/img/TextSample4.jpg">
+    <img src="/img/TextSample4.jpg" alt="">
+  </a>
+  
+  
+  
+</div>
+
+<p>A few observations:</p>
+
+<ul>
+<li>The model is great at picking up on the general structure of a screenplay; characters exchange dialog and occasionally you get camera and scene instructions &ndash; &ldquo;CU of Mickey&rdquo; (ie, a close up shot of Mickey) and &ldquo;INT. - BARTHOUSE - DAY&rdquo; (ie, an interior shot at the &ldquo;barthouse&rdquo; during the day).</li>
+<li>Scenes are an amalgam of characters from all of Tarantino&rsquo;s movies (&ldquo;THE BRIDE&rdquo; from <em>Kill Bill</em>, &ldquo;ORDELL&rdquo; from <em>Jackie Brown</em>, etc), but unsurprisingly it doesn&rsquo;t create any new character names.</li>
+<li>It&rsquo;s also pretty good at word completion (short-term memory). It completes &ldquo;the burn on the side of his f&rdquo; with &ldquo;face&rdquo; and &ldquo;walking towards the hos&rdquo; with &ldquo;hostages&rdquo;.</li>
+<li>I really like the &ldquo;MAX &hellip; INT. - BARTHOUSE - DAY &hellip; MAX (CONT&rsquo;D)&rdquo; sequence, though I think that was
+coincidence more than anything. With an input sequence of 50 characters, the model could not have known that MAX was talking prior to the scene change.</li>
+</ul>
+
+<p>I didn&rsquo;t fully tune the model because I felt bad wasting cluster resources on a silly task, but it achieves 60% accuracy on the test set. That&rsquo;s pretty good considering the messy text and paucity of data (1.7M chars total). It trained relatively quickly as well (9 epochs with early stopping).</p>
+
+<p>Update 2019: I would be curious to see how well one of the &ldquo;Sesame Street&rdquo; models &ndash; ELMo, ERNIE, BERT, XLNet, RoBERTa, Transfo-XL, GPT-2, etc &ndash; would perform on the same task.
+Thomas Dehaene must have had the same thought regarding Hallmark movies, as he just posted <a href="https://towardsdatascience.com/an-nlp-view-on-holiday-movies-part-ii-text-generation-using-lstms-in-keras-36dc1ff8a6d2" target="_blank">this tutorial</a> on his blog. He couldn&rsquo;t find any screenplays either and used subtitles instead.</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">I subsequently found <a href="https://twitter.com/keatonpatti/status/1072877290902745089?lang=en" target="_blank">this post</a> from a comedian making the same point, though that script was clearly human-generated.
+ <a class="footnote-return" href="#fnref:1"><sup>^</sup></a></li>
+</ol>
+</div>
+
+    </div>
+
+    
+
+
+    
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/deep-learning/">Deep Learning</a>
+  
+  <a class="badge badge-light" href="/tags/rnn/">RNN</a>
+  
+  <a class="badge badge-light" href="/tags/nlp/">NLP</a>
+  
+  <a class="badge badge-light" href="/tags/lstm/">LSTM</a>
+  
+  <a class="badge badge-light" href="/tags/neural-net/">Neural net</a>
+  
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+      
+      <img class="portrait mr-3" src="/authors/admin/avatar_hu52a603635ecebd45650b162dadabb4e5_12861_250x250_fill_q90_lanczos_center.jpg" itemprop="image" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="https://zperzan.github.io/">Zach Perzan</a></h5>
+      <h6 class="card-subtitle">PhD Student</h6>
+      <p class="card-text" itemprop="description">I use modern data science techniques to study water quality issues, but I often get sidetracked into problems that are less environmentally relevant.</p>
+      <ul class="network-icon" aria-hidden="true">
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          <li>
+            <a itemprop="sameAs" href="mailto:zperzan@stanford.edu" >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://scholar.google.com/citations?user=tEPiW54AAAAJ&amp;hl=en" target="_blank" rel="noopener">
+              <i class="ai ai-google-scholar"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="/files/cv.pdf" >
+              <i class="ai ai-cv"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+      
+      
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/r.min.js"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.16bbb3750feb7244c9bc409a5a4fe678.js"></script>
+
+    
+
+
+
+
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

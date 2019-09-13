@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zach Perzan</title>
+    <link>https://zperzan.github.io/</link>
+      <atom:link href="https://zperzan.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <description>Zach Perzan</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://zperzan.github.io/img/icon-192.png</url>
+      <title>Zach Perzan</title>
+      <link>https://zperzan.github.io/</link>
+    </image>
+    
+    <item>
+      <title>Research</title>
+      <link>https://zperzan.github.io/research/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/research/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://zperzan.github.io/projects/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/projects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link></link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid></guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

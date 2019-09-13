@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Water quality | Zach Perzan</title>
+    <link>https://zperzan.github.io/tags/water-quality/</link>
+      <atom:link href="https://zperzan.github.io/tags/water-quality/index.xml" rel="self" type="application/rss+xml" />
+    <description>Water quality</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://zperzan.github.io/img/icon-192.png</url>
+      <title>Water quality</title>
+      <link>https://zperzan.github.io/tags/water-quality/</link>
+    </image>
+    
+    <item>
+      <title>Distrusting the tap: the hidden costs of unsafe drinking water</title>
+      <link>https://zperzan.github.io/research/bottled-water/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/research/bottled-water/</guid>
+      <description>&lt;p&gt;The ongoing water crisis in Flint, Michigan, was &amp;ndash; and still is &amp;ndash; a major news story that exposed governmental oversight and brought the question of safe drinking water into the news. A switch in the municipal drinking water supply, combined with insufficient water treatment, exposed over 100,000 Flint residents to elevated levels of coliform bacteria, lead and trihalomethans (THMs). Reporting on the crisis made national headlines and caused many Americans to reconsider the safety of their tap water. Even though the crisis affected a small, working-class city, we can see that bottled water sales spiked around the same time period in other states all across the country.&lt;/p&gt;
+
+&lt;p&gt;We are examining consumer spending habits and public sentiment data to analyze how many Americans distrust their tap and rely on bottled water as an alternate drinking water supply. Recent research has shown that U.S. households who perceive the tap as unsafe spend $5.65 billion per year on alternate water supplies&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, despite the fact that bottled water is less regulated than tap water and isn&amp;rsquo;t any safer on average.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;Javidi, A., Pierce, G., 2018. U.S. Households’ Perception of Drinking Water as Unsafe and its Consequences: Examining Alternative Choices to the Tap. Water Resources Research, 54, pp. 6100-6113.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

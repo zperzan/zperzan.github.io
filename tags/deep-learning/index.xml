@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Deep Learning | Zach Perzan</title>
+    <link>https://zperzan.github.io/tags/deep-learning/</link>
+      <atom:link href="https://zperzan.github.io/tags/deep-learning/index.xml" rel="self" type="application/rss+xml" />
+    <description>Deep Learning</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://zperzan.github.io/img/icon-192.png</url>
+      <title>Deep Learning</title>
+      <link>https://zperzan.github.io/tags/deep-learning/</link>
+    </image>
+    
+    <item>
+      <title>Data-driven water quality modeling</title>
+      <link>https://zperzan.github.io/research/sensors/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/research/sensors/</guid>
+      <description>&lt;p&gt;Traditionally, hydrologic modeling has relied on a suite of process-based models developed by many different researchers over years or even decades. These models contain a wealth of domain knowledge about contaminant transport &amp;ndash; the physics of water flow and the chemistry of water-rock interactions &amp;ndash; but they are relatively fixed and not designed to handle new streams of incoming data; a calibrated reactive transport model, for example, has to be completely re-calibrated from the beginning if new observations are not in agreement with model predictions.&lt;/p&gt;
+
+&lt;p&gt;Recent advances in data science and &lt;em&gt;in situ&lt;/em&gt; sensor technology &amp;ndash; when combined with robust biogeochemical models &amp;ndash; offer a unique opportunity to address this challenge. We have installed a network of solar-powered environmental sensors at sites in Colorado and Wyoming that provide continuous, high-frequency measurements of hydrologic conditions, microbial metabolic activity and key biogeochemical constituents. Remote connection via cellular modem allows us to access this data and update models in real time.&lt;/p&gt;
+
+&lt;p&gt;We are using several techniques to combine the knowledge contained within (process-based) reactive transport models with the flexibility and adaptability of modern machine learning/deep learning models. This includes:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Assimilating sensor data into a basic reactive transport model with an ensemble Kalman filter&lt;/li&gt;
+&lt;li&gt;Training an LSTM (and now transformers) with data from reactive transport model simulations, then using transfer learning to apply the model to real-world data&lt;/li&gt;
+&lt;li&gt;The same as above, but using sensor data from other sites across the world&lt;/li&gt;
+&lt;li&gt;Augementing sensor training data with generative adverarial networks (GAN) then building a GRU, LSTM, or sequence-to-sequence model&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Teaching an RNN to write Movie Scripts</title>
+      <link>https://zperzan.github.io/projects/script-generator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/projects/script-generator/</guid>
+      <description>&lt;p&gt;Around Christmas, I was home visiting family and sat through an overload of Hallmark Channel holiday movies. To me, Hallmark holiday movies all have the same plot and same characters with different names, so I joked that a well-trained neural net could easily write one and no one would know the difference.&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; That joke made me wonder how hard it would be to train an RNN to write movie scripts, so I set out to try.&lt;/p&gt;
+
+&lt;p&gt;It turns out scripts for movies on the Hallmark Channel are hard to find, so I decided to use screenplays written by Quentin Tarantino instead. I couldn&amp;rsquo;t find a usable copy of &lt;em&gt;Grindhouse: Death Proof&lt;/em&gt;, but I got vector PDFs for everything else &amp;ndash;
+12 out of 13 isn&amp;rsquo;t bad.&lt;/p&gt;
+
+&lt;p&gt;I converted the PDFs to text, cleaned up the text using a combination of &lt;code&gt;sed&lt;/code&gt; and &lt;code&gt;awk&lt;/code&gt;, embedded the characters as one-hot vectors, and fed that into a bidirectional LSTM. Words in all caps have special meaning in screenplays (names of characters, camera directions), so I embedded upper and lower case letters separately.&lt;/p&gt;
+
+&lt;p&gt;The finished model consists of 2 bidirectional LSTM layers &amp;ndash; each with 512 nodes and 20% recurrent dropout &amp;ndash; topped off by fully-connected Softmax layer with 82 nodes (there are 82 total characters in the model). The full details and all the code is available in the repo. For now, let&amp;rsquo;s see some sample output:&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+&lt;div class=&#34;gallery&#34;&gt;
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+    
+      
+    
+  
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; data-caption=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) result from the model itself.&#34; href=&#34;https://zperzan.github.io/img/TextSample6.jpg&#34;&gt;
+    &lt;img src=&#34;https://zperzan.github.io/img/TextSample6.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+  
+  
+  
+    
+      
+    
+  
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; data-caption=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) result from the model itself.&#34; href=&#34;https://zperzan.github.io/img/TextSample5.jpg&#34;&gt;
+    &lt;img src=&#34;https://zperzan.github.io/img/TextSample5.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+  
+  
+  
+    
+      
+    
+  
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; data-caption=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) result from the model itself.&#34; href=&#34;https://zperzan.github.io/img/TextSample9.jpg&#34;&gt;
+    &lt;img src=&#34;https://zperzan.github.io/img/TextSample9.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+  
+  
+  
+    
+      
+    
+  
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; data-caption=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) result from the model itself.&#34; href=&#34;https://zperzan.github.io/img/TextSample2.jpg&#34;&gt;
+    &lt;img src=&#34;https://zperzan.github.io/img/TextSample2.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+  
+  
+  
+    
+      
+    
+  
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; data-caption=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) result from the model itself.&#34; href=&#34;https://zperzan.github.io/img/TextSample7.jpg&#34;&gt;
+    &lt;img src=&#34;https://zperzan.github.io/img/TextSample7.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+  
+  
+  
+    
+      
+    
+  
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; data-caption=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) result from the model itself.&#34; href=&#34;https://zperzan.github.io/img/TextSample8.jpg&#34;&gt;
+    &lt;img src=&#34;https://zperzan.github.io/img/TextSample8.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+  
+  
+  
+    
+      
+    
+  
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; data-caption=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) result from the model itself.&#34; href=&#34;https://zperzan.github.io/img/TextSample3.jpg&#34;&gt;
+    &lt;img src=&#34;https://zperzan.github.io/img/TextSample3.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+  
+  
+  
+    
+      
+    
+  
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; data-caption=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) result from the model itself.&#34; href=&#34;https://zperzan.github.io/img/TextSample4.jpg&#34;&gt;
+    &lt;img src=&#34;https://zperzan.github.io/img/TextSample4.jpg&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+  
+  
+&lt;/div&gt;
+
+&lt;p&gt;A few observations:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The model is great at picking up on the general structure of a screenplay; characters exchange dialog and occasionally you get camera and scene instructions &amp;ndash; &amp;ldquo;CU of Mickey&amp;rdquo; (ie, a close up shot of Mickey) and &amp;ldquo;INT. - BARTHOUSE - DAY&amp;rdquo; (ie, an interior shot at the &amp;ldquo;barthouse&amp;rdquo; during the day).&lt;/li&gt;
+&lt;li&gt;Scenes are an amalgam of characters from all of Tarantino&amp;rsquo;s movies (&amp;ldquo;THE BRIDE&amp;rdquo; from &lt;em&gt;Kill Bill&lt;/em&gt;, &amp;ldquo;ORDELL&amp;rdquo; from &lt;em&gt;Jackie Brown&lt;/em&gt;, etc), but unsurprisingly it doesn&amp;rsquo;t create any new character names.&lt;/li&gt;
+&lt;li&gt;It&amp;rsquo;s also pretty good at word completion (short-term memory). It completes &amp;ldquo;the burn on the side of his f&amp;rdquo; with &amp;ldquo;face&amp;rdquo; and &amp;ldquo;walking towards the hos&amp;rdquo; with &amp;ldquo;hostages&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;I really like the &amp;ldquo;MAX &amp;hellip; INT. - BARTHOUSE - DAY &amp;hellip; MAX (CONT&amp;rsquo;D)&amp;rdquo; sequence, though I think that was
+coincidence more than anything. With an input sequence of 50 characters, the model could not have known that MAX was talking prior to the scene change.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I didn&amp;rsquo;t fully tune the model because I felt bad wasting cluster resources on a silly task, but it achieves 60% accuracy on the test set. That&amp;rsquo;s pretty good considering the messy text and paucity of data (1.7M chars total). It trained relatively quickly as well (9 epochs with early stopping).&lt;/p&gt;
+
+&lt;p&gt;Update 2019: I would be curious to see how well one of the &amp;ldquo;Sesame Street&amp;rdquo; models &amp;ndash; ELMo, ERNIE, BERT, XLNet, RoBERTa, Transfo-XL, GPT-2, etc &amp;ndash; would perform on the same task.
+Thomas Dehaene must have had the same thought regarding Hallmark movies, as he just posted &lt;a href=&#34;https://towardsdatascience.com/an-nlp-view-on-holiday-movies-part-ii-text-generation-using-lstms-in-keras-36dc1ff8a6d2&#34; target=&#34;_blank&#34;&gt;this tutorial&lt;/a&gt; on his blog. He couldn&amp;rsquo;t find any screenplays either and used subtitles instead.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;I subsequently found &lt;a href=&#34;https://twitter.com/keatonpatti/status/1072877290902745089?lang=en&#34; target=&#34;_blank&#34;&gt;this post&lt;/a&gt; from a comedian making the same point, though that script was clearly human-generated.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
