@@ -5,7 +5,7 @@
     <link>https://zperzan.github.io/</link>
       <atom:link href="https://zperzan.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Zach Perzan</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 27 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://zperzan.github.io/img/icon-192.png</url>
       <title>Zach Perzan</title>
@@ -13,18 +13,18 @@
     </image>
     
     <item>
-      <title>Projects</title>
-      <link>https://zperzan.github.io/projects/</link>
-      <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>https://zperzan.github.io/projects/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Research</title>
       <link>https://zperzan.github.io/research/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       <guid>https://zperzan.github.io/research/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://zperzan.github.io/projects/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/projects/</guid>
       <description></description>
     </item>
     
