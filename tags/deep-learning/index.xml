@@ -5,7 +5,7 @@
     <link>https://zperzan.github.io/tags/deep-learning/</link>
       <atom:link href="https://zperzan.github.io/tags/deep-learning/index.xml" rel="self" type="application/rss+xml" />
     <description>Deep Learning</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 27 Apr 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://zperzan.github.io/img/icon-192.png</url>
       <title>Deep Learning</title>
@@ -13,16 +13,26 @@
     </image>
     
     <item>
+      <title>Identifying terroir with ConvNets</title>
+      <link>https://zperzan.github.io/projects/cnn-terroir/</link>
+      <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/projects/cnn-terroir/</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
+&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
+&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Data-driven water quality modeling</title>
       <link>https://zperzan.github.io/research/sensors/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       <guid>https://zperzan.github.io/research/sensors/</guid>
       <description>&lt;p&gt;Traditionally, hydrologic modeling has relied on a suite of process-based models developed by many different researchers over years or even decades. These models contain a wealth of domain knowledge about contaminant transport &amp;ndash; the physics of water flow and the chemistry of water-rock interactions &amp;ndash; but they are relatively fixed and not designed to handle new streams of incoming data; a calibrated reactive transport model, for example, has to be completely re-calibrated from the beginning if new observations are not in agreement with model predictions.&lt;/p&gt;
-
 &lt;p&gt;Recent advances in data science and &lt;em&gt;in situ&lt;/em&gt; sensor technology &amp;ndash; when combined with robust biogeochemical models &amp;ndash; offer a unique opportunity to address this challenge. We have installed a network of solar-powered environmental sensors at sites in Colorado and Wyoming that provide continuous, high-frequency measurements of hydrologic conditions, microbial metabolic activity and key biogeochemical constituents. Remote connection via cellular modem allows us to access this data and update models in real time.&lt;/p&gt;
-
 &lt;p&gt;We are using several techniques to combine the knowledge contained within (process-based) reactive transport models with the flexibility and adaptability of modern machine learning/deep learning models. This includes:&lt;/p&gt;
-
 &lt;ol&gt;
 &lt;li&gt;Assimilating sensor data into a basic reactive transport model with an ensemble Kalman filter&lt;/li&gt;
 &lt;li&gt;Training an LSTM (and now transformers) with data from reactive transport model simulations, then using transfer learning to apply the model to real-world data&lt;/li&gt;
@@ -37,17 +47,12 @@
       <link>https://zperzan.github.io/projects/script-generator/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://zperzan.github.io/projects/script-generator/</guid>
-      <description>&lt;p&gt;&lt;em&gt;Note: all code and data for this project can be found in a &lt;a href=&#34;https://github.com/zperzan/tarantino&#34; target=&#34;_blank&#34;&gt;GitHub repository&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Around Christmas, I was home visiting family and sat through an overload of Hallmark Channel holiday movies. To me, Hallmark holiday movies all have the same plot and same characters with different names, so I joked that a well-trained neural net could easily write one and no one would know the difference.&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; That joke made me wonder how hard it would be to train an RNN to write movie scripts, so I set out to try.&lt;/p&gt;
-
+      <description>&lt;p&gt;&lt;em&gt;Note: all code and data for this project can be found in a &lt;a href=&#34;https://github.com/zperzan/tarantino&#34;&gt;GitHub repository&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Around Christmas, I was home visiting family and sat through an overload of Hallmark Channel holiday movies. To me, Hallmark holiday movies all have the same plot and same characters with different names, so I joked that a well-trained neural net could easily write one and no one would know the difference.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; That joke made me wonder how hard it would be to train an RNN to write movie scripts, so I set out to try.&lt;/p&gt;
 &lt;p&gt;It turns out scripts for movies on the Hallmark Channel are hard to find, so I decided to use screenplays written by Quentin Tarantino instead. I couldn&amp;rsquo;t find a usable copy of &lt;em&gt;Grindhouse: Death Proof&lt;/em&gt;, but I got vector PDFs for everything else &amp;ndash;
 12 out of 13 isn&amp;rsquo;t bad.&lt;/p&gt;
-
 &lt;p&gt;I converted the PDFs to text, cleaned up the text using a combination of &lt;code&gt;sed&lt;/code&gt; and &lt;code&gt;awk&lt;/code&gt;, embedded the characters as one-hot vectors, and fed that into a bidirectional LSTM. Words in all caps have special meaning in screenplays (names of characters, camera directions), so I embedded upper and lower case letters separately.&lt;/p&gt;
-
-&lt;p&gt;The finished model consists of 2 bidirectional LSTM layers &amp;ndash; each with 512 nodes and 20% recurrent dropout &amp;ndash; topped off by fully-connected Softmax layer with 82 nodes (there are 82 total characters in the model). The full details and all the code is available in the &lt;a href=&#34;https://github.com/zperzan/tarantino&#34; target=&#34;_blank&#34;&gt;repo&lt;/a&gt;. For now, let&amp;rsquo;s see some sample output:&lt;/p&gt;
-
+&lt;p&gt;The finished model consists of 2 bidirectional LSTM layers &amp;ndash; each with 512 nodes and 20% recurrent dropout &amp;ndash; topped off by fully-connected Softmax layer with 82 nodes (there are 82 total characters in the model). The full details and all the code is available in the &lt;a href=&#34;https://github.com/zperzan/tarantino&#34;&gt;repo&lt;/a&gt;. For now, let&amp;rsquo;s see some sample output:&lt;/p&gt;
 
 
 
@@ -160,9 +165,7 @@
   
   
 &lt;/div&gt;
-
 &lt;p&gt;A few observations:&lt;/p&gt;
-
 &lt;ul&gt;
 &lt;li&gt;The model is great at picking up on the general structure of a screenplay; characters exchange dialog and occasionally you get camera and scene instructions &amp;ndash; &amp;ldquo;CU of Mickey&amp;rdquo; (ie, a close up shot of Mickey) and &amp;ldquo;INT. - BARTHOUSE - DAY&amp;rdquo; (ie, an interior shot at the &amp;ldquo;barthouse&amp;rdquo; during the day).&lt;/li&gt;
 &lt;li&gt;Scenes are an amalgam of characters from all of Tarantino&amp;rsquo;s movies (&amp;ldquo;THE BRIDE&amp;rdquo; from &lt;em&gt;Kill Bill&lt;/em&gt;, &amp;ldquo;ORDELL&amp;rdquo; from &lt;em&gt;Jackie Brown&lt;/em&gt;, etc), but unsurprisingly it doesn&amp;rsquo;t create any new character names.&lt;/li&gt;
@@ -170,20 +173,17 @@
 &lt;li&gt;I really like the &amp;ldquo;MAX &amp;hellip; INT. - BARTHOUSE - DAY &amp;hellip; MAX (CONT&amp;rsquo;D)&amp;rdquo; sequence, though I think that was
 coincidence more than anything. With an input sequence of 50 characters, the model could not have known that MAX was talking prior to the scene change.&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;p&gt;I didn&amp;rsquo;t fully tune the model because I felt bad wasting cluster resources on a silly task, but it achieves 60% accuracy on the test set. That&amp;rsquo;s pretty good considering the messy text and paucity of data (1.7M chars total). It trained relatively quickly as well (9 epochs with early stopping).&lt;/p&gt;
-
 &lt;p&gt;Update 2019: I would be curious to see how well one of the &amp;ldquo;Sesame Street&amp;rdquo; models &amp;ndash; ELMo, ERNIE, BERT, XLNet, RoBERTa, Transfo-XL, GPT-2, etc &amp;ndash; would perform on the same task.
-Thomas Dehaene must have had the same thought regarding Hallmark movies, as he just posted &lt;a href=&#34;https://towardsdatascience.com/an-nlp-view-on-holiday-movies-part-ii-text-generation-using-lstms-in-keras-36dc1ff8a6d2&#34; target=&#34;_blank&#34;&gt;this tutorial&lt;/a&gt; on his blog. He couldn&amp;rsquo;t find any screenplays either and used subtitles instead.&lt;/p&gt;
-&lt;div class=&#34;footnotes&#34;&gt;
-
-&lt;hr /&gt;
-
+Thomas Dehaene must have had the same thought regarding Hallmark movies, as he just posted &lt;a href=&#34;https://towardsdatascience.com/an-nlp-view-on-holiday-movies-part-ii-text-generation-using-lstms-in-keras-36dc1ff8a6d2&#34;&gt;this tutorial&lt;/a&gt; on his blog. He couldn&amp;rsquo;t find any screenplays either and used subtitles instead.&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34;&gt;I subsequently found &lt;a href=&#34;https://twitter.com/keatonpatti/status/1072877290902745089?lang=en&#34; target=&#34;_blank&#34;&gt;this post&lt;/a&gt; from a comedian making the same point, though that script was clearly human-generated.
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;I subsequently found &lt;a href=&#34;https://twitter.com/keatonpatti/status/1072877290902745089?lang=en&#34;&gt;this post&lt;/a&gt; from a comedian making the same point, though that script was clearly human-generated. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;
+&lt;/section&gt;
 </description>
     </item>
     

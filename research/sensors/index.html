@@ -84,7 +84,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/academic.min.89c159036fd5fc85df286f54aed8999a.css">
+  <link rel="stylesheet" href="/css/academic.min.1fb188d6638b1778e8eabd02456a0bec.css">
 
   
 
@@ -548,11 +548,8 @@
 
     <div class="article-style" itemprop="articleBody">
       <p>Traditionally, hydrologic modeling has relied on a suite of process-based models developed by many different researchers over years or even decades. These models contain a wealth of domain knowledge about contaminant transport &ndash; the physics of water flow and the chemistry of water-rock interactions &ndash; but they are relatively fixed and not designed to handle new streams of incoming data; a calibrated reactive transport model, for example, has to be completely re-calibrated from the beginning if new observations are not in agreement with model predictions.</p>
-
 <p>Recent advances in data science and <em>in situ</em> sensor technology &ndash; when combined with robust biogeochemical models &ndash; offer a unique opportunity to address this challenge. We have installed a network of solar-powered environmental sensors at sites in Colorado and Wyoming that provide continuous, high-frequency measurements of hydrologic conditions, microbial metabolic activity and key biogeochemical constituents. Remote connection via cellular modem allows us to access this data and update models in real time.</p>
-
 <p>We are using several techniques to combine the knowledge contained within (process-based) reactive transport models with the flexibility and adaptability of modern machine learning/deep learning models. This includes:</p>
-
 <ol>
 <li>Assimilating sensor data into a basic reactive transport model with an ensemble Kalman filter</li>
 <li>Training an LSTM (and now transformers) with data from reactive transport model simulations, then using transfer learning to apply the model to real-world data</li>

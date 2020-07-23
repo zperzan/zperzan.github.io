@@ -18,11 +18,8 @@
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       <guid>https://zperzan.github.io/research/sensors/</guid>
       <description>&lt;p&gt;Traditionally, hydrologic modeling has relied on a suite of process-based models developed by many different researchers over years or even decades. These models contain a wealth of domain knowledge about contaminant transport &amp;ndash; the physics of water flow and the chemistry of water-rock interactions &amp;ndash; but they are relatively fixed and not designed to handle new streams of incoming data; a calibrated reactive transport model, for example, has to be completely re-calibrated from the beginning if new observations are not in agreement with model predictions.&lt;/p&gt;
-
 &lt;p&gt;Recent advances in data science and &lt;em&gt;in situ&lt;/em&gt; sensor technology &amp;ndash; when combined with robust biogeochemical models &amp;ndash; offer a unique opportunity to address this challenge. We have installed a network of solar-powered environmental sensors at sites in Colorado and Wyoming that provide continuous, high-frequency measurements of hydrologic conditions, microbial metabolic activity and key biogeochemical constituents. Remote connection via cellular modem allows us to access this data and update models in real time.&lt;/p&gt;
-
 &lt;p&gt;We are using several techniques to combine the knowledge contained within (process-based) reactive transport models with the flexibility and adaptability of modern machine learning/deep learning models. This includes:&lt;/p&gt;
-
 &lt;ol&gt;
 &lt;li&gt;Assimilating sensor data into a basic reactive transport model with an ensemble Kalman filter&lt;/li&gt;
 &lt;li&gt;Training an LSTM (and now transformers) with data from reactive transport model simulations, then using transfer learning to apply the model to real-world data&lt;/li&gt;
@@ -37,9 +34,8 @@
       <link>https://zperzan.github.io/research/riverton/</link>
       <pubDate>Mon, 31 Dec 2018 00:00:00 +0000</pubDate>
       <guid>https://zperzan.github.io/research/riverton/</guid>
-      <description>&lt;p&gt;A long history of uranium mining and weapons development throughout the Cold War has left many mining, milling and testing sites contaminated with radioactive materials like uranium, thorium, and radium, as well as other non-radioactive heavy metals including vanadium, molybdenum, selenium and arsenic. There are nearly 100 such locations &lt;a href=&#34;https://www.energy.gov/lm/sites/lm-sites&#34; target=&#34;_blank&#34;&gt;across the western U.S.&lt;/a&gt; managed by the Department of Energy. The groundwater contaminant plumes at many sites are not dissipating as expected and contamination may persist beyond the 100-year timeframe required for regulatory compliance.&lt;/p&gt;
-
-&lt;p&gt;The contaminant plumes at many floodplain mill sites are subject to strong seasonal fluctuations, but the processes behind these variations are not well understood. We are studying uranium transport and the concurrent biogeochemical cycling that occurs during hydrologic perturbations, with research centered around a series of field experiments using artificial groundwater tracers. The tracer tests have immediate relevance to water quality concerns at the field site &amp;ndash; a uranium-contaminated floodplain in Riverton, Wyoming &amp;ndash; but has much broader implications as well. Isotopically labeled nitrate allows us to track denitrification and the production of nitrous oxide (a powerful greenhouse gas), deuterated water (D&lt;sub&gt;2&lt;/sub&gt;O) could map plant water uptake, and dye infiltration patterns can answer questions regarding unsaturated zone flow.&lt;/p&gt;
+      <description>&lt;p&gt;A long history of uranium mining and weapons development throughout the Cold War has left many mining, milling and testing sites contaminated with radioactive materials like uranium, thorium, and radium, as well as other non-radioactive heavy metals including vanadium, molybdenum, selenium and arsenic. There are nearly 100 such locations &lt;a href=&#34;https://www.energy.gov/lm/sites/lm-sites&#34;&gt;across the western U.S.&lt;/a&gt; managed by the Department of Energy. The groundwater contaminant plumes at many sites are not dissipating as expected and contamination may persist beyond the 100-year timeframe required for regulatory compliance.&lt;/p&gt;
+&lt;p&gt;The contaminant plumes at many floodplain mill sites are subject to strong seasonal fluctuations, but the processes behind these variations are not well understood. We are studying uranium transport and the concurrent biogeochemical cycling that occurs during hydrologic perturbations, with research centered around a series of field experiments using artificial groundwater tracers. The tracer tests have immediate relevance to water quality concerns at the field site &amp;ndash; a uranium-contaminated floodplain in Riverton, Wyoming &amp;ndash; but has much broader implications as well. Isotopically labeled nitrate allows us to track denitrification and the production of nitrous oxide (a powerful greenhouse gas), deuterated water (D&lt;!-- raw HTML omitted --&gt;2&lt;!-- raw HTML omitted --&gt;O) could map plant water uptake, and dye infiltration patterns can answer questions regarding unsaturated zone flow.&lt;/p&gt;
 </description>
     </item>
     
@@ -49,17 +45,15 @@
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
       <guid>https://zperzan.github.io/research/bottled-water/</guid>
       <description>&lt;p&gt;The ongoing water crisis in Flint, Michigan, was &amp;ndash; and still is &amp;ndash; a major news story that exposed governmental oversight and brought the question of safe drinking water into the news. A switch in the municipal drinking water supply, combined with insufficient water treatment, exposed over 100,000 Flint residents to elevated levels of coliform bacteria, lead and trihalomethans (THMs). Reporting on the crisis made national headlines and caused many Americans to reconsider the safety of their tap water. Even though the crisis affected a small, working-class city, we can see that bottled water sales spiked around the same time period in other states all across the country.&lt;/p&gt;
-
-&lt;p&gt;We are examining consumer spending habits and public sentiment data to analyze how many Americans distrust their tap and rely on bottled water as an alternate drinking water supply. Recent research has shown that U.S. households who perceive the tap as unsafe spend $5.65 billion per year on alternate water supplies&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, despite the fact that bottled water is less regulated than tap water and isn&amp;rsquo;t any safer on average.&lt;/p&gt;
-&lt;div class=&#34;footnotes&#34;&gt;
-
-&lt;hr /&gt;
-
+&lt;p&gt;We are examining consumer spending habits and public sentiment data to analyze how many Americans distrust their tap and rely on bottled water as an alternate drinking water supply. Recent research has shown that U.S. households who perceive the tap as unsafe spend $5.65 billion per year on alternate water supplies&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, despite the fact that bottled water is less regulated than tap water and isn&amp;rsquo;t any safer on average.&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34;&gt;Javidi, A., Pierce, G., 2018. U.S. Households’ Perception of Drinking Water as Unsafe and its Consequences: Examining Alternative Choices to the Tap. Water Resources Research, 54, pp. 6100-6113.
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Javidi, A., Pierce, G., 2018. U.S. Households’ Perception of Drinking Water as Unsafe and its Consequences: Examining Alternative Choices to the Tap. Water Resources Research, 54, pp. 6100-6113. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;
+&lt;/section&gt;
 </description>
     </item>
     
@@ -68,20 +62,19 @@
       <link>https://zperzan.github.io/research/cv-mar/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       <guid>https://zperzan.github.io/research/cv-mar/</guid>
-      <description>&lt;p&gt;Over the coming decades, increased interannual variability in precipitation &amp;ndash; wetter wet years and drier dry years &amp;ndash; will place increased demand on California&amp;rsquo;s network of reservoirs and dams. Though we need additional water storage capacity to store water from rainy years for use during drought years, events like the Oroville Dam disaster highlight the fact that California’s water storage infrastructure is already maxed out. Managed aquifer recharge (MAR) projects &amp;ndash; in which water is intentionally stored in aquifers for later extraction &amp;ndash; have been proposed as a tool to combat this problem; in California’s Central Valley, excess precipitation diverted to MAR sites could recharge aquifers with up to 1.5 km&lt;sup&gt;3&lt;/sup&gt; of water per year, approximately 11% of annual groundwater withdrawals.&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p&gt;However, identifying the most promising MAR sites remains an ongoing challenge. We are using ParCrunchFlow&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; &amp;ndash; a parallel reactive transport model capable of simulating both saturated and unsaturated flow &amp;ndash; to identify suitable MAR sites surveyed with time-domain electromagnetic equipment. The CrunchTope component of ParCrunchFlow allows us to simulate potential changes in water chemistry as well, ensuring that MAR sites increase quantity of available water without degrading its quality.&lt;/p&gt;
-&lt;div class=&#34;footnotes&#34;&gt;
-
-&lt;hr /&gt;
-
+      <description>&lt;p&gt;Over the coming decades, increased interannual variability in precipitation &amp;ndash; wetter wet years and drier dry years &amp;ndash; will place increased demand on California&amp;rsquo;s network of reservoirs and dams. Though we need additional water storage capacity to store water from rainy years for use during drought years, events like the Oroville Dam disaster highlight the fact that California’s water storage infrastructure is already maxed out. Managed aquifer recharge (MAR) projects &amp;ndash; in which water is intentionally stored in aquifers for later extraction &amp;ndash; have been proposed as a tool to combat this problem; in California’s Central Valley, excess precipitation diverted to MAR sites could recharge aquifers with up to 1.5 km&lt;!-- raw HTML omitted --&gt;3&lt;!-- raw HTML omitted --&gt; of water per year, approximately 11% of annual groundwater withdrawals.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;However, identifying the most promising MAR sites remains an ongoing challenge. We are using ParCrunchFlow&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; &amp;ndash; a parallel reactive transport model capable of simulating both saturated and unsaturated flow &amp;ndash; to identify suitable MAR sites surveyed with time-domain electromagnetic equipment. The CrunchTope component of ParCrunchFlow allows us to simulate potential changes in water chemistry as well, ensuring that MAR sites increase quantity of available water without degrading its quality.&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34;&gt;Scanlon, B., Reedy, R., Faunt, C., Pool, D., Uhlman, K., 2016. Enhancing drought resilience with conjunctive use and managed aquifer recharge in California and Arizona. Environmental Research Letters. 11 (4), pp. 15.
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:2&#34;&gt;Beisman, J., Maxwell, R., Navarre-Sitchler, A., Steefel, C., Molins, S., 2015. ParCrunchFlow: an efficient, parallel reactive transport simulation tool for physically and chemically heterogeneous saturated subsurface environments. Computational Geosciences, 19 (2), pp. 403-422.
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:2&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Scanlon, B., Reedy, R., Faunt, C., Pool, D., Uhlman, K., 2016. Enhancing drought resilience with conjunctive use and managed aquifer recharge in California and Arizona. Environmental Research Letters. 11 (4), pp. 15. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Beisman, J., Maxwell, R., Navarre-Sitchler, A., Steefel, C., Molins, S., 2015. ParCrunchFlow: an efficient, parallel reactive transport simulation tool for physically and chemically heterogeneous saturated subsurface environments. Computational Geosciences, 19 (2), pp. 403-422. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;
+&lt;/section&gt;
 </description>
     </item>
     
@@ -90,26 +83,24 @@
       <link>https://zperzan.github.io/research/weybridge-cave/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
       <guid>https://zperzan.github.io/research/weybridge-cave/</guid>
-      <description>&lt;p&gt;As part of my undergraduate thesis at Middlebury College, I worked with Will Amidon and Jeff Munroe to search for potential paleoclimate records in New England caves. We found a sequence of sediments in Weybridge Cave, Vermont, and used luminescence and paleomagnetic technqiues to show that the sediments span from 35 to 70 ka. This is significantly older than any surface sediments in New England, which were all deposited after the last glacial maximum (~26 ka).&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; We combined the Weybridge Cave record with other sedimentary records from the region to calculate rates of Laurentide Ice Sheet advance during the last glaciation. Read the full details at:&lt;/p&gt;
-
+      <description>&lt;p&gt;As part of my undergraduate thesis at Middlebury College, I worked with Will Amidon and Jeff Munroe to search for potential paleoclimate records in New England caves. We found a sequence of sediments in Weybridge Cave, Vermont, and used luminescence and paleomagnetic technqiues to show that the sediments span from 35 to 70 ka. This is significantly older than any surface sediments in New England, which were all deposited after the last glacial maximum (~26 ka).&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; We combined the Weybridge Cave record with other sedimentary records from the region to calculate rates of Laurentide Ice Sheet advance during the last glaciation. Read the full details at:&lt;/p&gt;
 &lt;p&gt;Munroe, J., Perzan, Z., and Amidon, W., 2016. Cave sediments constrain the latest Pleistocene advance of the Laurentide ice sheet in the Champlain Valley, Vermont, USA. Journal of Quaternary Science, 31 (8), pp. 893-904.&lt;/p&gt;
-
-&lt;p&gt;During this research, I was lucky enough to be the first to use Middlebury&amp;rsquo;s new luminescence geochronology lab and spent many hours toiling away in the dark room figuring out our brand new instrument. Given the potential for partial bleaching and the fact that most samples were at or near saturation, New England cave sediemnts probably weren&amp;rsquo;t the easiest samples to start out with.&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p&gt;As part of this project, I also collected a young stalactite and took it to the clean lab at the University of Quebec at Montreal for U-Th age dating. For his undergraduate thesis, Drew Gorin (another Middlebury geology student) then combined those ages with stable isotope measurements to construct a late Holocene precipitation and temperature record.&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;div class=&#34;footnotes&#34;&gt;
-
-&lt;hr /&gt;
-
+&lt;p&gt;During this research, I was lucky enough to be the first to use Middlebury&amp;rsquo;s new luminescence geochronology lab and spent many hours toiling away in the dark room figuring out our brand new instrument. Given the potential for partial bleaching and the fact that most samples were at or near saturation, New England cave sediemnts probably weren&amp;rsquo;t the easiest samples to start out with.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;As part of this project, I also collected a young stalactite and took it to the clean lab at the University of Quebec at Montreal for U-Th age dating. For his undergraduate thesis, Drew Gorin (another Middlebury geology student) then combined those ages with stable isotope measurements to construct a late Holocene precipitation and temperature record.&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34;&gt;Estimates differ, but see Dyke et al. (2002), Mickelson and Colgan (2003) and Ridge (2004) for more info.
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:2&#34;&gt;Counterintuitively, luminescence-based dating techniques are not well suited to cave sediments because of the high potential for partial bleaching; sediments deposited at the surface usually have direct exposure to sunlight, whereas sediments deposited in one chamber of a cave could be eroded and deposited in another chamber, without ever being exposed to light. In this way, luminescence ages on cave sediments represent the time they first entered the cave, not the time they were deposited in the sequence.
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:2&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:3&#34;&gt;Gorin, Andrew L., 2016. Paleoclimate Reconstruction from a Weybridge Cave Speleothem, Vermont. Undergraduate Thesis, Middlebury College, Middlebury, VT, 72p.
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:3&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Estimates differ, but see Dyke et al. (2002), Mickelson and Colgan (2003) and Ridge (2004) for more info. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Counterintuitively, luminescence-based dating techniques are not well suited to cave sediments because of the high potential for partial bleaching; sediments deposited at the surface usually have direct exposure to sunlight, whereas sediments deposited in one chamber of a cave could be eroded and deposited in another chamber, without ever being exposed to light. In this way, luminescence ages on cave sediments represent the time they first entered the cave, not the time they were deposited in the sequence. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Gorin, Andrew L., 2016. Paleoclimate Reconstruction from a Weybridge Cave Speleothem, Vermont. Undergraduate Thesis, Middlebury College, Middlebury, VT, 72p. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;
+&lt;/section&gt;
 </description>
     </item>
     
