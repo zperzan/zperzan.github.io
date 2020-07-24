@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Softwares | Zach Perzan</title>
+    <link>https://zperzan.github.io/software/</link>
+      <atom:link href="https://zperzan.github.io/software/index.xml" rel="self" type="application/rss+xml" />
+    <description>Softwares</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 23 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://zperzan.github.io/img/icon-192.png</url>
+      <title>Softwares</title>
+      <link>https://zperzan.github.io/software/</link>
+    </image>
+    
+    <item>
+      <title>python-crunchflow</title>
+      <link>https://zperzan.github.io/software/python-crunchflow/</link>
+      <pubDate>Thu, 23 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/software/python-crunchflow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pyDGSA</title>
+      <link>https://zperzan.github.io/software/pydgsa/</link>
+      <pubDate>Tue, 30 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/software/pydgsa/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

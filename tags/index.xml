@@ -5,12 +5,44 @@
     <link>https://zperzan.github.io/tags/</link>
       <atom:link href="https://zperzan.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 23 Jul 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://zperzan.github.io/img/icon-192.png</url>
       <title>Tags</title>
       <link>https://zperzan.github.io/tags/</link>
     </image>
+    
+    <item>
+      <title>CrunchFlow</title>
+      <link>https://zperzan.github.io/tags/crunchflow/</link>
+      <pubDate>Thu, 23 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/tags/crunchflow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://zperzan.github.io/tags/python/</link>
+      <pubDate>Thu, 23 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>reactive transport</title>
+      <link>https://zperzan.github.io/tags/reactive-transport/</link>
+      <pubDate>Thu, 23 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/tags/reactive-transport/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sensitivity analysis</title>
+      <link>https://zperzan.github.io/tags/sensitivity-analysis/</link>
+      <pubDate>Tue, 30 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/tags/sensitivity-analysis/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Deep Learning</title>

@@ -3,6 +3,51 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://zperzan.github.io/tags/crunchflow/</loc>
+    <lastmod>2020-07-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zperzan.github.io/tags/python/</loc>
+    <lastmod>2020-07-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zperzan.github.io/software/python-crunchflow/</loc>
+    <lastmod>2020-07-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zperzan.github.io/tags/reactive-transport/</loc>
+    <lastmod>2020-07-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zperzan.github.io/software/</loc>
+    <lastmod>2020-07-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zperzan.github.io/tags/</loc>
+    <lastmod>2020-07-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zperzan.github.io/</loc>
+    <lastmod>2020-07-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zperzan.github.io/software/pydgsa/</loc>
+    <lastmod>2020-06-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zperzan.github.io/tags/sensitivity-analysis/</loc>
+    <lastmod>2020-06-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://zperzan.github.io/research/sensors/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
   </url>
@@ -24,16 +69,6 @@
   
   <url>
     <loc>https://zperzan.github.io/tags/sensors/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zperzan.github.io/tags/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zperzan.github.io/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
   </url>
   
