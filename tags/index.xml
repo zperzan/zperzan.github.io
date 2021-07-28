@@ -5,12 +5,36 @@
     <link>https://zperzan.github.io/tags/</link>
       <atom:link href="https://zperzan.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 23 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 25 Jul 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://zperzan.github.io/img/icon-192.png</url>
       <title>Tags</title>
       <link>https://zperzan.github.io/tags/</link>
     </image>
+    
+    <item>
+      <title>Weather</title>
+      <link>https://zperzan.github.io/tags/weather/</link>
+      <pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/tags/weather/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Weather Underground</title>
+      <link>https://zperzan.github.io/tags/weather-underground/</link>
+      <pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/tags/weather-underground/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>web scraping</title>
+      <link>https://zperzan.github.io/tags/web-scraping/</link>
+      <pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/tags/web-scraping/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>CrunchFlow</title>

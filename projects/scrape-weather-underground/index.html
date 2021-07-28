@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.4.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Zach Perzan">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Weather Undergound stores data from over 250,000 personal weather stations across the world. Unfortunately, historical data are not easy to access. It&rsquo;s possible to view tables of 5-min data from a single day &ndash; see this example from a station outside Crested Butte, Colorado &ndash; but if you try to scrape the http using something like Python&rsquo;s requests library, the tables appear blank.
+Weather Underground has a security policy that blocks automated requests from viewing data stored in each table.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://zperzan.github.io/projects/scrape-weather-underground/">
+
+  
+
+
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.min.d0f6c6c6ce72e2c96bb51f9f2c6b38b7.css">
+
+  
+
+  
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon-32.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://zperzan.github.io/projects/scrape-weather-underground/">
+
+  
+  
+  
+  
+    
+  
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="Zach Perzan">
+  <meta property="og:url" content="https://zperzan.github.io/projects/scrape-weather-underground/">
+  <meta property="og:title" content="Scraping 5-min weather data from Weather Underground | Zach Perzan">
+  <meta property="og:description" content="Weather Undergound stores data from over 250,000 personal weather stations across the world. Unfortunately, historical data are not easy to access. It&rsquo;s possible to view tables of 5-min data from a single day &ndash; see this example from a station outside Crested Butte, Colorado &ndash; but if you try to scrape the http using something like Python&rsquo;s requests library, the tables appear blank.
+Weather Underground has a security policy that blocks automated requests from viewing data stored in each table."><meta property="og:image" content="https://zperzan.github.io/projects/scrape-weather-underground/featured.jpg">
+  <meta property="twitter:image" content="https://zperzan.github.io/projects/scrape-weather-underground/featured.jpg"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2021-07-25T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2021-07-25T00:00:00&#43;00:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>Scraping 5-min weather data from Weather Underground | Zach Perzan</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0 compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Zach Perzan</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav mr-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#research"><span>Research</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Other projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/files/cv.pdf"><span>CV</span></a>
+        </li>
+
+        
+        
+
+      
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  <article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+<div class="article-container pt-3">
+  <h1 itemprop="name">Scraping 5-min weather data from Weather Underground</h1>
+
+  
+
+  
+
+
+
+<meta content="2021-07-25 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2021-07-25 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time></time>
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://zperzan.github.io/projects/scrape-weather-underground/&amp;text=Scraping%205-min%20weather%20data%20from%20Weather%20Underground" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://zperzan.github.io/projects/scrape-weather-underground/&amp;t=Scraping%205-min%20weather%20data%20from%20Weather%20Underground" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Scraping%205-min%20weather%20data%20from%20Weather%20Underground&amp;body=https://zperzan.github.io/projects/scrape-weather-underground/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 579px;">
+  <div style="position: relative">
+    <img src="/projects/scrape-weather-underground/featured_hu7043283189369dab4b8a79ca9afffe05_118705_720x0_resize_q90_lanczos.jpg" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      <p>Weather Undergound stores data from over 250,000 personal weather stations across the world. Unfortunately, historical data are not easy to access. It&rsquo;s possible to view tables of 5-min data from a single day &ndash; see <a href="https://www.wunderground.com/dashboard/pws/KCOCREST39/table/2021-07-25/2021-07-25/daily">this example</a> from a station outside Crested Butte, Colorado &ndash; but if you try to scrape the http using something like Python&rsquo;s <code>requests</code> library, the tables appear blank.</p>
+<p>Weather Underground has a security policy that blocks automated requests from viewing data stored in each table. This is where <a href="https://www.selenium.dev/documentation/en/webdriver/">Selenium WebDriver</a> comes in. WebDriver is an toolbox for natively running web browsers, so when you render a page with WebDriver, Weather Underground thinks a regular user is accessing their website and you can access the full source code.</p>
+<p>To run the script, the first thing to do is ensure that <a href="https://chromedriver.chromium.org/">ChromeDriver</a> is installed. Note that you have to match the ChromeDriver version to whichever version of Chrome is installed on your machine. It&rsquo;s also possible to use something other than Chrome, for example <a href="https://github.com/mozilla/geckodriver/releases">geckodriver</a> for Firefox or <a href="https://webkit.org/blog/6900/webdriver-support-in-safari-10/">safaridriver</a> for Safari.</p>
+<p>Next, update the path to chromedriver in <code>scrape_wunderground.py</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Set the absolute path to chromedriver</span>
+chromedriver_path <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;/path/to/chromedriver&#39;</span>
+</code></pre></div><p>As long as BeautifulSoup and Selenium are installed, the script should work fine after that. However, there are a few important points to note about processing the data once it&rsquo;s downloaded:</p>
+<ol>
+<li>All data is listed in local time. So summer data is in daylight savings time and winter data is in standard time.</li>
+<li>Depending on the quality of the station,</li>
+<li>All pressure data is reported as sea-level pressure. Depending on the weather station, it may be possible to back-calculate to absolute pressure; some manufacturers (e.g., Ambient Weather WS-2902) use a constant offset whereas others (e.g., Davis Vantage Pro2) perform a more complicated barometric pressure reduction using the station&rsquo;s 12-hr temperature and humidity history.</li>
+</ol>
+<p>The full Python script is available <a href="/files/scrape_wunderground.py">here</a> but is also included below.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#e6db74">&#34;&#34;&#34;Module to scrape 5-min personal weather station data from Weather Underground.
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">Usage is:
+</span><span style="color:#e6db74">&gt;&gt;&gt; python scrape_wunderground.py   STATION    DATE
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">where station is a personal weather station (e.g., KCAJAMES3) and date is in the 
+</span><span style="color:#e6db74">format YYYY-MM-DD. 
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">Alternatively, each function below can be imported and used in a separate python
+</span><span style="color:#e6db74">script. Note that a working version of chromedriver must be installed and the absolute 
+</span><span style="color:#e6db74">path to executable has to be updated below (&#34;chromedriver_path&#34;).
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">Zach Perzan, 2021-07-28&#34;&#34;&#34;</span>
+
+<span style="color:#f92672">import</span> time
+<span style="color:#f92672">import</span> sys
+
+<span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+<span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+<span style="color:#f92672">from</span> bs4 <span style="color:#f92672">import</span> BeautifulSoup <span style="color:#66d9ef">as</span> BS
+<span style="color:#f92672">from</span> selenium <span style="color:#f92672">import</span> webdriver
+
+
+<span style="color:#75715e"># Set the absolute path to chromedriver</span>
+chromedriver_path <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;/path/to/chromedriver&#39;</span>
+
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">render_page</span>(url):
+    <span style="color:#e6db74">&#34;&#34;&#34;Given a url, render it with chromedriver and return the html source
+</span><span style="color:#e6db74">    
+</span><span style="color:#e6db74">    Parameters
+</span><span style="color:#e6db74">    ----------
+</span><span style="color:#e6db74">        url : str
+</span><span style="color:#e6db74">            url to render
+</span><span style="color:#e6db74">    
+</span><span style="color:#e6db74">    Returns
+</span><span style="color:#e6db74">    -------
+</span><span style="color:#e6db74">        r : 
+</span><span style="color:#e6db74">            rendered page source
+</span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+    
+    driver <span style="color:#f92672">=</span> webdriver<span style="color:#f92672">.</span>Chrome(chromedriver_path)
+    driver<span style="color:#f92672">.</span>get(url)
+    time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">3</span>) <span style="color:#75715e"># Could potentially decrease the sleep time</span>
+    r <span style="color:#f92672">=</span> driver<span style="color:#f92672">.</span>page_source
+    driver<span style="color:#f92672">.</span>quit()
+
+    <span style="color:#66d9ef">return</span> r
+
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">scrape_wunderground</span>(station, date):
+    <span style="color:#e6db74">&#34;&#34;&#34;Given a PWS station ID and date, scrape that day&#39;s data from Weather 
+</span><span style="color:#e6db74">    Underground and return it as a dataframe.
+</span><span style="color:#e6db74">    
+</span><span style="color:#e6db74">    Parameters
+</span><span style="color:#e6db74">    ----------
+</span><span style="color:#e6db74">        station : str
+</span><span style="color:#e6db74">            The personal weather station ID
+</span><span style="color:#e6db74">        date : str
+</span><span style="color:#e6db74">            The date for which to acquire data, formatted as &#39;YYYY-MM-DD&#39;
+</span><span style="color:#e6db74">            
+</span><span style="color:#e6db74">    Returns
+</span><span style="color:#e6db74">    -------
+</span><span style="color:#e6db74">        df : dataframe or None
+</span><span style="color:#e6db74">            A dataframe of weather observations, with index as pd.DateTimeIndex 
+</span><span style="color:#e6db74">            and columns as the observed data
+</span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+    
+    <span style="color:#75715e"># Render the url and open the page source as BS object</span>
+    url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;https://www.wunderground.com/dashboard/pws/</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">/table/</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">/</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">/daily&#39;</span> <span style="color:#f92672">%</span> (station,
+                                                                               date, date)
+    r <span style="color:#f92672">=</span> render_page(url)
+    soup <span style="color:#f92672">=</span> BS(r, <span style="color:#e6db74">&#34;html.parser&#34;</span>,)
+
+    container <span style="color:#f92672">=</span> soup<span style="color:#f92672">.</span>find(<span style="color:#e6db74">&#39;lib-history-table&#39;</span>)
+    
+    <span style="color:#75715e"># Check that lib-history-table is found</span>
+    <span style="color:#66d9ef">if</span> container <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span>:
+        <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">ValueError</span>(<span style="color:#e6db74">&#34;could not find lib-history-table in html source for </span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">%</span> url)
+    
+    <span style="color:#75715e"># Get the timestamps and data from two separate &#39;tbody&#39; tags</span>
+    all_checks <span style="color:#f92672">=</span> container<span style="color:#f92672">.</span>find_all(<span style="color:#e6db74">&#39;tbody&#39;</span>)
+    time_check <span style="color:#f92672">=</span> all_checks[<span style="color:#ae81ff">0</span>]
+    data_check <span style="color:#f92672">=</span> all_checks[<span style="color:#ae81ff">1</span>]
+
+    <span style="color:#75715e"># Iterate through &#39;tr&#39; tags and get the timestamps</span>
+    hours <span style="color:#f92672">=</span> []
+    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> time_check<span style="color:#f92672">.</span>find_all(<span style="color:#e6db74">&#39;tr&#39;</span>):
+        trial <span style="color:#f92672">=</span> i<span style="color:#f92672">.</span>get_text()
+        hours<span style="color:#f92672">.</span>append(trial)
+
+    <span style="color:#75715e"># For data, locate both value and no-value (&#34;--&#34;) classes</span>
+    classes <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;wu-value wu-value-to&#39;</span>, <span style="color:#e6db74">&#39;wu-unit-no-value ng-star-inserted&#39;</span>]
+
+    <span style="color:#75715e"># Iterate through span tags and get data</span>
+    data <span style="color:#f92672">=</span> []
+    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> data_check<span style="color:#f92672">.</span>find_all(<span style="color:#e6db74">&#39;span&#39;</span>, class_<span style="color:#f92672">=</span>classes):
+        trial <span style="color:#f92672">=</span> i<span style="color:#f92672">.</span>get_text()
+        data<span style="color:#f92672">.</span>append(trial)
+
+    columns <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;Temperature&#39;</span>, <span style="color:#e6db74">&#39;Dew Point&#39;</span>, <span style="color:#e6db74">&#39;Humidity&#39;</span>, <span style="color:#e6db74">&#39;Wind Speed&#39;</span>, 
+               <span style="color:#e6db74">&#39;Wind Gust&#39;</span>, <span style="color:#e6db74">&#39;Pressure&#39;</span>, <span style="color:#e6db74">&#39;Precip. Rate&#39;</span>, <span style="color:#e6db74">&#39;Precip. Accum.&#39;</span>]
+
+    <span style="color:#75715e"># Convert NaN values (stings of &#39;--&#39;) to np.nan</span>
+    data_nan <span style="color:#f92672">=</span> [np<span style="color:#f92672">.</span>nan <span style="color:#66d9ef">if</span> x <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;--&#39;</span> <span style="color:#66d9ef">else</span> x <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> data]
+
+    <span style="color:#75715e"># Convert list of data to an array</span>
+    data_array <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array(data_nan, dtype<span style="color:#f92672">=</span>float)
+    data_array <span style="color:#f92672">=</span> data_array<span style="color:#f92672">.</span>reshape(<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, len(columns))
+
+    <span style="color:#75715e"># Prepend date to HH:MM strings</span>
+    timestamps <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%s</span><span style="color:#e6db74"> </span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#39;</span> <span style="color:#f92672">%</span> (date, t) <span style="color:#66d9ef">for</span> t <span style="color:#f92672">in</span> hours]
+
+    <span style="color:#75715e"># Convert to dataframe</span>
+    df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame(index<span style="color:#f92672">=</span>timestamps, data<span style="color:#f92672">=</span>data_array, columns<span style="color:#f92672">=</span>columns)
+    df<span style="color:#f92672">.</span>index <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>to_datetime(df<span style="color:#f92672">.</span>index)
+    
+    <span style="color:#66d9ef">return</span> df
+
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">scrape_multiattempt</span>(station, date, attempts<span style="color:#f92672">=</span><span style="color:#ae81ff">4</span>, wait_time<span style="color:#f92672">=</span><span style="color:#ae81ff">5.0</span>):
+    <span style="color:#e6db74">&#34;&#34;&#34;Try to scrape data from Weather Underground. If there is an error on the 
+</span><span style="color:#e6db74">    first attempt, try again.
+</span><span style="color:#e6db74">    
+</span><span style="color:#e6db74">    Parameters
+</span><span style="color:#e6db74">    ----------
+</span><span style="color:#e6db74">        station : str
+</span><span style="color:#e6db74">            The personal weather station ID
+</span><span style="color:#e6db74">        date : str
+</span><span style="color:#e6db74">            The date for which to acquire data, formatted as &#39;YYYY-MM-DD&#39;
+</span><span style="color:#e6db74">        attempts : int, default 4
+</span><span style="color:#e6db74">            Maximum number of times to try accessing before failuer
+</span><span style="color:#e6db74">        wait_time : float, default 5.0
+</span><span style="color:#e6db74">            Amount of time to wait in between attempts
+</span><span style="color:#e6db74">            
+</span><span style="color:#e6db74">    Returns
+</span><span style="color:#e6db74">    -------
+</span><span style="color:#e6db74">        df : dataframe or None
+</span><span style="color:#e6db74">            A dataframe of weather observations, with index as pd.DateTimeIndex 
+</span><span style="color:#e6db74">            and columns as the observed data
+</span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+    
+    <span style="color:#75715e"># Try to download data limited number of attempts</span>
+    <span style="color:#66d9ef">for</span> n <span style="color:#f92672">in</span> range(attempts):
+        <span style="color:#66d9ef">try</span>:
+            df <span style="color:#f92672">=</span> scrape_wunderground(station, date)
+        <span style="color:#66d9ef">except</span>:
+            <span style="color:#75715e"># if unsuccessful, pause and retry</span>
+            time<span style="color:#f92672">.</span>sleep(wait_time)
+        <span style="color:#66d9ef">else</span>: 
+            <span style="color:#75715e"># if successful, then break</span>
+            <span style="color:#66d9ef">break</span>
+    <span style="color:#75715e"># If all attempts failed, return empty df</span>
+    <span style="color:#66d9ef">else</span>:
+        df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame()
+        
+    <span style="color:#66d9ef">return</span> df
+</code></pre></div>
+    </div>
+
+    
+
+
+    
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/weather/">Weather</a>
+  
+  <a class="badge badge-light" href="/tags/weather-underground/">Weather Underground</a>
+  
+  <a class="badge badge-light" href="/tags/web-scraping/">web scraping</a>
+  
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+      
+      <img class="portrait mr-3" src="/authors/admin/avatar_hu7f3da43b6ef367326652e50d4fe0d292_808671_250x250_fill_q90_lanczos_center.jpg" itemprop="image" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="https://zperzan.github.io/">Zach Perzan</a></h5>
+      <h6 class="card-subtitle">PhD candidate</h6>
+      <p class="card-text" itemprop="description">I use modern data science techniques to study water quality issues, but I often get sidetracked into problems that are less environmentally relevant.</p>
+      <ul class="network-icon" aria-hidden="true">
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          <li>
+            <a itemprop="sameAs" href="mailto:zperzan@stanford.edu" >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://scholar.google.com/citations?user=tEPiW54AAAAJ&amp;hl=en" target="_blank" rel="noopener">
+              <i class="ai ai-google-scholar"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/zperzan" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="/files/cv.pdf" >
+              <i class="ai ai-cv"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+      
+      
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/r.min.js"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.b22d2266dab94c8508ae1f0cf6b7056c.js"></script>
+
+    
+
+
+
+
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
