@@ -5,35 +5,540 @@
     <link>https://zperzan.github.io/</link>
       <atom:link href="https://zperzan.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Zach Perzan</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 25 Jul 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 Nov 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://zperzan.github.io/img/icon-192.png</url>
+      <url>https://zperzan.github.io/media/icon_hud1d0979e3910d321b321c3c963a9ae6e_14691_512x512_fill_lanczos_center_3.png</url>
       <title>Zach Perzan</title>
       <link>https://zperzan.github.io/</link>
     </image>
     
     <item>
-      <title>Projects</title>
-      <link>https://zperzan.github.io/projects/</link>
+      <title>Reimagining the nitrogen cycle</title>
+      <link>https://zperzan.github.io/research/ednr/</link>
+      <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/research/ednr/</guid>
+      <description>&lt;p&gt;Nitrogen is one of the most ubiquitous, costly and challenging environmental pollutants of the 21st century. In addition to clean water issues, the 21st century will require more efficient fertilizer production to meet the needs of a growing population. As part of a new interdisciplinary research team, we aim to tackle these two challenges by converting waterborne nitrogen pollutants into high-purity fertilizer.&lt;/p&gt;
+&lt;p&gt;Collaborators in the Dept. of Chemical Engineering have developed a new methodology for exactly this purpose: electrodialysis and nitrate reduction (EDNR). The next step is to build and optimize a device that in a real-world setting. In collaboration with our industry partners (the New York City Dept. of Environmental Protection, San Francisco Water Power Sewer, Jasper Ridge Biological Preserve, and others), we aim to deploy EDNR systems in both urban and rural settings.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Scraping 5-min weather data from Weather Underground</title>
+      <link>https://zperzan.github.io/projects/scrape-weather-underground/</link>
       <pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
-      <guid>https://zperzan.github.io/projects/</guid>
+      <guid>https://zperzan.github.io/projects/scrape-weather-underground/</guid>
+      <description>&lt;p&gt;Weather Undergound stores data from over 250,000 personal weather stations across the world. Unfortunately, historical data are not easy to access. It&amp;rsquo;s possible to view tables of 5-min data from a single day &amp;ndash; see &lt;a href=&#34;https://www.wunderground.com/dashboard/pws/KCOCREST39/table/2021-07-25/2021-07-25/daily&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this example&lt;/a&gt; from a station outside Crested Butte, Colorado &amp;ndash; but if you try to scrape the http using something like Python&amp;rsquo;s &lt;code&gt;requests&lt;/code&gt; library, the tables appear blank.&lt;/p&gt;
+&lt;p&gt;Weather Underground has a security policy that blocks automated requests from viewing data stored in each table. This is where &lt;a href=&#34;https://www.selenium.dev/documentation/en/webdriver/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Selenium WebDriver&lt;/a&gt; comes in. WebDriver is an toolbox for natively running web browsers, so when you render a page with WebDriver, Weather Underground thinks a regular user is accessing their website and you can access the full source code.&lt;/p&gt;
+&lt;p&gt;To run the script, the first thing to do is ensure that &lt;a href=&#34;https://chromedriver.chromium.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ChromeDriver&lt;/a&gt; is installed. Note that you have to match the ChromeDriver version to whichever version of Chrome is installed on your machine. It&amp;rsquo;s also possible to use something other than Chrome, for example &lt;a href=&#34;https://github.com/mozilla/geckodriver/releases&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;geckodriver&lt;/a&gt; for Firefox or &lt;a href=&#34;https://webkit.org/blog/6900/webdriver-support-in-safari-10/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;safaridriver&lt;/a&gt; for Safari.&lt;/p&gt;
+&lt;p&gt;Next, update the path to chromedriver in &lt;code&gt;scrape_wunderground.py&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# Set the absolute path to chromedriver
+chromedriver_path = &#39;/path/to/chromedriver&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;As long as BeautifulSoup and Selenium are installed, the script should work fine after that. However, there are a few important points to note about processing the data once it&amp;rsquo;s downloaded:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;All data is listed in local time. So summer data is in daylight savings time and winter data is in standard time.&lt;/li&gt;
+&lt;li&gt;Depending on the quality of the station,&lt;/li&gt;
+&lt;li&gt;All pressure data is reported as sea-level pressure. Depending on the weather station, it may be possible to back-calculate to absolute pressure; some manufacturers (e.g., Ambient Weather WS-2902) use a constant offset whereas others (e.g., Davis Vantage Pro2) perform a more complicated barometric pressure reduction using the station&amp;rsquo;s 12-hr temperature and humidity history.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The full Python script is available &lt;a href=&#34;https://zperzan.github.io/files/scrape_wunderground.py&#34;&gt;here&lt;/a&gt; but is also included below.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;quot;&amp;quot;&amp;quot;Module to scrape 5-min personal weather station data from Weather Underground.
+
+Usage is:
+&amp;gt;&amp;gt;&amp;gt; python scrape_wunderground.py   STATION    DATE
+
+where station is a personal weather station (e.g., KCAJAMES3) and date is in the 
+format YYYY-MM-DD. 
+
+Alternatively, each function below can be imported and used in a separate python
+script. Note that a working version of chromedriver must be installed and the absolute 
+path to executable has to be updated below (&amp;quot;chromedriver_path&amp;quot;).
+
+Zach Perzan, 2021-07-28&amp;quot;&amp;quot;&amp;quot;
+
+import time
+import sys
+
+import numpy as np
+import pandas as pd
+from bs4 import BeautifulSoup as BS
+from selenium import webdriver
+
+
+# Set the absolute path to chromedriver
+chromedriver_path = &#39;/path/to/chromedriver&#39;
+
+
+def render_page(url):
+    &amp;quot;&amp;quot;&amp;quot;Given a url, render it with chromedriver and return the html source
+    
+    Parameters
+    ----------
+        url : str
+            url to render
+    
+    Returns
+    -------
+        r : 
+            rendered page source
+    &amp;quot;&amp;quot;&amp;quot;
+    
+    driver = webdriver.Chrome(chromedriver_path)
+    driver.get(url)
+    time.sleep(3) # Could potentially decrease the sleep time
+    r = driver.page_source
+    driver.quit()
+
+    return r
+
+
+def scrape_wunderground(station, date):
+    &amp;quot;&amp;quot;&amp;quot;Given a PWS station ID and date, scrape that day&#39;s data from Weather 
+    Underground and return it as a dataframe.
+    
+    Parameters
+    ----------
+        station : str
+            The personal weather station ID
+        date : str
+            The date for which to acquire data, formatted as &#39;YYYY-MM-DD&#39;
+            
+    Returns
+    -------
+        df : dataframe or None
+            A dataframe of weather observations, with index as pd.DateTimeIndex 
+            and columns as the observed data
+    &amp;quot;&amp;quot;&amp;quot;
+    
+    # Render the url and open the page source as BS object
+    url = &#39;https://www.wunderground.com/dashboard/pws/%s/table/%s/%s/daily&#39; % (station,
+                                                                               date, date)
+    r = render_page(url)
+    soup = BS(r, &amp;quot;html.parser&amp;quot;,)
+
+    container = soup.find(&#39;lib-history-table&#39;)
+    
+    # Check that lib-history-table is found
+    if container is None:
+        raise ValueError(&amp;quot;could not find lib-history-table in html source for %s&amp;quot; % url)
+    
+    # Get the timestamps and data from two separate &#39;tbody&#39; tags
+    all_checks = container.find_all(&#39;tbody&#39;)
+    time_check = all_checks[0]
+    data_check = all_checks[1]
+
+    # Iterate through &#39;tr&#39; tags and get the timestamps
+    hours = []
+    for i in time_check.find_all(&#39;tr&#39;):
+        trial = i.get_text()
+        hours.append(trial)
+
+    # For data, locate both value and no-value (&amp;quot;--&amp;quot;) classes
+    classes = [&#39;wu-value wu-value-to&#39;, &#39;wu-unit-no-value ng-star-inserted&#39;]
+
+    # Iterate through span tags and get data
+    data = []
+    for i in data_check.find_all(&#39;span&#39;, class_=classes):
+        trial = i.get_text()
+        data.append(trial)
+
+    columns = [&#39;Temperature&#39;, &#39;Dew Point&#39;, &#39;Humidity&#39;, &#39;Wind Speed&#39;, 
+               &#39;Wind Gust&#39;, &#39;Pressure&#39;, &#39;Precip. Rate&#39;, &#39;Precip. Accum.&#39;]
+
+    # Convert NaN values (stings of &#39;--&#39;) to np.nan
+    data_nan = [np.nan if x == &#39;--&#39; else x for x in data]
+
+    # Convert list of data to an array
+    data_array = np.array(data_nan, dtype=float)
+    data_array = data_array.reshape(-1, len(columns))
+
+    # Prepend date to HH:MM strings
+    timestamps = [&#39;%s %s&#39; % (date, t) for t in hours]
+
+    # Convert to dataframe
+    df = pd.DataFrame(index=timestamps, data=data_array, columns=columns)
+    df.index = pd.to_datetime(df.index)
+    
+    return df
+
+
+def scrape_multiattempt(station, date, attempts=4, wait_time=5.0):
+    &amp;quot;&amp;quot;&amp;quot;Try to scrape data from Weather Underground. If there is an error on the 
+    first attempt, try again.
+    
+    Parameters
+    ----------
+        station : str
+            The personal weather station ID
+        date : str
+            The date for which to acquire data, formatted as &#39;YYYY-MM-DD&#39;
+        attempts : int, default 4
+            Maximum number of times to try accessing before failuer
+        wait_time : float, default 5.0
+            Amount of time to wait in between attempts
+            
+    Returns
+    -------
+        df : dataframe or None
+            A dataframe of weather observations, with index as pd.DateTimeIndex 
+            and columns as the observed data
+    &amp;quot;&amp;quot;&amp;quot;
+    
+    # Try to download data limited number of attempts
+    for n in range(attempts):
+        try:
+            df = scrape_wunderground(station, date)
+        except:
+            # if unsuccessful, pause and retry
+            time.sleep(wait_time)
+        else: 
+            # if successful, then break
+            break
+    # If all attempts failed, return empty df
+    else:
+        df = pd.DataFrame()
+        
+    return df
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>python-crunchflow</title>
+      <link>https://zperzan.github.io/software/python-crunchflow/</link>
+      <pubDate>Thu, 06 May 2021 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/software/python-crunchflow/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Softwares</title>
-      <link>https://zperzan.github.io/software/</link>
-      <pubDate>Thu, 23 Jul 2020 00:00:00 +0000</pubDate>
-      <guid>https://zperzan.github.io/software/</guid>
+      <title>pyDGSA</title>
+      <link>https://zperzan.github.io/software/pydgsa/</link>
+      <pubDate>Wed, 30 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/software/pydgsa/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Research</title>
-      <link>https://zperzan.github.io/research/</link>
+      <title>A new tool for groundwater velocity measurements</title>
+      <link>https://zperzan.github.io/research/wellstics/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/research/wellstics/</guid>
+      <description>&lt;p&gt;Groundwater velocity is inherently difficult to measure, especially at a site with limited infrastructure. Most modern groundwater velocity sensors are expensive ($1,110 to $18,000). More than that, they can only be installed in wells 2-inches in diameter or larger, which (if not present on site) can be expensive and time-consuming to install.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ve developed a new sensor system that can be installed in narrow wells (&amp;gt;8mm ID), like Solinst drive-point piezometers. These piezometer systems can be installed by hand (even in cobble!) and we&amp;rsquo;ve used the sensor system to measure groundwater velocity several sites.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Novel biosensors for monitoring trace contaminants</title>
+      <link>https://zperzan.github.io/research/qube/</link>
+      <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/research/qube/</guid>
+      <description>&lt;p&gt;Most contaminants in water (nitrate, arsenic, mercury and lead, to name a few) can only be measured by manually grabbing a water sample and analyzing it in the lab. This is a time-intensive process. A few companies offer optical sensors for &lt;em&gt;in situ&lt;/em&gt; geochemical measurements, but those are limited to gasses like CO&lt;sub&gt;2&lt;/sub&gt; (e.g., &lt;a href=&#34;https://www.vaisala.com/en/measurement/carbon-dioxide-co2-measurements&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vaisala&lt;/a&gt;) and O&lt;sub&gt;2&lt;/sub&gt; (e.g., &lt;a href=&#34;https://www.presens.de/products/detail/oxybaser-series&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PreSens&lt;/a&gt;). Others use electrochemistry to quantify concentrations of many different species (e.g., &lt;a href=&#34;https://aishome.com/in-situ-2/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Analytical Instrument Systems, Inc.&lt;/a&gt;), but data from those systems is hard to interpret and it can be impossible to deconvolve multiple overlapping signals.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;re working with &lt;a href=&#34;https://www.qbisci.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Quantitative BioSciences, Inc.&lt;/a&gt; to develop and deploy sensor systems that use customized biosensors strains to measure contaminant concentrations that we previously couldn&amp;rsquo;t measure. Current sensing capabilities include arsenic, lead, mercury, cadmium, nitrate, nitrite, ammonium, phosphorus, and more. We&amp;rsquo;ve deployed these systems in harsh environments (ie, fully solar-powered and subject to temperatures from -10 to 110 degrees Fahrenheit).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The spillover effect of drinking water violations</title>
+      <link>https://zperzan.github.io/research/bottled-water/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/research/bottled-water/</guid>
+      <description>&lt;p&gt;The ongoing water crisis in Flint, Michigan, was &amp;ndash; and still is &amp;ndash; a major news story that exposed governmental oversight and brought the question of safe drinking water into the news. A switch in the municipal drinking water supply, combined with insufficient water treatment, exposed over 100,000 Flint residents to elevated levels of coliform bacteria, lead and trihalomethans (THMs). Reporting on the crisis made national headlines and caused many Americans to reconsider the safety of their tap water. Even though the crisis affected a small, working-class city, we can see that bottled water sales spiked around the same time period in other states all across the country.&lt;/p&gt;
+&lt;p&gt;We are examining consumer spending habits and public sentiment data to analyze how many Americans distrust their tap and rely on bottled water as an alternate drinking water supply. Recent research has shown that U.S. households who perceive the tap as unsafe spend $5.65 billion per year on alternate water supplies&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, despite the fact that bottled water is less regulated than tap water and isn&amp;rsquo;t any safer on average.&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Javidi, A., Pierce, G., 2018. U.S. Households’ Perception of Drinking Water as Unsafe and its Consequences: Examining Alternative Choices to the Tap. Water Resources Research, 54, pp. 6100-6113.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Data-driven water quality modeling</title>
+      <link>https://zperzan.github.io/research/sensors/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>https://zperzan.github.io/research/</guid>
-      <description></description>
+      <guid>https://zperzan.github.io/research/sensors/</guid>
+      <description>&lt;p&gt;Traditionally, hydrologic modeling has relied on a suite of process-based models developed by many different researchers over years or even decades. These models contain a wealth of domain knowledge about contaminant transport &amp;ndash; the physics of water flow and the chemistry of water-rock interactions &amp;ndash; but they are relatively fixed and not designed to handle new streams of incoming data; a calibrated reactive transport model, for example, has to be completely re-calibrated from the beginning if new observations are not in agreement with model predictions.&lt;/p&gt;
+&lt;p&gt;Recent advances in data science and &lt;em&gt;in situ&lt;/em&gt; sensors &amp;ndash; when combined with robust biogeochemical models &amp;ndash; offer a unique opportunity to address this challenge. We have installed a network of solar-powered environmental sensors at sites in Colorado and Wyoming that provide continuous, high-frequency measurements of hydrologic conditions, microbial metabolic activity and key biogeochemical constituents. Remote connection via cellular modem allows us to access this data and update models in real time.&lt;/p&gt;
+&lt;p&gt;We are using several techniques to combine the knowledge contained within (process-based) reactive transport models with the flexibility and adaptability of modern machine learning/deep learning models. This includes:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Assimilating sensor data into a basic reactive transport model with an ensemble Kalman filter&lt;/li&gt;
+&lt;li&gt;Training an LSTM (and now transformers) with data from reactive transport model simulations, then using transfer learning to apply the model to real-world data&lt;/li&gt;
+&lt;li&gt;The same as above, but using sensor data from other sites across the world&lt;/li&gt;
+&lt;li&gt;Augementing sensor training data with generative adverarial networks (GAN) then building a GRU, LSTM, or sequence-to-sequence model&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Modeling managed aquifer recharge (MAR) in the Central Valley</title>
+      <link>https://zperzan.github.io/research/cv-mar/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/research/cv-mar/</guid>
+      <description>&lt;p&gt;Over the coming decades, increased interannual variability in precipitation &amp;ndash; wetter wet years and drier dry years &amp;ndash; will place increased demand on California&amp;rsquo;s network of reservoirs and dams. Though we need additional water storage capacity to store water from rainy years for use during drought years, events like the Oroville Dam disaster highlight the fact that California’s water storage infrastructure is already maxed out. Managed aquifer recharge (MAR) projects &amp;ndash; in which water is intentionally stored in aquifers for later extraction &amp;ndash; have been proposed as a tool to combat this problem; in California’s Central Valley, excess precipitation diverted to MAR sites could recharge aquifers with up to 1.5 km&lt;sup&gt;3&lt;/sup&gt; of water per year, approximately 11% of annual groundwater withdrawals.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;However, identifying the most promising MAR sites remains an ongoing challenge. We are using ParCrunchFlow&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; &amp;ndash; a parallel reactive transport model capable of simulating both saturated and unsaturated flow &amp;ndash; to identify suitable MAR sites surveyed with time-domain electromagnetic equipment. The CrunchTope component of ParCrunchFlow allows us to simulate potential changes in water chemistry as well, ensuring that MAR sites increase quantity of available water without degrading its quality.&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Scanlon, B., Reedy, R., Faunt, C., Pool, D., Uhlman, K., 2016. Enhancing drought resilience with conjunctive use and managed aquifer recharge in California and Arizona. Environmental Research Letters. 11 (4), pp. 15.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Beisman, J., Maxwell, R., Navarre-Sitchler, A., Steefel, C., Molins, S., 2015. ParCrunchFlow: an efficient, parallel reactive transport simulation tool for physically and chemically heterogeneous saturated subsurface environments. Computational Geosciences, 19 (2), pp. 403-422.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Teaching an RNN to write Movie Scripts</title>
+      <link>https://zperzan.github.io/projects/script-generator/</link>
+      <pubDate>Thu, 25 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/projects/script-generator/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Note: all code and data for this project can be found in a &lt;a href=&#34;https://github.com/zperzan/tarantino&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub repository&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Around Christmas, I was home visiting family and sat through an overload of Hallmark Channel holiday movies. To me, Hallmark holiday movies all have the same plot and same characters with different names, so I joked that a well-trained neural net could easily write one and no one would know the difference.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; That joke made me wonder how hard it would be to train an RNN to write movie scripts, so I set out to try.&lt;/p&gt;
+&lt;p&gt;It turns out scripts for movies on the Hallmark Channel are hard to find, so I decided to use screenplays written by Quentin Tarantino instead. I couldn&amp;rsquo;t find a usable copy of &lt;em&gt;Grindhouse: Death Proof&lt;/em&gt;, but I got vector PDFs for everything else &amp;ndash;
+12 out of 13 isn&amp;rsquo;t bad.&lt;/p&gt;
+&lt;p&gt;I converted the PDFs to text, cleaned up the text using a combination of &lt;code&gt;sed&lt;/code&gt; and &lt;code&gt;awk&lt;/code&gt;, embedded the characters as one-hot vectors, and fed that into a bidirectional LSTM. Words in all caps have special meaning in screenplays (names of characters, camera directions), so I embedded upper and lower case letters separately.&lt;/p&gt;
+&lt;p&gt;The finished model consists of 2 bidirectional LSTM layers &amp;ndash; each with 512 nodes and 20% recurrent dropout &amp;ndash; topped off by fully-connected Softmax layer with 82 nodes (there are 82 total characters in the model). The full details and all the code is available in the &lt;a href=&#34;https://github.com/zperzan/tarantino&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;repo&lt;/a&gt;. For now, let&amp;rsquo;s see some sample output:&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;gallery&#34;&gt;
+
+  
+  
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+    &lt;a data-fancybox=&#34;gallery-tarantino&#34; href=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample2.jpg&#34; data-caption=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34;&gt;
+      &lt;img src=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample2_hu8f2ae577097e28cb24b40b2fead3709a_78458_0x190_resize_q75_h2_lanczos.webp&#34; loading=&#34;lazy&#34; alt=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34; width=&#34;215&#34; height=&#34;190&#34;&gt;
+    &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+    &lt;a data-fancybox=&#34;gallery-tarantino&#34; href=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample3.jpg&#34; data-caption=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34;&gt;
+      &lt;img src=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample3_hu8f2ae577097e28cb24b40b2fead3709a_81169_0x190_resize_q75_h2_lanczos.webp&#34; loading=&#34;lazy&#34; alt=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34; width=&#34;215&#34; height=&#34;190&#34;&gt;
+    &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+    &lt;a data-fancybox=&#34;gallery-tarantino&#34; href=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample4.jpg&#34; data-caption=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34;&gt;
+      &lt;img src=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample4_hu8f2ae577097e28cb24b40b2fead3709a_81305_0x190_resize_q75_h2_lanczos.webp&#34; loading=&#34;lazy&#34; alt=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34; width=&#34;215&#34; height=&#34;190&#34;&gt;
+    &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+    &lt;a data-fancybox=&#34;gallery-tarantino&#34; href=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample5.jpg&#34; data-caption=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34;&gt;
+      &lt;img src=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample5_hu8f2ae577097e28cb24b40b2fead3709a_80077_0x190_resize_q75_h2_lanczos.webp&#34; loading=&#34;lazy&#34; alt=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34; width=&#34;215&#34; height=&#34;190&#34;&gt;
+    &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+    &lt;a data-fancybox=&#34;gallery-tarantino&#34; href=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample6.jpg&#34; data-caption=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words. The only change&#34;&gt;
+      &lt;img src=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample6_hu8f2ae577097e28cb24b40b2fead3709a_80887_0x190_resize_q75_h2_lanczos.webp&#34; loading=&#34;lazy&#34; alt=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words. The only change&#34; width=&#34;215&#34; height=&#34;190&#34;&gt;
+    &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+    &lt;a data-fancybox=&#34;gallery-tarantino&#34; href=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample7.jpg&#34; data-caption=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34;&gt;
+      &lt;img src=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample7_hu8f2ae577097e28cb24b40b2fead3709a_83587_0x190_resize_q75_h2_lanczos.webp&#34; loading=&#34;lazy&#34; alt=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34; width=&#34;215&#34; height=&#34;190&#34;&gt;
+    &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+    &lt;a data-fancybox=&#34;gallery-tarantino&#34; href=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample8.jpg&#34; data-caption=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34;&gt;
+      &lt;img src=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample8_hu8f2ae577097e28cb24b40b2fead3709a_80904_0x190_resize_q75_h2_lanczos.webp&#34; loading=&#34;lazy&#34; alt=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34; width=&#34;215&#34; height=&#34;190&#34;&gt;
+    &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+    &lt;a data-fancybox=&#34;gallery-tarantino&#34; href=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample9.jpg&#34; data-caption=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34;&gt;
+      &lt;img src=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample9_hu8f2ae577097e28cb24b40b2fead3709a_80850_0x190_resize_q75_h2_lanczos.webp&#34; loading=&#34;lazy&#34; alt=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34; width=&#34;215&#34; height=&#34;190&#34;&gt;
+    &lt;/a&gt;
+  
+
+&lt;/div&gt;
+&lt;p&gt;A few observations:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The model is great at picking up on the general structure of a screenplay; characters exchange dialog and occasionally you get camera and scene instructions &amp;ndash; &amp;ldquo;CU of Mickey&amp;rdquo; (ie, a close up shot of Mickey) and &amp;ldquo;INT. - BARTHOUSE - DAY&amp;rdquo; (ie, an interior shot at the &amp;ldquo;barthouse&amp;rdquo; during the day).&lt;/li&gt;
+&lt;li&gt;Scenes are an amalgam of characters from all of Tarantino&amp;rsquo;s movies (&amp;ldquo;THE BRIDE&amp;rdquo; from &lt;em&gt;Kill Bill&lt;/em&gt;, &amp;ldquo;ORDELL&amp;rdquo; from &lt;em&gt;Jackie Brown&lt;/em&gt;, etc), but unsurprisingly it doesn&amp;rsquo;t create any new character names.&lt;/li&gt;
+&lt;li&gt;It&amp;rsquo;s also pretty good at word completion (short-term memory). It completes &amp;ldquo;the burn on the side of his f&amp;rdquo; with &amp;ldquo;face&amp;rdquo; and &amp;ldquo;walking towards the hos&amp;rdquo; with &amp;ldquo;hostages&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;I really like the &amp;ldquo;MAX &amp;hellip; INT. - BARTHOUSE - DAY &amp;hellip; MAX (CONT&amp;rsquo;D)&amp;rdquo; sequence, though I think that was
+coincidence more than anything. With an input sequence of 50 characters, the model could not have known that MAX was talking prior to the scene change.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I didn&amp;rsquo;t fully tune the model because I felt bad wasting cluster resources on a silly task, but it achieves 60% accuracy on the test set. That&amp;rsquo;s pretty good considering the messy text and paucity of data (1.7M chars total). It trained relatively quickly as well (9 epochs with early stopping).&lt;/p&gt;
+&lt;p&gt;Update 2019: I would be curious to see how well one of the &amp;ldquo;Sesame Street&amp;rdquo; models &amp;ndash; ELMo, ERNIE, BERT, XLNet, RoBERTa, Transfo-XL, GPT-2, etc &amp;ndash; would perform on the same task.
+Thomas Dehaene must have had the same thought regarding Hallmark movies, as he just posted &lt;a href=&#34;https://towardsdatascience.com/an-nlp-view-on-holiday-movies-part-ii-text-generation-using-lstms-in-keras-36dc1ff8a6d2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this tutorial&lt;/a&gt; on his blog. He couldn&amp;rsquo;t find any screenplays either and used subtitles instead.&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;I subsequently found &lt;a href=&#34;https://twitter.com/keatonpatti/status/1072877290902745089?lang=en&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this post&lt;/a&gt; from a comedian making the same point, though that script was clearly human-generated.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Biogeochemical cycling in a uranium-contaminated floodplain</title>
+      <link>https://zperzan.github.io/research/riverton/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/research/riverton/</guid>
+      <description>&lt;p&gt;A long history of uranium mining and weapons development throughout the Cold War has left many mining, milling and testing sites contaminated with radioactive materials like uranium, thorium, and radium, as well as other non-radioactive heavy metals including vanadium, molybdenum, selenium and arsenic. There are nearly 100 such locations &lt;a href=&#34;https://www.energy.gov/lm/sites/lm-sites&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;across the western U.S.&lt;/a&gt; managed by the Department of Energy. The groundwater contaminant plumes at many sites are not dissipating as expected and contamination may persist beyond the 100-year timeframe required for regulatory compliance.&lt;/p&gt;
+&lt;p&gt;The contaminant plumes at many floodplain mill sites are subject to strong seasonal fluctuations, but the processes behind these variations are not well understood. We are studying uranium transport and the concurrent biogeochemical cycling that occurs during hydrologic perturbations, with research centered around a series of field experiments using artificial groundwater tracers. The tracer tests have immediate relevance to water quality concerns at the field site &amp;ndash; a uranium-contaminated floodplain in Riverton, Wyoming &amp;ndash; but has much broader implications as well. Isotopically labeled nitrate allows us to track denitrification and the production of nitrous oxide (a powerful greenhouse gas), deuterated water (D&lt;sub&gt;2&lt;/sub&gt;O) could map plant water uptake, and dye infiltration patterns can answer questions regarding unsaturated zone flow.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Studying paleoclimate through New England cave sediments</title>
+      <link>https://zperzan.github.io/research/weybridge-cave/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/research/weybridge-cave/</guid>
+      <description>&lt;p&gt;As part of my undergraduate thesis at Middlebury College, I worked with Will Amidon and Jeff Munroe to search for potential paleoclimate records in New England caves. We found a sequence of sediments in Weybridge Cave, Vermont, and used luminescence and paleomagnetic technqiues to show that the sediments span from 35 to 70 ka. This is significantly older than any surface sediments in New England, which were all deposited after the last glacial maximum (~26 ka).&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; We combined the Weybridge Cave record with other sedimentary records from the region to calculate rates of Laurentide Ice Sheet advance during the last glaciation. Read the full details at:&lt;/p&gt;
+&lt;p&gt;Munroe, J., Perzan, Z., and Amidon, W., 2016. Cave sediments constrain the latest Pleistocene advance of the Laurentide ice sheet in the Champlain Valley, Vermont, USA. Journal of Quaternary Science, 31 (8), pp. 893-904.&lt;/p&gt;
+&lt;p&gt;During this research, I was lucky enough to be the first to use Middlebury&amp;rsquo;s new luminescence geochronology lab and spent many hours toiling away in the dark room figuring out our brand new instrument. Given the potential for partial bleaching and the fact that most samples were at or near saturation, New England cave sediemnts probably weren&amp;rsquo;t the easiest samples to start out with.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;As part of this project, I also collected a young stalactite and took it to the clean lab at the University of Quebec at Montreal for U-Th age dating. For his undergraduate thesis, Drew Gorin (another Middlebury geology student) then combined those ages with stable isotope measurements to construct a late Holocene precipitation and temperature record.&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Estimates differ, but see Dyke et al. (2002), Mickelson and Colgan (2003) and Ridge (2004) for more info.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Counterintuitively, luminescence-based dating techniques are not well suited to cave sediments because of the high potential for partial bleaching; sediments deposited at the surface usually have direct exposure to sunlight, whereas sediments deposited in one chamber of a cave could be eroded and deposited in another chamber, without ever being exposed to light. In this way, luminescence ages on cave sediments represent the time they first entered the cave, not the time they were deposited in the sequence.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Gorin, Andrew L., 2016. Paleoclimate Reconstruction from a Weybridge Cave Speleothem, Vermont. Undergraduate Thesis, Middlebury College, Middlebury, VT, 72p.&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Mapping lava tube caves with LiDAR</title>
+      <link>https://zperzan.github.io/projects/lidar-caves/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/projects/lidar-caves/</guid>
+      <description>&lt;p&gt;In 2015, I worked for the Bureau of Land Management in Shoshone, Idaho, as part of the Geological Society of America&amp;rsquo;s GeoCorps program. Most of my time was spent driving around the desert, dodging rattlesnakes and exploring lava tube caves. In collaboration with researchers from Idaho State University, we used a tripod-mounted LiDAR system to map the interior of several caves.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-full-map-of-maze-cave-viewed-from-the-side-a-single-map-consists-of-several-20-50-different-individual-scans-from-the-lidar-unit-that-are-then-merged-together-during-post-processing&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Full map of Maze Cave, viewed from the side. A single map consists of several (20-50) different individual scans from the LiDAR unit that are then merged together during post-processing.&#34; srcset=&#34;
+               /projects/lidar-caves/MazeCave_Side_hu1b0a5dd10fb2a163a7328ad1ca1feb65_519024_09dac9c8a3a8d01d50ab1b68d6840175.webp 400w,
+               /projects/lidar-caves/MazeCave_Side_hu1b0a5dd10fb2a163a7328ad1ca1feb65_519024_b4c8feaa78695affce60e1853a706fc1.webp 760w,
+               /projects/lidar-caves/MazeCave_Side_hu1b0a5dd10fb2a163a7328ad1ca1feb65_519024_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://zperzan.github.io/projects/lidar-caves/MazeCave_Side_hu1b0a5dd10fb2a163a7328ad1ca1feb65_519024_09dac9c8a3a8d01d50ab1b68d6840175.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;184&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Full map of Maze Cave, viewed from the side. A single map consists of several (20-50) different individual scans from the LiDAR unit that are then merged together during post-processing.
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;The BLM was interested in detailed cave maps for practical reasons &amp;ndash; in case of a rescue, for example &amp;ndash; as well as for basic research purposes. Precise cross-sections of lava tubes can be used to infer the velocity and viscocity of lava that once flowed through the caves, while a time series of LiDAR scans can be used to better understand cave wall deformation and cave collapse.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An example conference paper</title>
+      <link>https://zperzan.github.io/publication/example/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/publication/example/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code, math, and images&lt;/a&gt;.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

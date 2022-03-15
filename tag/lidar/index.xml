@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lidar | Zach Perzan</title>
+    <link>https://zperzan.github.io/tag/lidar/</link>
+      <atom:link href="https://zperzan.github.io/tag/lidar/index.xml" rel="self" type="application/rss+xml" />
+    <description>Lidar</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jan 2015 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://zperzan.github.io/media/icon_hud1d0979e3910d321b321c3c963a9ae6e_14691_512x512_fill_lanczos_center_3.png</url>
+      <title>Lidar</title>
+      <link>https://zperzan.github.io/tag/lidar/</link>
+    </image>
+    
+    <item>
+      <title>Mapping lava tube caves with LiDAR</title>
+      <link>https://zperzan.github.io/projects/lidar-caves/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/projects/lidar-caves/</guid>
+      <description>&lt;p&gt;In 2015, I worked for the Bureau of Land Management in Shoshone, Idaho, as part of the Geological Society of America&amp;rsquo;s GeoCorps program. Most of my time was spent driving around the desert, dodging rattlesnakes and exploring lava tube caves. In collaboration with researchers from Idaho State University, we used a tripod-mounted LiDAR system to map the interior of several caves.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-full-map-of-maze-cave-viewed-from-the-side-a-single-map-consists-of-several-20-50-different-individual-scans-from-the-lidar-unit-that-are-then-merged-together-during-post-processing&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Full map of Maze Cave, viewed from the side. A single map consists of several (20-50) different individual scans from the LiDAR unit that are then merged together during post-processing.&#34; srcset=&#34;
+               /projects/lidar-caves/MazeCave_Side_hu1b0a5dd10fb2a163a7328ad1ca1feb65_519024_09dac9c8a3a8d01d50ab1b68d6840175.webp 400w,
+               /projects/lidar-caves/MazeCave_Side_hu1b0a5dd10fb2a163a7328ad1ca1feb65_519024_b4c8feaa78695affce60e1853a706fc1.webp 760w,
+               /projects/lidar-caves/MazeCave_Side_hu1b0a5dd10fb2a163a7328ad1ca1feb65_519024_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://zperzan.github.io/projects/lidar-caves/MazeCave_Side_hu1b0a5dd10fb2a163a7328ad1ca1feb65_519024_09dac9c8a3a8d01d50ab1b68d6840175.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;184&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Full map of Maze Cave, viewed from the side. A single map consists of several (20-50) different individual scans from the LiDAR unit that are then merged together during post-processing.
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;The BLM was interested in detailed cave maps for practical reasons &amp;ndash; in case of a rescue, for example &amp;ndash; as well as for basic research purposes. Precise cross-sections of lava tubes can be used to infer the velocity and viscocity of lava that once flowed through the caves, while a time series of LiDAR scans can be used to better understand cave wall deformation and cave collapse.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

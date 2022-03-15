@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CrunchFlow | Zach Perzan</title>
+    <link>https://zperzan.github.io/tag/crunchflow/</link>
+      <atom:link href="https://zperzan.github.io/tag/crunchflow/index.xml" rel="self" type="application/rss+xml" />
+    <description>CrunchFlow</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 06 May 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://zperzan.github.io/media/icon_hud1d0979e3910d321b321c3c963a9ae6e_14691_512x512_fill_lanczos_center_3.png</url>
+      <title>CrunchFlow</title>
+      <link>https://zperzan.github.io/tag/crunchflow/</link>
+    </image>
+    
+    <item>
+      <title>python-crunchflow</title>
+      <link>https://zperzan.github.io/software/python-crunchflow/</link>
+      <pubDate>Thu, 06 May 2021 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/software/python-crunchflow/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

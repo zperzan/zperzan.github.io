@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Weather Underground | Zach Perzan</title>
+    <link>https://zperzan.github.io/tag/weather-underground/</link>
+      <atom:link href="https://zperzan.github.io/tag/weather-underground/index.xml" rel="self" type="application/rss+xml" />
+    <description>Weather Underground</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 25 Jul 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://zperzan.github.io/media/icon_hud1d0979e3910d321b321c3c963a9ae6e_14691_512x512_fill_lanczos_center_3.png</url>
+      <title>Weather Underground</title>
+      <link>https://zperzan.github.io/tag/weather-underground/</link>
+    </image>
+    
+    <item>
+      <title>Scraping 5-min weather data from Weather Underground</title>
+      <link>https://zperzan.github.io/projects/scrape-weather-underground/</link>
+      <pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/projects/scrape-weather-underground/</guid>
+      <description>&lt;p&gt;Weather Undergound stores data from over 250,000 personal weather stations across the world. Unfortunately, historical data are not easy to access. It&amp;rsquo;s possible to view tables of 5-min data from a single day &amp;ndash; see &lt;a href=&#34;https://www.wunderground.com/dashboard/pws/KCOCREST39/table/2021-07-25/2021-07-25/daily&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this example&lt;/a&gt; from a station outside Crested Butte, Colorado &amp;ndash; but if you try to scrape the http using something like Python&amp;rsquo;s &lt;code&gt;requests&lt;/code&gt; library, the tables appear blank.&lt;/p&gt;
+&lt;p&gt;Weather Underground has a security policy that blocks automated requests from viewing data stored in each table. This is where &lt;a href=&#34;https://www.selenium.dev/documentation/en/webdriver/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Selenium WebDriver&lt;/a&gt; comes in. WebDriver is an toolbox for natively running web browsers, so when you render a page with WebDriver, Weather Underground thinks a regular user is accessing their website and you can access the full source code.&lt;/p&gt;
+&lt;p&gt;To run the script, the first thing to do is ensure that &lt;a href=&#34;https://chromedriver.chromium.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ChromeDriver&lt;/a&gt; is installed. Note that you have to match the ChromeDriver version to whichever version of Chrome is installed on your machine. It&amp;rsquo;s also possible to use something other than Chrome, for example &lt;a href=&#34;https://github.com/mozilla/geckodriver/releases&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;geckodriver&lt;/a&gt; for Firefox or &lt;a href=&#34;https://webkit.org/blog/6900/webdriver-support-in-safari-10/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;safaridriver&lt;/a&gt; for Safari.&lt;/p&gt;
+&lt;p&gt;Next, update the path to chromedriver in &lt;code&gt;scrape_wunderground.py&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# Set the absolute path to chromedriver
+chromedriver_path = &#39;/path/to/chromedriver&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;As long as BeautifulSoup and Selenium are installed, the script should work fine after that. However, there are a few important points to note about processing the data once it&amp;rsquo;s downloaded:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;All data is listed in local time. So summer data is in daylight savings time and winter data is in standard time.&lt;/li&gt;
+&lt;li&gt;Depending on the quality of the station,&lt;/li&gt;
+&lt;li&gt;All pressure data is reported as sea-level pressure. Depending on the weather station, it may be possible to back-calculate to absolute pressure; some manufacturers (e.g., Ambient Weather WS-2902) use a constant offset whereas others (e.g., Davis Vantage Pro2) perform a more complicated barometric pressure reduction using the station&amp;rsquo;s 12-hr temperature and humidity history.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The full Python script is available &lt;a href=&#34;https://zperzan.github.io/files/scrape_wunderground.py&#34;&gt;here&lt;/a&gt; but is also included below.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;quot;&amp;quot;&amp;quot;Module to scrape 5-min personal weather station data from Weather Underground.
+
+Usage is:
+&amp;gt;&amp;gt;&amp;gt; python scrape_wunderground.py   STATION    DATE
+
+where station is a personal weather station (e.g., KCAJAMES3) and date is in the 
+format YYYY-MM-DD. 
+
+Alternatively, each function below can be imported and used in a separate python
+script. Note that a working version of chromedriver must be installed and the absolute 
+path to executable has to be updated below (&amp;quot;chromedriver_path&amp;quot;).
+
+Zach Perzan, 2021-07-28&amp;quot;&amp;quot;&amp;quot;
+
+import time
+import sys
+
+import numpy as np
+import pandas as pd
+from bs4 import BeautifulSoup as BS
+from selenium import webdriver
+
+
+# Set the absolute path to chromedriver
+chromedriver_path = &#39;/path/to/chromedriver&#39;
+
+
+def render_page(url):
+    &amp;quot;&amp;quot;&amp;quot;Given a url, render it with chromedriver and return the html source
+    
+    Parameters
+    ----------
+        url : str
+            url to render
+    
+    Returns
+    -------
+        r : 
+            rendered page source
+    &amp;quot;&amp;quot;&amp;quot;
+    
+    driver = webdriver.Chrome(chromedriver_path)
+    driver.get(url)
+    time.sleep(3) # Could potentially decrease the sleep time
+    r = driver.page_source
+    driver.quit()
+
+    return r
+
+
+def scrape_wunderground(station, date):
+    &amp;quot;&amp;quot;&amp;quot;Given a PWS station ID and date, scrape that day&#39;s data from Weather 
+    Underground and return it as a dataframe.
+    
+    Parameters
+    ----------
+        station : str
+            The personal weather station ID
+        date : str
+            The date for which to acquire data, formatted as &#39;YYYY-MM-DD&#39;
+            
+    Returns
+    -------
+        df : dataframe or None
+            A dataframe of weather observations, with index as pd.DateTimeIndex 
+            and columns as the observed data
+    &amp;quot;&amp;quot;&amp;quot;
+    
+    # Render the url and open the page source as BS object
+    url = &#39;https://www.wunderground.com/dashboard/pws/%s/table/%s/%s/daily&#39; % (station,
+                                                                               date, date)
+    r = render_page(url)
+    soup = BS(r, &amp;quot;html.parser&amp;quot;,)
+
+    container = soup.find(&#39;lib-history-table&#39;)
+    
+    # Check that lib-history-table is found
+    if container is None:
+        raise ValueError(&amp;quot;could not find lib-history-table in html source for %s&amp;quot; % url)
+    
+    # Get the timestamps and data from two separate &#39;tbody&#39; tags
+    all_checks = container.find_all(&#39;tbody&#39;)
+    time_check = all_checks[0]
+    data_check = all_checks[1]
+
+    # Iterate through &#39;tr&#39; tags and get the timestamps
+    hours = []
+    for i in time_check.find_all(&#39;tr&#39;):
+        trial = i.get_text()
+        hours.append(trial)
+
+    # For data, locate both value and no-value (&amp;quot;--&amp;quot;) classes
+    classes = [&#39;wu-value wu-value-to&#39;, &#39;wu-unit-no-value ng-star-inserted&#39;]
+
+    # Iterate through span tags and get data
+    data = []
+    for i in data_check.find_all(&#39;span&#39;, class_=classes):
+        trial = i.get_text()
+        data.append(trial)
+
+    columns = [&#39;Temperature&#39;, &#39;Dew Point&#39;, &#39;Humidity&#39;, &#39;Wind Speed&#39;, 
+               &#39;Wind Gust&#39;, &#39;Pressure&#39;, &#39;Precip. Rate&#39;, &#39;Precip. Accum.&#39;]
+
+    # Convert NaN values (stings of &#39;--&#39;) to np.nan
+    data_nan = [np.nan if x == &#39;--&#39; else x for x in data]
+
+    # Convert list of data to an array
+    data_array = np.array(data_nan, dtype=float)
+    data_array = data_array.reshape(-1, len(columns))
+
+    # Prepend date to HH:MM strings
+    timestamps = [&#39;%s %s&#39; % (date, t) for t in hours]
+
+    # Convert to dataframe
+    df = pd.DataFrame(index=timestamps, data=data_array, columns=columns)
+    df.index = pd.to_datetime(df.index)
+    
+    return df
+
+
+def scrape_multiattempt(station, date, attempts=4, wait_time=5.0):
+    &amp;quot;&amp;quot;&amp;quot;Try to scrape data from Weather Underground. If there is an error on the 
+    first attempt, try again.
+    
+    Parameters
+    ----------
+        station : str
+            The personal weather station ID
+        date : str
+            The date for which to acquire data, formatted as &#39;YYYY-MM-DD&#39;
+        attempts : int, default 4
+            Maximum number of times to try accessing before failuer
+        wait_time : float, default 5.0
+            Amount of time to wait in between attempts
+            
+    Returns
+    -------
+        df : dataframe or None
+            A dataframe of weather observations, with index as pd.DateTimeIndex 
+            and columns as the observed data
+    &amp;quot;&amp;quot;&amp;quot;
+    
+    # Try to download data limited number of attempts
+    for n in range(attempts):
+        try:
+            df = scrape_wunderground(station, date)
+        except:
+            # if unsuccessful, pause and retry
+            time.sleep(wait_time)
+        else: 
+            # if successful, then break
+            break
+    # If all attempts failed, return empty df
+    else:
+        df = pd.DataFrame()
+        
+    return df
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
