@@ -17,7 +17,7 @@
       <link>https://zperzan.github.io/research/ednr/</link>
       <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
       <guid>https://zperzan.github.io/research/ednr/</guid>
-      <description>&lt;p&gt;Nitrogen is one of the most ubiquitous, costly and challenging environmental pollutants of the 21st century. In addition to clean water issues, the 21st century will require more efficient fertilizer production to meet the needs of a growing population. As part of a new interdisciplinary research team, we aim to tackle these two challenges by converting waterborne nitrogen pollutants into high-purity fertilizer.&lt;/p&gt;
+      <description>&lt;p&gt;Nitrogen is one of the most ubiquitous, costly and challenging environmental pollutants of the 21st century. In addition to clean water issues, the 21st century will require more efficient fertilizer production to meet the needs of a growing population. As part of an interdisciplinary research team, we aim to tackle these two challenges by converting waterborne nitrogen pollutants into high-purity fertilizer.&lt;/p&gt;
 &lt;p&gt;Collaborators in the Dept. of Chemical Engineering have developed a new methodology for exactly this purpose: electrodialysis and nitrate reduction (EDNR). The next step is to build and optimize a device that in a real-world setting. In collaboration with our industry partners (the New York City Dept. of Environmental Protection, San Francisco Water Power Sewer, Jasper Ridge Biological Preserve, and others), we aim to deploy EDNR systems in both urban and rural settings.&lt;/p&gt;
 </description>
     </item>
@@ -219,22 +219,12 @@ def scrape_multiattempt(station, date, attempts=4, wait_time=5.0):
     </item>
     
     <item>
-      <title>A new tool for groundwater velocity measurements</title>
-      <link>https://zperzan.github.io/research/wellstics/</link>
-      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>https://zperzan.github.io/research/wellstics/</guid>
-      <description>&lt;p&gt;Groundwater velocity is inherently difficult to measure, especially at a site with limited infrastructure. Most modern groundwater velocity sensors are expensive ($1,110 to $18,000). More than that, they can only be installed in wells 2-inches in diameter or larger, which (if not present on site) can be expensive and time-consuming to install.&lt;/p&gt;
-&lt;p&gt;We&amp;rsquo;ve developed a new sensor system that can be installed in narrow wells (&amp;gt;8mm ID), like Solinst drive-point piezometers. These piezometer systems can be installed by hand (even in cobble!) and we&amp;rsquo;ve used the sensor system to measure groundwater velocity several sites.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Novel biosensors for monitoring trace contaminants</title>
       <link>https://zperzan.github.io/research/qube/</link>
       <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
       <guid>https://zperzan.github.io/research/qube/</guid>
       <description>&lt;p&gt;Most contaminants in water (nitrate, arsenic, mercury and lead, to name a few) can only be measured by manually grabbing a water sample and analyzing it in the lab. This is a time-intensive process. A few companies offer optical sensors for &lt;em&gt;in situ&lt;/em&gt; geochemical measurements, but those are limited to gasses like CO&lt;sub&gt;2&lt;/sub&gt; (e.g., &lt;a href=&#34;https://www.vaisala.com/en/measurement/carbon-dioxide-co2-measurements&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vaisala&lt;/a&gt;) and O&lt;sub&gt;2&lt;/sub&gt; (e.g., &lt;a href=&#34;https://www.presens.de/products/detail/oxybaser-series&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PreSens&lt;/a&gt;). Others use electrochemistry to quantify concentrations of many different species (e.g., &lt;a href=&#34;https://aishome.com/in-situ-2/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Analytical Instrument Systems, Inc.&lt;/a&gt;), but data from those systems is hard to interpret and it can be impossible to deconvolve multiple overlapping signals.&lt;/p&gt;
-&lt;p&gt;We&amp;rsquo;re working with &lt;a href=&#34;https://www.qbisci.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Quantitative BioSciences, Inc.&lt;/a&gt; to develop and deploy sensor systems that use customized biosensors strains to measure contaminant concentrations that we previously couldn&amp;rsquo;t measure. Current sensing capabilities include arsenic, lead, mercury, cadmium, nitrate, nitrite, ammonium, phosphorus, and more. We&amp;rsquo;ve deployed these systems in harsh environments (ie, fully solar-powered and subject to temperatures from -10 to 110 degrees Fahrenheit).&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;re working with &lt;a href=&#34;https://www.qbisci.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Quantitative BioSciences, Inc.&lt;/a&gt; to develop and deploy sensor systems that use customized biosensors strains to measure a suite of contaminants. Current sensing capabilities include arsenic, lead, mercury, cadmium, nitrate, nitrite, ammonium, phosphorus, and more. We&amp;rsquo;ve deployed these systems remotely (ie, fully solar-powered and autonomous) and in harsh environments (ie, subject to driving wind, snow and temperatures from -10 to 110° F).&lt;/p&gt;
 </description>
     </item>
     
@@ -253,6 +243,16 @@ def scrape_multiattempt(station, date, attempts=4, wait_time=5.0):
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A new tool for groundwater velocity measurements</title>
+      <link>https://zperzan.github.io/research/wellstics/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/research/wellstics/</guid>
+      <description>&lt;p&gt;Groundwater velocity is inherently difficult to measure, especially at sites with limited infrastructure. Most modern groundwater velocity sensors are expensive ($1,110 to $18,000). More than that, they can only be installed in wells 2 inches in diameter or larger, which are expensive and time-consuming to install.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ve developed a new sensor system that can be installed in narrow wells (as small as 8 mm ID), like &lt;a href=&#34;https://www.solinst.com/products/direct-push-equipment/615-drive-point-piezometers/datasheet/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Solinst drive-point piezometers&lt;/a&gt;. These piezometer systems can be installed by hand (even in cobble!) and we&amp;rsquo;ve successfully used the system to measure groundwater velocity several sites.&lt;/p&gt;
 </description>
     </item>
     
