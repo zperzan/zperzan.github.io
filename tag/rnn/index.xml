@@ -156,14 +156,14 @@ coincidence more than anything. With an input sequence of 50 characters, the mod
 &lt;p&gt;I didn&amp;rsquo;t fully tune the model because I felt bad wasting cluster resources on a silly task, but it achieves 60% accuracy on the test set. That&amp;rsquo;s pretty good considering the messy text and paucity of data (1.7M chars total). It trained relatively quickly as well (9 epochs with early stopping).&lt;/p&gt;
 &lt;p&gt;Update 2019: I would be curious to see how well one of the &amp;ldquo;Sesame Street&amp;rdquo; models &amp;ndash; ELMo, ERNIE, BERT, XLNet, RoBERTa, Transfo-XL, GPT-2, etc &amp;ndash; would perform on the same task.
 Thomas Dehaene must have had the same thought regarding Hallmark movies, as he just posted &lt;a href=&#34;https://towardsdatascience.com/an-nlp-view-on-holiday-movies-part-ii-text-generation-using-lstms-in-keras-36dc1ff8a6d2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this tutorial&lt;/a&gt; on his blog. He couldn&amp;rsquo;t find any screenplays either and used subtitles instead.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
 &lt;p&gt;I subsequently found &lt;a href=&#34;https://twitter.com/keatonpatti/status/1072877290902745089?lang=en&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this post&lt;/a&gt; from a comedian making the same point, though that script was clearly human-generated.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     

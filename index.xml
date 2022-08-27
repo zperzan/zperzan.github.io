@@ -5,7 +5,7 @@
     <link>https://zperzan.github.io/</link>
       <atom:link href="https://zperzan.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Zach Perzan</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 Nov 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Dec 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://zperzan.github.io/media/icon_hud1d0979e3910d321b321c3c963a9ae6e_14691_512x512_fill_lanczos_center_3.png</url>
       <title>Zach Perzan</title>
@@ -13,12 +13,33 @@
     </image>
     
     <item>
-      <title>Reimagining the nitrogen cycle</title>
-      <link>https://zperzan.github.io/research/ednr/</link>
-      <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
-      <guid>https://zperzan.github.io/research/ednr/</guid>
-      <description>&lt;p&gt;Nitrogen is one of the most ubiquitous, costly and challenging environmental pollutants of the 21st century. In addition to clean water issues, the 21st century will require more efficient fertilizer production to meet the needs of a growing population. As part of an interdisciplinary research team, we aim to tackle these two challenges by converting waterborne nitrogen pollutants into high-purity fertilizer.&lt;/p&gt;
-&lt;p&gt;Collaborators in the Dept. of Chemical Engineering have developed a new methodology for exactly this purpose: electrodialysis and nitrate reduction (EDNR). The next step is to build and optimize a device that in a real-world setting. In collaboration with our industry partners (the New York City Dept. of Environmental Protection, San Francisco Water Power Sewer, Jasper Ridge Biological Preserve, and others), we aim to deploy EDNR systems in both urban and rural settings.&lt;/p&gt;
+      <title>Modeling managed aquifer recharge (MAR) in the Central Valley</title>
+      <link>https://zperzan.github.io/research/cv-mar/</link>
+      <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/research/cv-mar/</guid>
+      <description>&lt;p&gt;Over the coming decades, increased interannual variability in precipitation &amp;ndash; wetter wet years and drier dry years &amp;ndash; will place increased demand on California&amp;rsquo;s network of reservoirs and dams. Though we need additional water storage capacity to store water from rainy years for use during drought years, events like the Oroville Dam disaster highlight the fact that California’s water storage infrastructure is already maxed out. Managed aquifer recharge (MAR) projects &amp;ndash; in which water is intentionally stored in aquifers for later extraction &amp;ndash; have been proposed as a tool to combat this problem; in California’s Central Valley, excess precipitation diverted to MAR sites could recharge aquifers with up to 1.5 km&lt;sup&gt;3&lt;/sup&gt; of water per year, approximately 11% of annual groundwater withdrawals.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;However, identifying the most promising MAR sites remains an ongoing challenge. We are using ParCrunchFlow&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; &amp;ndash; a parallel reactive transport model capable of simulating both saturated and unsaturated flow &amp;ndash; to identify suitable MAR sites surveyed with time-domain electromagnetic equipment. The CrunchTope component of ParCrunchFlow allows us to simulate potential changes in water chemistry as well, ensuring that MAR sites increase quantity of available water without degrading its quality.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Scanlon, B., Reedy, R., Faunt, C., Pool, D., Uhlman, K., 2016. Enhancing drought resilience with conjunctive use and managed aquifer recharge in California and Arizona. Environmental Research Letters. 11 (4), pp. 15.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;Beisman, J., Maxwell, R., Navarre-Sitchler, A., Steefel, C., Molins, S., 2015. ParCrunchFlow: an efficient, parallel reactive transport simulation tool for physically and chemically heterogeneous saturated subsurface environments. Computational Geosciences, 19 (2), pp. 403-422.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A new tool for groundwater velocity measurements</title>
+      <link>https://zperzan.github.io/research/wellstics/</link>
+      <pubDate>Fri, 01 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/research/wellstics/</guid>
+      <description>&lt;p&gt;Groundwater velocity is inherently difficult to measure, especially at sites with limited infrastructure. Most modern groundwater velocity sensors are expensive ($1,110 to $18,000). More than that, they can only be installed in wells 2 inches in diameter or larger, which are expensive and time-consuming to install.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ve developed a new sensor system that can be installed in narrow wells (as small as 8 mm ID), like &lt;a href=&#34;https://www.solinst.com/products/direct-push-equipment/615-drive-point-piezometers/datasheet/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Solinst drive-point piezometers&lt;/a&gt;. These piezometer systems can be installed by hand (even in cobble!) and we&amp;rsquo;ve successfully used the system to measure groundwater velocity several sites.&lt;/p&gt;
 </description>
     </item>
     
@@ -203,11 +224,38 @@ def scrape_multiattempt(station, date, attempts=4, wait_time=5.0):
     </item>
     
     <item>
+      <title>Data-driven water quality modeling</title>
+      <link>https://zperzan.github.io/research/sensors/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/research/sensors/</guid>
+      <description>&lt;p&gt;Traditionally, hydrologic modeling has relied on a suite of process-based models developed by many different researchers over years or even decades. These models contain a wealth of domain knowledge about contaminant transport &amp;ndash; the physics of water flow and the chemistry of water-rock interactions &amp;ndash; but they are relatively fixed and not designed to handle new streams of incoming data; a calibrated reactive transport model, for example, has to be completely re-calibrated from the beginning if new observations are not in agreement with model predictions.&lt;/p&gt;
+&lt;p&gt;Recent advances in data science and &lt;em&gt;in situ&lt;/em&gt; sensors &amp;ndash; when combined with robust biogeochemical models &amp;ndash; offer a unique opportunity to address this challenge. We have installed a network of solar-powered environmental sensors at sites in Colorado and Wyoming that provide continuous, high-frequency measurements of hydrologic conditions, microbial metabolic activity and key biogeochemical constituents. Remote connection via cellular modem allows us to access this data and update models in real time.&lt;/p&gt;
+&lt;p&gt;We are using several techniques to combine the knowledge contained within (process-based) reactive transport models with the flexibility and adaptability of modern machine learning/deep learning models. This includes:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Assimilating sensor data into a basic reactive transport model with an ensemble Kalman filter&lt;/li&gt;
+&lt;li&gt;Training an LSTM (and now transformers) with data from reactive transport model simulations, then using transfer learning to apply the model to real-world data&lt;/li&gt;
+&lt;li&gt;The same as above, but using sensor data from other sites across the world&lt;/li&gt;
+&lt;li&gt;Augementing sensor training data with generative adverarial networks (GAN) then building a GRU, LSTM, or sequence-to-sequence model&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
       <title>python-crunchflow</title>
       <link>https://zperzan.github.io/software/python-crunchflow/</link>
       <pubDate>Thu, 06 May 2021 00:00:00 +0000</pubDate>
       <guid>https://zperzan.github.io/software/python-crunchflow/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Reimagining the nitrogen cycle</title>
+      <link>https://zperzan.github.io/research/ednr/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/research/ednr/</guid>
+      <description>&lt;p&gt;Nitrogen is one of the most ubiquitous, costly and challenging environmental pollutants of the 21st century. In addition to clean water issues, the 21st century will require more efficient fertilizer production to meet the needs of a growing population. As part of an interdisciplinary research team, we aim to tackle these two challenges by converting waterborne nitrogen pollutants into high-purity fertilizer.&lt;/p&gt;
+&lt;p&gt;Collaborators in the Dept. of Chemical Engineering have developed a new methodology for exactly this purpose: electrodialysis and nitrate reduction (EDNR). The next step is to build and optimize a device that in a real-world setting. In collaboration with our industry partners (the New York City Dept. of Environmental Protection, San Francisco Water Power Sewer, Jasper Ridge Biological Preserve, and others), we aim to deploy EDNR systems in both urban and rural settings.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -235,62 +283,14 @@ def scrape_multiattempt(station, date, attempts=4, wait_time=5.0):
       <guid>https://zperzan.github.io/research/bottled-water/</guid>
       <description>&lt;p&gt;The ongoing water crisis in Flint, Michigan, was &amp;ndash; and still is &amp;ndash; a major news story that exposed governmental oversight and brought the question of safe drinking water into the news. A switch in the municipal drinking water supply, combined with insufficient water treatment, exposed over 100,000 Flint residents to elevated levels of coliform bacteria, lead and trihalomethans (THMs). Reporting on the crisis made national headlines and caused many Americans to reconsider the safety of their tap water. Even though the crisis affected a small, working-class city, we can see that bottled water sales spiked around the same time period in other states all across the country.&lt;/p&gt;
 &lt;p&gt;We are examining consumer spending habits and public sentiment data to analyze how many Americans distrust their tap and rely on bottled water as an alternate drinking water supply. Recent research has shown that U.S. households who perceive the tap as unsafe spend $5.65 billion per year on alternate water supplies&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, despite the fact that bottled water is less regulated than tap water and isn&amp;rsquo;t any safer on average.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
 &lt;p&gt;Javidi, A., Pierce, G., 2018. U.S. Households’ Perception of Drinking Water as Unsafe and its Consequences: Examining Alternative Choices to the Tap. Water Resources Research, 54, pp. 6100-6113.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>A new tool for groundwater velocity measurements</title>
-      <link>https://zperzan.github.io/research/wellstics/</link>
-      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>https://zperzan.github.io/research/wellstics/</guid>
-      <description>&lt;p&gt;Groundwater velocity is inherently difficult to measure, especially at sites with limited infrastructure. Most modern groundwater velocity sensors are expensive ($1,110 to $18,000). More than that, they can only be installed in wells 2 inches in diameter or larger, which are expensive and time-consuming to install.&lt;/p&gt;
-&lt;p&gt;We&amp;rsquo;ve developed a new sensor system that can be installed in narrow wells (as small as 8 mm ID), like &lt;a href=&#34;https://www.solinst.com/products/direct-push-equipment/615-drive-point-piezometers/datasheet/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Solinst drive-point piezometers&lt;/a&gt;. These piezometer systems can be installed by hand (even in cobble!) and we&amp;rsquo;ve successfully used the system to measure groundwater velocity several sites.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Data-driven water quality modeling</title>
-      <link>https://zperzan.github.io/research/sensors/</link>
-      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>https://zperzan.github.io/research/sensors/</guid>
-      <description>&lt;p&gt;Traditionally, hydrologic modeling has relied on a suite of process-based models developed by many different researchers over years or even decades. These models contain a wealth of domain knowledge about contaminant transport &amp;ndash; the physics of water flow and the chemistry of water-rock interactions &amp;ndash; but they are relatively fixed and not designed to handle new streams of incoming data; a calibrated reactive transport model, for example, has to be completely re-calibrated from the beginning if new observations are not in agreement with model predictions.&lt;/p&gt;
-&lt;p&gt;Recent advances in data science and &lt;em&gt;in situ&lt;/em&gt; sensors &amp;ndash; when combined with robust biogeochemical models &amp;ndash; offer a unique opportunity to address this challenge. We have installed a network of solar-powered environmental sensors at sites in Colorado and Wyoming that provide continuous, high-frequency measurements of hydrologic conditions, microbial metabolic activity and key biogeochemical constituents. Remote connection via cellular modem allows us to access this data and update models in real time.&lt;/p&gt;
-&lt;p&gt;We are using several techniques to combine the knowledge contained within (process-based) reactive transport models with the flexibility and adaptability of modern machine learning/deep learning models. This includes:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Assimilating sensor data into a basic reactive transport model with an ensemble Kalman filter&lt;/li&gt;
-&lt;li&gt;Training an LSTM (and now transformers) with data from reactive transport model simulations, then using transfer learning to apply the model to real-world data&lt;/li&gt;
-&lt;li&gt;The same as above, but using sensor data from other sites across the world&lt;/li&gt;
-&lt;li&gt;Augementing sensor training data with generative adverarial networks (GAN) then building a GRU, LSTM, or sequence-to-sequence model&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Modeling managed aquifer recharge (MAR) in the Central Valley</title>
-      <link>https://zperzan.github.io/research/cv-mar/</link>
-      <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
-      <guid>https://zperzan.github.io/research/cv-mar/</guid>
-      <description>&lt;p&gt;Over the coming decades, increased interannual variability in precipitation &amp;ndash; wetter wet years and drier dry years &amp;ndash; will place increased demand on California&amp;rsquo;s network of reservoirs and dams. Though we need additional water storage capacity to store water from rainy years for use during drought years, events like the Oroville Dam disaster highlight the fact that California’s water storage infrastructure is already maxed out. Managed aquifer recharge (MAR) projects &amp;ndash; in which water is intentionally stored in aquifers for later extraction &amp;ndash; have been proposed as a tool to combat this problem; in California’s Central Valley, excess precipitation diverted to MAR sites could recharge aquifers with up to 1.5 km&lt;sup&gt;3&lt;/sup&gt; of water per year, approximately 11% of annual groundwater withdrawals.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;p&gt;However, identifying the most promising MAR sites remains an ongoing challenge. We are using ParCrunchFlow&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; &amp;ndash; a parallel reactive transport model capable of simulating both saturated and unsaturated flow &amp;ndash; to identify suitable MAR sites surveyed with time-domain electromagnetic equipment. The CrunchTope component of ParCrunchFlow allows us to simulate potential changes in water chemistry as well, ensuring that MAR sites increase quantity of available water without degrading its quality.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Scanlon, B., Reedy, R., Faunt, C., Pool, D., Uhlman, K., 2016. Enhancing drought resilience with conjunctive use and managed aquifer recharge in California and Arizona. Environmental Research Letters. 11 (4), pp. 15.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Beisman, J., Maxwell, R., Navarre-Sitchler, A., Steefel, C., Molins, S., 2015. ParCrunchFlow: an efficient, parallel reactive transport simulation tool for physically and chemically heterogeneous saturated subsurface environments. Computational Geosciences, 19 (2), pp. 403-422.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -438,14 +438,14 @@ coincidence more than anything. With an input sequence of 50 characters, the mod
 &lt;p&gt;I didn&amp;rsquo;t fully tune the model because I felt bad wasting cluster resources on a silly task, but it achieves 60% accuracy on the test set. That&amp;rsquo;s pretty good considering the messy text and paucity of data (1.7M chars total). It trained relatively quickly as well (9 epochs with early stopping).&lt;/p&gt;
 &lt;p&gt;Update 2019: I would be curious to see how well one of the &amp;ldquo;Sesame Street&amp;rdquo; models &amp;ndash; ELMo, ERNIE, BERT, XLNet, RoBERTa, Transfo-XL, GPT-2, etc &amp;ndash; would perform on the same task.
 Thomas Dehaene must have had the same thought regarding Hallmark movies, as he just posted &lt;a href=&#34;https://towardsdatascience.com/an-nlp-view-on-holiday-movies-part-ii-text-generation-using-lstms-in-keras-36dc1ff8a6d2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this tutorial&lt;/a&gt; on his blog. He couldn&amp;rsquo;t find any screenplays either and used subtitles instead.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
 &lt;p&gt;I subsequently found &lt;a href=&#34;https://twitter.com/keatonpatti/status/1072877290902745089?lang=en&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this post&lt;/a&gt; from a comedian making the same point, though that script was clearly human-generated.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -468,20 +468,20 @@ Thomas Dehaene must have had the same thought regarding Hallmark movies, as he j
 &lt;p&gt;Munroe, J., Perzan, Z., and Amidon, W., 2016. Cave sediments constrain the latest Pleistocene advance of the Laurentide ice sheet in the Champlain Valley, Vermont, USA. Journal of Quaternary Science, 31 (8), pp. 893-904.&lt;/p&gt;
 &lt;p&gt;During this research, I was lucky enough to be the first to use Middlebury&amp;rsquo;s new luminescence geochronology lab and spent many hours toiling away in the dark room figuring out our brand new instrument. Given the potential for partial bleaching and the fact that most samples were at or near saturation, New England cave sediemnts probably weren&amp;rsquo;t the easiest samples to start out with.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;p&gt;As part of this project, I also collected a young stalactite and took it to the clean lab at the University of Quebec at Montreal for U-Th age dating. For his undergraduate thesis, Drew Gorin (another Middlebury geology student) then combined those ages with stable isotope measurements to construct a late Holocene precipitation and temperature record.&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
 &lt;p&gt;Estimates differ, but see Dyke et al. (2002), Mickelson and Colgan (2003) and Ridge (2004) for more info.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
 &lt;p&gt;Counterintuitively, luminescence-based dating techniques are not well suited to cave sediments because of the high potential for partial bleaching; sediments deposited at the surface usually have direct exposure to sunlight, whereas sediments deposited in one chamber of a cave could be eroded and deposited in another chamber, without ever being exposed to light. In this way, luminescence ages on cave sediments represent the time they first entered the cave, not the time they were deposited in the sequence.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;li id=&#34;fn:3&#34;&gt;
 &lt;p&gt;Gorin, Andrew L., 2016. Paleoclimate Reconstruction from a Weybridge Cave Speleothem, Vermont. Undergraduate Thesis, Middlebury College, Middlebury, VT, 72p.&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
+&lt;/div&gt;
 </description>
     </item>
     

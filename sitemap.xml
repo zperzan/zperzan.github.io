@@ -4,11 +4,13 @@
   
   
   <url>
-    <loc>https://zperzan.github.io/research/</loc><lastmod>2021-11-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+    <loc>https://zperzan.github.io/research/</loc><lastmod>2021-12-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://zperzan.github.io/research/ednr/</loc><lastmod>2021-11-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+    <loc>https://zperzan.github.io/research/cv-mar/</loc><lastmod>2021-12-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://zperzan.github.io/</loc><lastmod>2021-11-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+    <loc>https://zperzan.github.io/</loc><lastmod>2021-12-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://zperzan.github.io/research/wellstics/</loc><lastmod>2021-10-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://zperzan.github.io/projects/</loc><lastmod>2021-07-25T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
@@ -22,6 +24,14 @@
   <url>
     <loc>https://zperzan.github.io/tag/web-scraping/</loc><lastmod>2021-07-25T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
+    <loc>https://zperzan.github.io/research/sensors/</loc><lastmod>2021-07-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://zperzan.github.io/tag/deep-learning/</loc><lastmod>2021-07-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://zperzan.github.io/tag/kalman-filter/</loc><lastmod>2021-07-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://zperzan.github.io/tag/sensors/</loc><lastmod>2021-07-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
     <loc>https://zperzan.github.io/tag/crunchflow/</loc><lastmod>2021-05-06T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://zperzan.github.io/tag/python/</loc><lastmod>2021-05-06T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
@@ -31,6 +41,8 @@
     <loc>https://zperzan.github.io/tag/reactive-transport/</loc><lastmod>2021-05-06T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://zperzan.github.io/software/</loc><lastmod>2021-05-06T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://zperzan.github.io/research/ednr/</loc><lastmod>2021-05-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://zperzan.github.io/software/pydgsa/</loc><lastmod>2020-09-30T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
@@ -47,18 +59,6 @@
     <loc>https://zperzan.github.io/research/bottled-water/</loc><lastmod>2019-03-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://zperzan.github.io/tag/water-quality/</loc><lastmod>2019-03-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
-    <loc>https://zperzan.github.io/research/wellstics/</loc><lastmod>2019-01-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
-    <loc>https://zperzan.github.io/research/sensors/</loc><lastmod>2019-01-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
-    <loc>https://zperzan.github.io/tag/deep-learning/</loc><lastmod>2019-01-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
-    <loc>https://zperzan.github.io/tag/kalman-filter/</loc><lastmod>2019-01-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
-    <loc>https://zperzan.github.io/tag/sensors/</loc><lastmod>2019-01-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
-    <loc>https://zperzan.github.io/research/cv-mar/</loc><lastmod>2018-12-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://zperzan.github.io/tag/lstm/</loc><lastmod>2018-10-25T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
