@@ -30,7 +30,7 @@ chromedriver_path = &#39;/path/to/chromedriver&#39;
 &lt;li&gt;Depending on the quality of the station,&lt;/li&gt;
 &lt;li&gt;All pressure data is reported as sea-level pressure. Depending on the weather station, it may be possible to back-calculate to absolute pressure; some manufacturers (e.g., Ambient Weather WS-2902) use a constant offset whereas others (e.g., Davis Vantage Pro2) perform a more complicated barometric pressure reduction using the station&amp;rsquo;s 12-hr temperature and humidity history.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;The full Python script is available &lt;a href=&#34;https://zperzan.github.io/files/scrape_wunderground.py&#34;&gt;here&lt;/a&gt; but is also included below.&lt;/p&gt;
+&lt;p&gt;The full Python script is available &lt;a href=&#34;https://github.com/zperzan/scrape_wunderground&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt; but is also included below.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;quot;&amp;quot;&amp;quot;Module to scrape 5-min personal weather station data from Weather Underground.
 
 Usage is:

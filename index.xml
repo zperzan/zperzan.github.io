@@ -17,29 +17,33 @@
       <link>https://zperzan.github.io/research/cv-mar/</link>
       <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
       <guid>https://zperzan.github.io/research/cv-mar/</guid>
-      <description>&lt;p&gt;Over the coming decades, increased interannual variability in precipitation &amp;ndash; wetter wet years and drier dry years &amp;ndash; will place increased demand on California&amp;rsquo;s network of reservoirs and dams. Though we need additional water storage capacity to store water from rainy years for use during drought years, events like the Oroville Dam disaster highlight the fact that California’s water storage infrastructure is already maxed out. Managed aquifer recharge (MAR) projects &amp;ndash; in which water is intentionally stored in aquifers for later extraction &amp;ndash; have been proposed as a tool to combat this problem; in California’s Central Valley, excess precipitation diverted to MAR sites could recharge aquifers with up to 1.5 km&lt;sup&gt;3&lt;/sup&gt; of water per year, approximately 11% of annual groundwater withdrawals.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;p&gt;However, identifying the most promising MAR sites remains an ongoing challenge. We are using ParCrunchFlow&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; &amp;ndash; a parallel reactive transport model capable of simulating both saturated and unsaturated flow &amp;ndash; to identify suitable MAR sites surveyed with time-domain electromagnetic equipment. The CrunchTope component of ParCrunchFlow allows us to simulate potential changes in water chemistry as well, ensuring that MAR sites increase quantity of available water without degrading its quality.&lt;/p&gt;
-&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34;&gt;
-&lt;p&gt;Scanlon, B., Reedy, R., Faunt, C., Pool, D., Uhlman, K., 2016. Enhancing drought resilience with conjunctive use and managed aquifer recharge in California and Arizona. Environmental Research Letters. 11 (4), pp. 15.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id=&#34;fn:2&#34;&gt;
-&lt;p&gt;Beisman, J., Maxwell, R., Navarre-Sitchler, A., Steefel, C., Molins, S., 2015. ParCrunchFlow: an efficient, parallel reactive transport simulation tool for physically and chemically heterogeneous saturated subsurface environments. Computational Geosciences, 19 (2), pp. 403-422.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
+      <description>&lt;body&gt;
+&lt;video width=&#34;1224&#34; height=&#34;964&#34; loop autoplay muted&gt;
+  &lt;source src=&#34;voxel.mp4&#34; type=&#34;video/mp4&#34;&gt;
+&lt;/video&gt;
+&lt;/body&gt;
+&lt;p&gt;Over the coming decades, increased interannual variability in precipitation &amp;ndash; wetter wet years and drier dry years &amp;ndash; will place increased demand on California&amp;rsquo;s network of reservoirs and dams. Though we need additional water storage capacity to store water from rainy years for use during drought years, events like the Oroville Dam disaster highlight the fact that California’s water storage infrastructure is already maxed out. Managed aquifer recharge (MAR) projects &amp;ndash; in which water is intentionally stored in aquifers for later extraction &amp;ndash; have been proposed as a tool to combat this problem; in California’s Central Valley, excess precipitation diverted to MAR sites could recharge aquifers with up to 1.5 km&lt;sup&gt;3&lt;/sup&gt; of water per year, approximately 11% of annual groundwater withdrawals.&lt;/p&gt;
+&lt;p&gt;However, identifying the most promising MAR sites remains an ongoing challenge. We are using ParFlow &amp;ndash; an integrated hydrologic model capable of simulating both saturated and unsaturated flow &amp;ndash; to understand the processes that control groundwater recharge.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>A new tool for groundwater velocity measurements</title>
-      <link>https://zperzan.github.io/research/wellstics/</link>
+      <title>A new tool to measure groundwater velocity</title>
+      <link>https://zperzan.github.io/pastwork/wellstics/</link>
       <pubDate>Fri, 01 Oct 2021 00:00:00 +0000</pubDate>
-      <guid>https://zperzan.github.io/research/wellstics/</guid>
+      <guid>https://zperzan.github.io/pastwork/wellstics/</guid>
       <description>&lt;p&gt;Groundwater velocity is inherently difficult to measure, especially at sites with limited infrastructure. Most modern groundwater velocity sensors are expensive ($1,110 to $18,000). More than that, they can only be installed in wells 2 inches in diameter or larger, which are expensive and time-consuming to install.&lt;/p&gt;
-&lt;p&gt;We&amp;rsquo;ve developed a new sensor system that can be installed in narrow wells (as small as 8 mm ID), like &lt;a href=&#34;https://www.solinst.com/products/direct-push-equipment/615-drive-point-piezometers/datasheet/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Solinst drive-point piezometers&lt;/a&gt;. These piezometer systems can be installed by hand (even in cobble!) and we&amp;rsquo;ve successfully used the system to measure groundwater velocity several sites.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ve developed a new sensor system that can be installed in narrow wells (as small as 8 mm ID), like &lt;a href=&#34;https://www.solinst.com/products/direct-push-equipment/615-drive-point-piezometers/datasheet/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Solinst drive-point piezometers&lt;/a&gt;. These piezometer systems can be installed by hand (even in cobble!) and we&amp;rsquo;ve successfully used the system to measure groundwater velocity several sites. Read more about it in our recent &lt;a href=&#34;https://doi.org/10.1029/2022WR033223&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;paper&lt;/a&gt; in Water Resources Research!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Biogeochemical cycling in high-elevation floodplains</title>
+      <link>https://zperzan.github.io/research/riverton/</link>
+      <pubDate>Fri, 01 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/research/riverton/</guid>
+      <description>&lt;p&gt;A long history of uranium mining and weapons development throughout the Cold War has left many mining, milling and testing sites contaminated with radioactive materials like uranium, thorium, and radium, as well as other non-radioactive heavy metals including vanadium, molybdenum, selenium and arsenic. There are nearly 100 such locations &lt;a href=&#34;https://www.energy.gov/lm/sites/lm-sites&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;across the western U.S.&lt;/a&gt; managed by the Department of Energy. The groundwater contaminant plumes at many sites are not dissipating as expected and contamination may persist beyond the 100-year timeframe required for regulatory compliance.&lt;/p&gt;
+&lt;p&gt;The contaminant plumes at many floodplain mill sites are subject to strong seasonal fluctuations, but the processes behind these variations are not well understood. We are studying uranium transport and the concurrent biogeochemical cycling that occurs during hydrologic perturbations, with research centered around a series of field experiments using artificial groundwater tracers. The tracer tests have immediate relevance to water quality concerns at the field site &amp;ndash; a uranium-contaminated floodplain in Riverton, Wyoming &amp;ndash; but has much broader implications as well. Isotopically labeled nitrate allows us to track denitrification and the production of nitrous oxide (a powerful greenhouse gas), deuterated water (D&lt;sub&gt;2&lt;/sub&gt;O) could map plant water uptake, and dye infiltration patterns can answer questions regarding unsaturated zone flow.&lt;/p&gt;
 </description>
     </item>
     
@@ -61,7 +65,7 @@ chromedriver_path = &#39;/path/to/chromedriver&#39;
 &lt;li&gt;Depending on the quality of the station,&lt;/li&gt;
 &lt;li&gt;All pressure data is reported as sea-level pressure. Depending on the weather station, it may be possible to back-calculate to absolute pressure; some manufacturers (e.g., Ambient Weather WS-2902) use a constant offset whereas others (e.g., Davis Vantage Pro2) perform a more complicated barometric pressure reduction using the station&amp;rsquo;s 12-hr temperature and humidity history.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;The full Python script is available &lt;a href=&#34;https://zperzan.github.io/files/scrape_wunderground.py&#34;&gt;here&lt;/a&gt; but is also included below.&lt;/p&gt;
+&lt;p&gt;The full Python script is available &lt;a href=&#34;https://github.com/zperzan/scrape_wunderground&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt; but is also included below.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;quot;&amp;quot;&amp;quot;Module to scrape 5-min personal weather station data from Weather Underground.
 
 Usage is:
@@ -250,9 +254,9 @@ def scrape_multiattempt(station, date, attempts=4, wait_time=5.0):
     
     <item>
       <title>Reimagining the nitrogen cycle</title>
-      <link>https://zperzan.github.io/research/ednr/</link>
+      <link>https://zperzan.github.io/pastwork/ednr/</link>
       <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
-      <guid>https://zperzan.github.io/research/ednr/</guid>
+      <guid>https://zperzan.github.io/pastwork/ednr/</guid>
       <description>&lt;p&gt;Nitrogen is one of the most ubiquitous, costly and challenging environmental pollutants of the 21st century. In addition to clean water issues, the 21st century will require more efficient fertilizer production to meet the needs of a growing population. As part of an interdisciplinary research team, we aim to tackle these two challenges by converting waterborne nitrogen pollutants into high-purity fertilizer.&lt;/p&gt;
 &lt;p&gt;Collaborators in the Dept. of Chemical Engineering have developed a new methodology for exactly this purpose: electrodialysis and nitrate reduction (EDNR). The next step is to build and optimize a device that in a real-world setting. In collaboration with our industry partners (the New York City Dept. of Environmental Protection, San Francisco Water Power Sewer, Jasper Ridge Biological Preserve, and others), we aim to deploy EDNR systems in both urban and rural settings.&lt;/p&gt;
 </description>
@@ -273,24 +277,6 @@ def scrape_multiattempt(station, date, attempts=4, wait_time=5.0):
       <guid>https://zperzan.github.io/research/qube/</guid>
       <description>&lt;p&gt;Most contaminants in water (nitrate, arsenic, mercury and lead, to name a few) can only be measured by manually grabbing a water sample and analyzing it in the lab. This is a time-intensive process. A few companies offer optical sensors for &lt;em&gt;in situ&lt;/em&gt; geochemical measurements, but those are limited to gasses like CO&lt;sub&gt;2&lt;/sub&gt; (e.g., &lt;a href=&#34;https://www.vaisala.com/en/measurement/carbon-dioxide-co2-measurements&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vaisala&lt;/a&gt;) and O&lt;sub&gt;2&lt;/sub&gt; (e.g., &lt;a href=&#34;https://www.presens.de/products/detail/oxybaser-series&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PreSens&lt;/a&gt;). Others use electrochemistry to quantify concentrations of many different species (e.g., &lt;a href=&#34;https://aishome.com/in-situ-2/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Analytical Instrument Systems, Inc.&lt;/a&gt;), but data from those systems is hard to interpret and it can be impossible to deconvolve multiple overlapping signals.&lt;/p&gt;
 &lt;p&gt;We&amp;rsquo;re working with &lt;a href=&#34;https://www.qbisci.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Quantitative BioSciences, Inc.&lt;/a&gt; to develop and deploy sensor systems that use customized biosensors strains to measure a suite of contaminants. Current sensing capabilities include arsenic, lead, mercury, cadmium, nitrate, nitrite, ammonium, phosphorus, and more. We&amp;rsquo;ve deployed these systems remotely (ie, fully solar-powered and autonomous) and in harsh environments (ie, subject to driving wind, snow and temperatures from -10 to 110° F).&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>The spillover effect of drinking water violations</title>
-      <link>https://zperzan.github.io/research/bottled-water/</link>
-      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>https://zperzan.github.io/research/bottled-water/</guid>
-      <description>&lt;p&gt;The ongoing water crisis in Flint, Michigan, was &amp;ndash; and still is &amp;ndash; a major news story that exposed governmental oversight and brought the question of safe drinking water into the news. A switch in the municipal drinking water supply, combined with insufficient water treatment, exposed over 100,000 Flint residents to elevated levels of coliform bacteria, lead and trihalomethans (THMs). Reporting on the crisis made national headlines and caused many Americans to reconsider the safety of their tap water. Even though the crisis affected a small, working-class city, we can see that bottled water sales spiked around the same time period in other states all across the country.&lt;/p&gt;
-&lt;p&gt;We are examining consumer spending habits and public sentiment data to analyze how many Americans distrust their tap and rely on bottled water as an alternate drinking water supply. Recent research has shown that U.S. households who perceive the tap as unsafe spend $5.65 billion per year on alternate water supplies&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, despite the fact that bottled water is less regulated than tap water and isn&amp;rsquo;t any safer on average.&lt;/p&gt;
-&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34;&gt;
-&lt;p&gt;Javidi, A., Pierce, G., 2018. U.S. Households’ Perception of Drinking Water as Unsafe and its Consequences: Examining Alternative Choices to the Tap. Water Resources Research, 54, pp. 6100-6113.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
 </description>
     </item>
     
@@ -450,20 +436,28 @@ Thomas Dehaene must have had the same thought regarding Hallmark movies, as he j
     </item>
     
     <item>
-      <title>Biogeochemical cycling in a uranium-contaminated floodplain</title>
-      <link>https://zperzan.github.io/research/riverton/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>https://zperzan.github.io/research/riverton/</guid>
-      <description>&lt;p&gt;A long history of uranium mining and weapons development throughout the Cold War has left many mining, milling and testing sites contaminated with radioactive materials like uranium, thorium, and radium, as well as other non-radioactive heavy metals including vanadium, molybdenum, selenium and arsenic. There are nearly 100 such locations &lt;a href=&#34;https://www.energy.gov/lm/sites/lm-sites&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;across the western U.S.&lt;/a&gt; managed by the Department of Energy. The groundwater contaminant plumes at many sites are not dissipating as expected and contamination may persist beyond the 100-year timeframe required for regulatory compliance.&lt;/p&gt;
-&lt;p&gt;The contaminant plumes at many floodplain mill sites are subject to strong seasonal fluctuations, but the processes behind these variations are not well understood. We are studying uranium transport and the concurrent biogeochemical cycling that occurs during hydrologic perturbations, with research centered around a series of field experiments using artificial groundwater tracers. The tracer tests have immediate relevance to water quality concerns at the field site &amp;ndash; a uranium-contaminated floodplain in Riverton, Wyoming &amp;ndash; but has much broader implications as well. Isotopically labeled nitrate allows us to track denitrification and the production of nitrous oxide (a powerful greenhouse gas), deuterated water (D&lt;sub&gt;2&lt;/sub&gt;O) could map plant water uptake, and dye infiltration patterns can answer questions regarding unsaturated zone flow.&lt;/p&gt;
+      <title>The spillover effect of drinking water violations</title>
+      <link>https://zperzan.github.io/pastwork/bottled-water/</link>
+      <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/pastwork/bottled-water/</guid>
+      <description>&lt;p&gt;The ongoing water crisis in Flint, Michigan, was &amp;ndash; and still is &amp;ndash; a major news story that exposed governmental oversight and brought the question of safe drinking water into the news. A switch in the municipal drinking water supply, combined with insufficient water treatment, exposed over 100,000 Flint residents to elevated levels of coliform bacteria, lead and trihalomethans (THMs). Reporting on the crisis made national headlines and caused many Americans to reconsider the safety of their tap water. Even though the crisis affected a small, working-class city, we can see that bottled water sales spiked around the same time period in other states all across the country.&lt;/p&gt;
+&lt;p&gt;We are examining consumer spending habits and public sentiment data to analyze how many Americans distrust their tap and rely on bottled water as an alternate drinking water supply. Recent research has shown that U.S. households who perceive the tap as unsafe spend $5.65 billion per year on alternate water supplies&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, despite the fact that bottled water is less regulated than tap water and isn&amp;rsquo;t any safer on average.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Javidi, A., Pierce, G., 2018. U.S. Households’ Perception of Drinking Water as Unsafe and its Consequences: Examining Alternative Choices to the Tap. Water Resources Research, 54, pp. 6100-6113.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
 </description>
     </item>
     
     <item>
       <title>Studying paleoclimate through New England cave sediments</title>
-      <link>https://zperzan.github.io/research/weybridge-cave/</link>
+      <link>https://zperzan.github.io/pastwork/weybridge-cave/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
-      <guid>https://zperzan.github.io/research/weybridge-cave/</guid>
+      <guid>https://zperzan.github.io/pastwork/weybridge-cave/</guid>
       <description>&lt;p&gt;As part of my undergraduate thesis at Middlebury College, I worked with Will Amidon and Jeff Munroe to search for potential paleoclimate records in New England caves. We found a sequence of sediments in Weybridge Cave, Vermont, and used luminescence and paleomagnetic technqiues to show that the sediments span from 35 to 70 ka. This is significantly older than any surface sediments in New England, which were all deposited after the last glacial maximum (~26 ka).&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; We combined the Weybridge Cave record with other sedimentary records from the region to calculate rates of Laurentide Ice Sheet advance during the last glaciation. Read the full details at:&lt;/p&gt;
 &lt;p&gt;Munroe, J., Perzan, Z., and Amidon, W., 2016. Cave sediments constrain the latest Pleistocene advance of the Laurentide ice sheet in the Champlain Valley, Vermont, USA. Journal of Quaternary Science, 31 (8), pp. 893-904.&lt;/p&gt;
 &lt;p&gt;During this research, I was lucky enough to be the first to use Middlebury&amp;rsquo;s new luminescence geochronology lab and spent many hours toiling away in the dark room figuring out our brand new instrument. Given the potential for partial bleaching and the fact that most samples were at or near saturation, New England cave sediemnts probably weren&amp;rsquo;t the easiest samples to start out with.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;

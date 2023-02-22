@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Previous work | Zach Perzan</title>
+    <link>https://zperzan.github.io/pastwork/</link>
+      <atom:link href="https://zperzan.github.io/pastwork/index.xml" rel="self" type="application/rss+xml" />
+    <description>Previous work</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 01 Oct 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://zperzan.github.io/media/icon_hud1d0979e3910d321b321c3c963a9ae6e_14691_512x512_fill_lanczos_center_3.png</url>
+      <title>Previous work</title>
+      <link>https://zperzan.github.io/pastwork/</link>
+    </image>
+    
+    <item>
+      <title>A new tool to measure groundwater velocity</title>
+      <link>https://zperzan.github.io/pastwork/wellstics/</link>
+      <pubDate>Fri, 01 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/pastwork/wellstics/</guid>
+      <description>&lt;p&gt;Groundwater velocity is inherently difficult to measure, especially at sites with limited infrastructure. Most modern groundwater velocity sensors are expensive ($1,110 to $18,000). More than that, they can only be installed in wells 2 inches in diameter or larger, which are expensive and time-consuming to install.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ve developed a new sensor system that can be installed in narrow wells (as small as 8 mm ID), like &lt;a href=&#34;https://www.solinst.com/products/direct-push-equipment/615-drive-point-piezometers/datasheet/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Solinst drive-point piezometers&lt;/a&gt;. These piezometer systems can be installed by hand (even in cobble!) and we&amp;rsquo;ve successfully used the system to measure groundwater velocity several sites. Read more about it in our recent &lt;a href=&#34;https://doi.org/10.1029/2022WR033223&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;paper&lt;/a&gt; in Water Resources Research!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Reimagining the nitrogen cycle</title>
+      <link>https://zperzan.github.io/pastwork/ednr/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/pastwork/ednr/</guid>
+      <description>&lt;p&gt;Nitrogen is one of the most ubiquitous, costly and challenging environmental pollutants of the 21st century. In addition to clean water issues, the 21st century will require more efficient fertilizer production to meet the needs of a growing population. As part of an interdisciplinary research team, we aim to tackle these two challenges by converting waterborne nitrogen pollutants into high-purity fertilizer.&lt;/p&gt;
+&lt;p&gt;Collaborators in the Dept. of Chemical Engineering have developed a new methodology for exactly this purpose: electrodialysis and nitrate reduction (EDNR). The next step is to build and optimize a device that in a real-world setting. In collaboration with our industry partners (the New York City Dept. of Environmental Protection, San Francisco Water Power Sewer, Jasper Ridge Biological Preserve, and others), we aim to deploy EDNR systems in both urban and rural settings.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The spillover effect of drinking water violations</title>
+      <link>https://zperzan.github.io/pastwork/bottled-water/</link>
+      <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/pastwork/bottled-water/</guid>
+      <description>&lt;p&gt;The ongoing water crisis in Flint, Michigan, was &amp;ndash; and still is &amp;ndash; a major news story that exposed governmental oversight and brought the question of safe drinking water into the news. A switch in the municipal drinking water supply, combined with insufficient water treatment, exposed over 100,000 Flint residents to elevated levels of coliform bacteria, lead and trihalomethans (THMs). Reporting on the crisis made national headlines and caused many Americans to reconsider the safety of their tap water. Even though the crisis affected a small, working-class city, we can see that bottled water sales spiked around the same time period in other states all across the country.&lt;/p&gt;
+&lt;p&gt;We are examining consumer spending habits and public sentiment data to analyze how many Americans distrust their tap and rely on bottled water as an alternate drinking water supply. Recent research has shown that U.S. households who perceive the tap as unsafe spend $5.65 billion per year on alternate water supplies&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, despite the fact that bottled water is less regulated than tap water and isn&amp;rsquo;t any safer on average.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Javidi, A., Pierce, G., 2018. U.S. Households’ Perception of Drinking Water as Unsafe and its Consequences: Examining Alternative Choices to the Tap. Water Resources Research, 54, pp. 6100-6113.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Studying paleoclimate through New England cave sediments</title>
+      <link>https://zperzan.github.io/pastwork/weybridge-cave/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/pastwork/weybridge-cave/</guid>
+      <description>&lt;p&gt;As part of my undergraduate thesis at Middlebury College, I worked with Will Amidon and Jeff Munroe to search for potential paleoclimate records in New England caves. We found a sequence of sediments in Weybridge Cave, Vermont, and used luminescence and paleomagnetic technqiues to show that the sediments span from 35 to 70 ka. This is significantly older than any surface sediments in New England, which were all deposited after the last glacial maximum (~26 ka).&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; We combined the Weybridge Cave record with other sedimentary records from the region to calculate rates of Laurentide Ice Sheet advance during the last glaciation. Read the full details at:&lt;/p&gt;
+&lt;p&gt;Munroe, J., Perzan, Z., and Amidon, W., 2016. Cave sediments constrain the latest Pleistocene advance of the Laurentide ice sheet in the Champlain Valley, Vermont, USA. Journal of Quaternary Science, 31 (8), pp. 893-904.&lt;/p&gt;
+&lt;p&gt;During this research, I was lucky enough to be the first to use Middlebury&amp;rsquo;s new luminescence geochronology lab and spent many hours toiling away in the dark room figuring out our brand new instrument. Given the potential for partial bleaching and the fact that most samples were at or near saturation, New England cave sediemnts probably weren&amp;rsquo;t the easiest samples to start out with.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;As part of this project, I also collected a young stalactite and took it to the clean lab at the University of Quebec at Montreal for U-Th age dating. For his undergraduate thesis, Drew Gorin (another Middlebury geology student) then combined those ages with stable isotope measurements to construct a late Holocene precipitation and temperature record.&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Estimates differ, but see Dyke et al. (2002), Mickelson and Colgan (2003) and Ridge (2004) for more info.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;Counterintuitively, luminescence-based dating techniques are not well suited to cave sediments because of the high potential for partial bleaching; sediments deposited at the surface usually have direct exposure to sunlight, whereas sediments deposited in one chamber of a cave could be eroded and deposited in another chamber, without ever being exposed to light. In this way, luminescence ages on cave sediments represent the time they first entered the cave, not the time they were deposited in the sequence.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34;&gt;
+&lt;p&gt;Gorin, Andrew L., 2016. Paleoclimate Reconstruction from a Weybridge Cave Speleothem, Vermont. Undergraduate Thesis, Middlebury College, Middlebury, VT, 72p.&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
