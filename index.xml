@@ -5,7 +5,7 @@
     <link>https://zperzan.github.io/</link>
       <atom:link href="https://zperzan.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Zach Perzan</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Dec 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://zperzan.github.io/media/icon_hud1d0979e3910d321b321c3c963a9ae6e_14691_512x512_fill_lanczos_center_3.png</url>
       <title>Zach Perzan</title>
@@ -13,14 +13,42 @@
     </image>
     
     <item>
+      <title>Understanding water quality changes during managed aquifer recharge</title>
+      <link>https://zperzan.github.io/research/ecoslim/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/research/ecoslim/</guid>
+      <description>&lt;body&gt;
+&lt;figure&gt;
+  &lt;video width=&#34;991&#34; height=&#34;529&#34; loop autoplay muted&gt;
+    &lt;source src=&#34;crosssec.mp4&#34; type=&#34;video/mp4&#34;&gt;
+  &lt;/video&gt;
+  &lt;figcaption&gt;
+  &lt;p&gt;
+  A cross-section showing water particles moving to the water table over an 80-year flood-MAR simulation.
+  &lt;/p&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/body&gt;
+&lt;p&gt;Flood managed aquifer recharge (flood-MAR) &amp;ndash; an emerging technique in which working landscapes are flooded to replenish depleted aquifers &amp;ndash; holds potential for widespread global implementation. However, the vadose zone beneath many flood-MAR sites can host a variety of contaminants, including fertilizers, salts and pesticide byproducts. A common conceptual model posits that initial flood-MAR operations will flush these contaminants to the saturated zone, degrading water quality, but in the long term, recharge operations will improve groundwater quality by diluting contaminant concentrations (&lt;a href=&#34;https://doi.org/10.1021/es501115c&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bachand et al., 2014&lt;/a&gt;). To assess this conceptual model, we are using transient particle tracking to estimate arrival times and mixing of recharge water during flood-MAR.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Modeling managed aquifer recharge (MAR) in the Central Valley</title>
       <link>https://zperzan.github.io/research/cv-mar/</link>
       <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
       <guid>https://zperzan.github.io/research/cv-mar/</guid>
       <description>&lt;body&gt;
-&lt;video width=&#34;1224&#34; height=&#34;964&#34; loop autoplay muted&gt;
-  &lt;source src=&#34;voxel.mp4&#34; type=&#34;video/mp4&#34;&gt;
-&lt;/video&gt;
+&lt;figure&gt;
+  &lt;video width=&#34;1224&#34; height=&#34;964&#34; loop autoplay muted&gt;
+    &lt;source src=&#34;voxel.mp4&#34; type=&#34;video/mp4&#34;&gt;
+  &lt;/video&gt;
+  &lt;figcaption&gt;
+  &lt;p&gt;
+  Simulated water content following a flood-MAR recharge event.
+  &lt;/p&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
 &lt;/body&gt;
 &lt;p&gt;Over the coming decades, increased interannual variability in precipitation &amp;ndash; wetter wet years and drier dry years &amp;ndash; will place increased demand on California&amp;rsquo;s network of reservoirs and dams. Though we need additional water storage capacity to store water from rainy years for use during drought years, events like the Oroville Dam disaster highlight the fact that California’s water storage infrastructure is already maxed out. Managed aquifer recharge (MAR) projects &amp;ndash; in which water is intentionally stored in aquifers for later extraction &amp;ndash; have been proposed as a tool to combat this problem; in California’s Central Valley, excess precipitation diverted to MAR sites could recharge aquifers with up to 1.5 km&lt;sup&gt;3&lt;/sup&gt; of water per year, approximately 11% of annual groundwater withdrawals.&lt;/p&gt;
 &lt;p&gt;However, identifying the most promising MAR sites remains an ongoing challenge. We are using ParFlow &amp;ndash; an integrated hydrologic model capable of simulating both saturated and unsaturated flow &amp;ndash; to understand the processes that control groundwater recharge.&lt;/p&gt;
