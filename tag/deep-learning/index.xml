@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Deep Learning | Zach Perzan</title>
+    <title>Deep learning | Zach Perzan</title>
     <link>https://zperzan.github.io/tag/deep-learning/</link>
       <atom:link href="https://zperzan.github.io/tag/deep-learning/index.xml" rel="self" type="application/rss+xml" />
-    <description>Deep Learning</description>
+    <description>Deep learning</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jul 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://zperzan.github.io/media/icon_hud1d0979e3910d321b321c3c963a9ae6e_14691_512x512_fill_lanczos_center_3.png</url>
-      <title>Deep Learning</title>
+      <title>Deep learning</title>
       <link>https://zperzan.github.io/tag/deep-learning/</link>
     </image>
     
     <item>
       <title>Data-driven water quality modeling</title>
-      <link>https://zperzan.github.io/research/sensors/</link>
+      <link>https://zperzan.github.io/currentresearch/sensors/</link>
       <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
-      <guid>https://zperzan.github.io/research/sensors/</guid>
-      <description>&lt;p&gt;Traditionally, hydrologic modeling has relied on a suite of process-based models developed by many different researchers over years or even decades. These models contain a wealth of domain knowledge about contaminant transport &amp;ndash; the physics of water flow and the chemistry of water-rock interactions &amp;ndash; but they are relatively fixed and not designed to handle new streams of incoming data; a calibrated reactive transport model, for example, has to be completely re-calibrated from the beginning if new observations are not in agreement with model predictions.&lt;/p&gt;
-&lt;p&gt;Recent advances in data science and &lt;em&gt;in situ&lt;/em&gt; sensors &amp;ndash; when combined with robust biogeochemical models &amp;ndash; offer a unique opportunity to address this challenge. We have installed a network of solar-powered environmental sensors at sites in Colorado and Wyoming that provide continuous, high-frequency measurements of hydrologic conditions, microbial metabolic activity and key biogeochemical constituents. Remote connection via cellular modem allows us to access this data and update models in real time.&lt;/p&gt;
+      <guid>https://zperzan.github.io/currentresearch/sensors/</guid>
+      <description>&lt;p&gt;Traditionally, hydrologic modeling has relied on a suite of process-based models developed by many different researchers over years or even decades. These models contain a wealth of domain knowledge about contaminant transport &amp;mdash; the physics of water flow and the chemistry of water-rock interactions &amp;mdash; but they are relatively fixed and not designed to handle new streams of incoming data; a calibrated reactive transport model, for example, has to be completely re-calibrated if new observations are not in agreement with model predictions.&lt;/p&gt;
+&lt;p&gt;Recent advances in data science and &lt;em&gt;in situ&lt;/em&gt; sensors &amp;mdash; when combined with robust biogeochemical models &amp;mdash; offer a unique opportunity to address this challenge. We have installed a network of solar-powered environmental sensors at sites in Colorado and Wyoming that provide continuous, high-frequency measurements of hydrologic conditions, microbial metabolic activity and key biogeochemical constituents. Remote connection via cellular modem allows us to access this data and update models in real time.&lt;/p&gt;
 &lt;p&gt;We are using several techniques to combine the knowledge contained within (process-based) reactive transport models with the flexibility and adaptability of modern machine learning/deep learning models. This includes:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Assimilating sensor data into a basic reactive transport model with an ensemble Kalman filter&lt;/li&gt;
-&lt;li&gt;Training an LSTM (and now transformers) with data from reactive transport model simulations, then using transfer learning to apply the model to real-world data&lt;/li&gt;
+&lt;li&gt;Training an LSTM with data from reactive transport model simulations, then using transfer learning to apply the model to real-world data&lt;/li&gt;
 &lt;li&gt;The same as above, but using sensor data from other sites across the world&lt;/li&gt;
 &lt;li&gt;Augementing sensor training data with generative adverarial networks (GAN) then building a GRU, LSTM, or sequence-to-sequence model&lt;/li&gt;
 &lt;/ol&gt;
@@ -30,7 +30,7 @@
     </item>
     
     <item>
-      <title>Teaching an RNN to write Movie Scripts</title>
+      <title>Teaching an RNN to write movie scripts</title>
       <link>https://zperzan.github.io/projects/script-generator/</link>
       <pubDate>Thu, 25 Oct 2018 00:00:00 +0000</pubDate>
       <guid>https://zperzan.github.io/projects/script-generator/</guid>
@@ -51,7 +51,13 @@
 
 
 
-&lt;div class=&#34;gallery&#34;&gt;
+
+
+
+
+
+
+&lt;div class=&#34;gallery-grid&#34;&gt;
 
   
   
@@ -65,9 +71,13 @@
         
       
     
+  
+  
+  &lt;div class=&#34;gallery-item gallery-item--medium&#34;&gt;
     &lt;a data-fancybox=&#34;gallery-tarantino&#34; href=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample2.jpg&#34; data-caption=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34;&gt;
-      &lt;img src=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample2_hu8f2ae577097e28cb24b40b2fead3709a_78458_0x190_resize_q75_h2_lanczos.webp&#34; loading=&#34;lazy&#34; alt=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34; width=&#34;215&#34; height=&#34;190&#34;&gt;
+      &lt;img src=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample2_hu8f2ae577097e28cb24b40b2fead3709a_78458_750x750_fit_q75_h2_lanczos.webp&#34; loading=&#34;lazy&#34; alt=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34; width=&#34;750&#34; height=&#34;663&#34;&gt;
     &lt;/a&gt;
+  &lt;/div&gt;
   
     
     
@@ -78,9 +88,13 @@
         
       
     
+  
+  
+  &lt;div class=&#34;gallery-item gallery-item--medium&#34;&gt;
     &lt;a data-fancybox=&#34;gallery-tarantino&#34; href=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample3.jpg&#34; data-caption=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34;&gt;
-      &lt;img src=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample3_hu8f2ae577097e28cb24b40b2fead3709a_81169_0x190_resize_q75_h2_lanczos.webp&#34; loading=&#34;lazy&#34; alt=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34; width=&#34;215&#34; height=&#34;190&#34;&gt;
+      &lt;img src=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample3_hu8f2ae577097e28cb24b40b2fead3709a_81169_750x750_fit_q75_h2_lanczos.webp&#34; loading=&#34;lazy&#34; alt=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34; width=&#34;750&#34; height=&#34;663&#34;&gt;
     &lt;/a&gt;
+  &lt;/div&gt;
   
     
     
@@ -91,9 +105,13 @@
         
       
     
+  
+  
+  &lt;div class=&#34;gallery-item gallery-item--medium&#34;&gt;
     &lt;a data-fancybox=&#34;gallery-tarantino&#34; href=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample4.jpg&#34; data-caption=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34;&gt;
-      &lt;img src=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample4_hu8f2ae577097e28cb24b40b2fead3709a_81305_0x190_resize_q75_h2_lanczos.webp&#34; loading=&#34;lazy&#34; alt=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34; width=&#34;215&#34; height=&#34;190&#34;&gt;
+      &lt;img src=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample4_hu8f2ae577097e28cb24b40b2fead3709a_81305_750x750_fit_q75_h2_lanczos.webp&#34; loading=&#34;lazy&#34; alt=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34; width=&#34;750&#34; height=&#34;663&#34;&gt;
     &lt;/a&gt;
+  &lt;/div&gt;
   
     
     
@@ -104,9 +122,13 @@
         
       
     
+  
+  
+  &lt;div class=&#34;gallery-item gallery-item--medium&#34;&gt;
     &lt;a data-fancybox=&#34;gallery-tarantino&#34; href=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample5.jpg&#34; data-caption=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34;&gt;
-      &lt;img src=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample5_hu8f2ae577097e28cb24b40b2fead3709a_80077_0x190_resize_q75_h2_lanczos.webp&#34; loading=&#34;lazy&#34; alt=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34; width=&#34;215&#34; height=&#34;190&#34;&gt;
+      &lt;img src=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample5_hu8f2ae577097e28cb24b40b2fead3709a_80077_750x750_fit_q75_h2_lanczos.webp&#34; loading=&#34;lazy&#34; alt=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34; width=&#34;750&#34; height=&#34;663&#34;&gt;
     &lt;/a&gt;
+  &lt;/div&gt;
   
     
     
@@ -117,9 +139,13 @@
         
       
     
+  
+  
+  &lt;div class=&#34;gallery-item gallery-item--medium&#34;&gt;
     &lt;a data-fancybox=&#34;gallery-tarantino&#34; href=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample6.jpg&#34; data-caption=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words. The only change&#34;&gt;
-      &lt;img src=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample6_hu8f2ae577097e28cb24b40b2fead3709a_80887_0x190_resize_q75_h2_lanczos.webp&#34; loading=&#34;lazy&#34; alt=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words. The only change&#34; width=&#34;215&#34; height=&#34;190&#34;&gt;
+      &lt;img src=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample6_hu8f2ae577097e28cb24b40b2fead3709a_80887_750x750_fit_q75_h2_lanczos.webp&#34; loading=&#34;lazy&#34; alt=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words. The only change&#34; width=&#34;750&#34; height=&#34;663&#34;&gt;
     &lt;/a&gt;
+  &lt;/div&gt;
   
     
     
@@ -130,9 +156,13 @@
         
       
     
+  
+  
+  &lt;div class=&#34;gallery-item gallery-item--medium&#34;&gt;
     &lt;a data-fancybox=&#34;gallery-tarantino&#34; href=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample7.jpg&#34; data-caption=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34;&gt;
-      &lt;img src=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample7_hu8f2ae577097e28cb24b40b2fead3709a_83587_0x190_resize_q75_h2_lanczos.webp&#34; loading=&#34;lazy&#34; alt=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34; width=&#34;215&#34; height=&#34;190&#34;&gt;
+      &lt;img src=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample7_hu8f2ae577097e28cb24b40b2fead3709a_83587_750x750_fit_q75_h2_lanczos.webp&#34; loading=&#34;lazy&#34; alt=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34; width=&#34;750&#34; height=&#34;663&#34;&gt;
     &lt;/a&gt;
+  &lt;/div&gt;
   
     
     
@@ -143,9 +173,13 @@
         
       
     
+  
+  
+  &lt;div class=&#34;gallery-item gallery-item--medium&#34;&gt;
     &lt;a data-fancybox=&#34;gallery-tarantino&#34; href=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample8.jpg&#34; data-caption=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34;&gt;
-      &lt;img src=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample8_hu8f2ae577097e28cb24b40b2fead3709a_80904_0x190_resize_q75_h2_lanczos.webp&#34; loading=&#34;lazy&#34; alt=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34; width=&#34;215&#34; height=&#34;190&#34;&gt;
+      &lt;img src=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample8_hu8f2ae577097e28cb24b40b2fead3709a_80904_750x750_fit_q75_h2_lanczos.webp&#34; loading=&#34;lazy&#34; alt=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34; width=&#34;750&#34; height=&#34;663&#34;&gt;
     &lt;/a&gt;
+  &lt;/div&gt;
   
     
     
@@ -156,12 +190,17 @@
         
       
     
+  
+  
+  &lt;div class=&#34;gallery-item gallery-item--medium&#34;&gt;
     &lt;a data-fancybox=&#34;gallery-tarantino&#34; href=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample9.jpg&#34; data-caption=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34;&gt;
-      &lt;img src=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample9_hu8f2ae577097e28cb24b40b2fead3709a_80850_0x190_resize_q75_h2_lanczos.webp&#34; loading=&#34;lazy&#34; alt=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34; width=&#34;215&#34; height=&#34;190&#34;&gt;
+      &lt;img src=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample9_hu8f2ae577097e28cb24b40b2fead3709a_80850_750x750_fit_q75_h2_lanczos.webp&#34; loading=&#34;lazy&#34; alt=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34; width=&#34;750&#34; height=&#34;663&#34;&gt;
     &lt;/a&gt;
+  &lt;/div&gt;
   
 
 &lt;/div&gt;
+
 &lt;p&gt;A few observations:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;The model is great at picking up on the general structure of a screenplay; characters exchange dialog and occasionally you get camera and scene instructions &amp;ndash; &amp;ldquo;CU of Mickey&amp;rdquo; (ie, a close up shot of Mickey) and &amp;ldquo;INT. - BARTHOUSE - DAY&amp;rdquo; (ie, an interior shot at the &amp;ldquo;barthouse&amp;rdquo; during the day).&lt;/li&gt;

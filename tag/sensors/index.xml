@@ -14,15 +14,15 @@
     
     <item>
       <title>Data-driven water quality modeling</title>
-      <link>https://zperzan.github.io/research/sensors/</link>
+      <link>https://zperzan.github.io/currentresearch/sensors/</link>
       <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
-      <guid>https://zperzan.github.io/research/sensors/</guid>
-      <description>&lt;p&gt;Traditionally, hydrologic modeling has relied on a suite of process-based models developed by many different researchers over years or even decades. These models contain a wealth of domain knowledge about contaminant transport &amp;ndash; the physics of water flow and the chemistry of water-rock interactions &amp;ndash; but they are relatively fixed and not designed to handle new streams of incoming data; a calibrated reactive transport model, for example, has to be completely re-calibrated from the beginning if new observations are not in agreement with model predictions.&lt;/p&gt;
-&lt;p&gt;Recent advances in data science and &lt;em&gt;in situ&lt;/em&gt; sensors &amp;ndash; when combined with robust biogeochemical models &amp;ndash; offer a unique opportunity to address this challenge. We have installed a network of solar-powered environmental sensors at sites in Colorado and Wyoming that provide continuous, high-frequency measurements of hydrologic conditions, microbial metabolic activity and key biogeochemical constituents. Remote connection via cellular modem allows us to access this data and update models in real time.&lt;/p&gt;
+      <guid>https://zperzan.github.io/currentresearch/sensors/</guid>
+      <description>&lt;p&gt;Traditionally, hydrologic modeling has relied on a suite of process-based models developed by many different researchers over years or even decades. These models contain a wealth of domain knowledge about contaminant transport &amp;mdash; the physics of water flow and the chemistry of water-rock interactions &amp;mdash; but they are relatively fixed and not designed to handle new streams of incoming data; a calibrated reactive transport model, for example, has to be completely re-calibrated if new observations are not in agreement with model predictions.&lt;/p&gt;
+&lt;p&gt;Recent advances in data science and &lt;em&gt;in situ&lt;/em&gt; sensors &amp;mdash; when combined with robust biogeochemical models &amp;mdash; offer a unique opportunity to address this challenge. We have installed a network of solar-powered environmental sensors at sites in Colorado and Wyoming that provide continuous, high-frequency measurements of hydrologic conditions, microbial metabolic activity and key biogeochemical constituents. Remote connection via cellular modem allows us to access this data and update models in real time.&lt;/p&gt;
 &lt;p&gt;We are using several techniques to combine the knowledge contained within (process-based) reactive transport models with the flexibility and adaptability of modern machine learning/deep learning models. This includes:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Assimilating sensor data into a basic reactive transport model with an ensemble Kalman filter&lt;/li&gt;
-&lt;li&gt;Training an LSTM (and now transformers) with data from reactive transport model simulations, then using transfer learning to apply the model to real-world data&lt;/li&gt;
+&lt;li&gt;Training an LSTM with data from reactive transport model simulations, then using transfer learning to apply the model to real-world data&lt;/li&gt;
 &lt;li&gt;The same as above, but using sensor data from other sites across the world&lt;/li&gt;
 &lt;li&gt;Augementing sensor training data with generative adverarial networks (GAN) then building a GRU, LSTM, or sequence-to-sequence model&lt;/li&gt;
 &lt;/ol&gt;

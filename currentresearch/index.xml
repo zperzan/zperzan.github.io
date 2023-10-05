@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Current research | Zach Perzan</title>
+    <link>https://zperzan.github.io/currentresearch/</link>
+      <atom:link href="https://zperzan.github.io/currentresearch/index.xml" rel="self" type="application/rss+xml" />
+    <description>Current research</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Oct 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://zperzan.github.io/media/icon_hud1d0979e3910d321b321c3c963a9ae6e_14691_512x512_fill_lanczos_center_3.png</url>
+      <title>Current research</title>
+      <link>https://zperzan.github.io/currentresearch/</link>
+    </image>
+    
+    <item>
+      <title>Biogeochemical cycling in high-elevation floodplains</title>
+      <link>https://zperzan.github.io/currentresearch/floodplains/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/currentresearch/floodplains/</guid>
+      <description>&lt;p&gt;Floodplains are complex, heterogeneous systems that retain, transmit and transform nutrients and contaminants as they move between land and surface water. Moreover, an array of biogeochemical and hydrologic processes interact within these heterogeneous environments, from preferential flow along root channels to microbially mediated reactions. In the face of this complexity, identifying the dominant processes that control floodplain solute exports &amp;mdash; and hence surface water quality &amp;mdash; is difficult.&lt;/p&gt;
+&lt;p&gt;We are using both measurements and modeling to understand the dominant processes that govern nutrient and contaminant cycling within floodplains. Our work focuses on select field sites across the western U.S. in which we have installed sensor arrays and collected manual samples. We then pair these measurements with reactive transport models to identify and understand the drivers behind our observations.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Controls on water quality during managed aquifer recharge</title>
+      <link>https://zperzan.github.io/currentresearch/recharge/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/currentresearch/recharge/</guid>
+      <description>&lt;body&gt;
+&lt;figure&gt;
+  &lt;video width=&#34;991&#34; height=&#34;529&#34; loop autoplay muted&gt;
+    &lt;source src=&#34;crosssec.mp4&#34; type=&#34;video/mp4&#34;&gt;
+  &lt;/video&gt;
+  &lt;figcaption&gt;
+  &lt;p&gt;
+  A cross-section showing water particles moving to the water table over an 80-year flood-MAR simulation.
+  &lt;/p&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/body&gt;
+&lt;p&gt;Over the coming decades, increased interannual variability in precipitation &amp;mdash; wetter wet years and drier dry years &amp;mdash; will place increased demand on our water infrastructure. Though we need additional water storage capacity to store water from rainy years for use during drought years, in many regions of the world water storage infrastructure is already maxed out. Flood managed aquifer recharge (flood-MAR) &amp;mdash; an emerging technique in which working landscapes are flooded to replenish depleted aquifers &amp;mdash; could meet this gap. However, identifying the most promising flood-MAR sites presents a challenge; many prospective sites are underlain by heterogeneous layers of sand and clay that can obstruct flow. In addition, the vadose zone beneath many flood-MAR sites can host a variety of contaminants, including fertilizers, salts and pesticide byproducts. A common conceptual model posits that initial flood-MAR operations will flush these contaminants to the saturated zone, degrading water quality, but in the long term, recharge operations will improve groundwater quality by diluting contaminant concentrations (&lt;a href=&#34;https://doi.org/10.1021/es501115c&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bachand et al., 2014&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;We are combining high-resolution geophysical surveys with numerical modeling to understand the processes that control the flow of water and solutes during managed aquifer recharge. Future work will use machine learning surrogate models and airborne geophysical surveys to scale up our analyses from the site- to basin-scale. This work addresses a gap in our understanding of solute transport during extreme floods and provides actionable information to mitigate both flood damage and groundwater depletion.&lt;/p&gt;
+&lt;body&gt;
+&lt;figure&gt;
+  &lt;video width=&#34;1224&#34; height=&#34;964&#34; loop autoplay muted&gt;
+    &lt;source src=&#34;voxel.mp4&#34; type=&#34;video/mp4&#34;&gt;
+  &lt;/video&gt;
+  &lt;figcaption&gt;
+  &lt;p&gt;
+  Simulated water content following a flood-MAR recharge event.
+  &lt;/p&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/body&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Data-driven water quality modeling</title>
+      <link>https://zperzan.github.io/currentresearch/sensors/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/currentresearch/sensors/</guid>
+      <description>&lt;p&gt;Traditionally, hydrologic modeling has relied on a suite of process-based models developed by many different researchers over years or even decades. These models contain a wealth of domain knowledge about contaminant transport &amp;mdash; the physics of water flow and the chemistry of water-rock interactions &amp;mdash; but they are relatively fixed and not designed to handle new streams of incoming data; a calibrated reactive transport model, for example, has to be completely re-calibrated if new observations are not in agreement with model predictions.&lt;/p&gt;
+&lt;p&gt;Recent advances in data science and &lt;em&gt;in situ&lt;/em&gt; sensors &amp;mdash; when combined with robust biogeochemical models &amp;mdash; offer a unique opportunity to address this challenge. We have installed a network of solar-powered environmental sensors at sites in Colorado and Wyoming that provide continuous, high-frequency measurements of hydrologic conditions, microbial metabolic activity and key biogeochemical constituents. Remote connection via cellular modem allows us to access this data and update models in real time.&lt;/p&gt;
+&lt;p&gt;We are using several techniques to combine the knowledge contained within (process-based) reactive transport models with the flexibility and adaptability of modern machine learning/deep learning models. This includes:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Assimilating sensor data into a basic reactive transport model with an ensemble Kalman filter&lt;/li&gt;
+&lt;li&gt;Training an LSTM with data from reactive transport model simulations, then using transfer learning to apply the model to real-world data&lt;/li&gt;
+&lt;li&gt;The same as above, but using sensor data from other sites across the world&lt;/li&gt;
+&lt;li&gt;Augementing sensor training data with generative adverarial networks (GAN) then building a GRU, LSTM, or sequence-to-sequence model&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

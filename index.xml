@@ -5,7 +5,7 @@
     <link>https://zperzan.github.io/</link>
       <atom:link href="https://zperzan.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Zach Perzan</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 03 Oct 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://zperzan.github.io/media/icon_hud1d0979e3910d321b321c3c963a9ae6e_14691_512x512_fill_lanczos_center_3.png</url>
       <title>Zach Perzan</title>
@@ -13,10 +13,28 @@
     </image>
     
     <item>
-      <title>Understanding water quality changes during managed aquifer recharge</title>
-      <link>https://zperzan.github.io/research/ecoslim/</link>
+      <title>Research</title>
+      <link>https://zperzan.github.io/research/</link>
+      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/research/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Biogeochemical cycling in high-elevation floodplains</title>
+      <link>https://zperzan.github.io/currentresearch/floodplains/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/currentresearch/floodplains/</guid>
+      <description>&lt;p&gt;Floodplains are complex, heterogeneous systems that retain, transmit and transform nutrients and contaminants as they move between land and surface water. Moreover, an array of biogeochemical and hydrologic processes interact within these heterogeneous environments, from preferential flow along root channels to microbially mediated reactions. In the face of this complexity, identifying the dominant processes that control floodplain solute exports &amp;mdash; and hence surface water quality &amp;mdash; is difficult.&lt;/p&gt;
+&lt;p&gt;We are using both measurements and modeling to understand the dominant processes that govern nutrient and contaminant cycling within floodplains. Our work focuses on select field sites across the western U.S. in which we have installed sensor arrays and collected manual samples. We then pair these measurements with reactive transport models to identify and understand the drivers behind our observations.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Controls on water quality during managed aquifer recharge</title>
+      <link>https://zperzan.github.io/currentresearch/recharge/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://zperzan.github.io/research/ecoslim/</guid>
+      <guid>https://zperzan.github.io/currentresearch/recharge/</guid>
       <description>&lt;body&gt;
 &lt;figure&gt;
   &lt;video width=&#34;991&#34; height=&#34;529&#34; loop autoplay muted&gt;
@@ -29,16 +47,9 @@
   &lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/body&gt;
-&lt;p&gt;Flood managed aquifer recharge (flood-MAR) &amp;ndash; an emerging technique in which working landscapes are flooded to replenish depleted aquifers &amp;ndash; holds potential for widespread global implementation. However, the vadose zone beneath many flood-MAR sites can host a variety of contaminants, including fertilizers, salts and pesticide byproducts. A common conceptual model posits that initial flood-MAR operations will flush these contaminants to the saturated zone, degrading water quality, but in the long term, recharge operations will improve groundwater quality by diluting contaminant concentrations (&lt;a href=&#34;https://doi.org/10.1021/es501115c&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bachand et al., 2014&lt;/a&gt;). To assess this conceptual model, we are using transient particle tracking to estimate arrival times and mixing of recharge water during flood-MAR.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Modeling managed aquifer recharge (MAR) in the Central Valley</title>
-      <link>https://zperzan.github.io/research/cv-mar/</link>
-      <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>https://zperzan.github.io/research/cv-mar/</guid>
-      <description>&lt;body&gt;
+&lt;p&gt;Over the coming decades, increased interannual variability in precipitation &amp;mdash; wetter wet years and drier dry years &amp;mdash; will place increased demand on our water infrastructure. Though we need additional water storage capacity to store water from rainy years for use during drought years, in many regions of the world water storage infrastructure is already maxed out. Flood managed aquifer recharge (flood-MAR) &amp;mdash; an emerging technique in which working landscapes are flooded to replenish depleted aquifers &amp;mdash; could meet this gap. However, identifying the most promising flood-MAR sites presents a challenge; many prospective sites are underlain by heterogeneous layers of sand and clay that can obstruct flow. In addition, the vadose zone beneath many flood-MAR sites can host a variety of contaminants, including fertilizers, salts and pesticide byproducts. A common conceptual model posits that initial flood-MAR operations will flush these contaminants to the saturated zone, degrading water quality, but in the long term, recharge operations will improve groundwater quality by diluting contaminant concentrations (&lt;a href=&#34;https://doi.org/10.1021/es501115c&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bachand et al., 2014&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;We are combining high-resolution geophysical surveys with numerical modeling to understand the processes that control the flow of water and solutes during managed aquifer recharge. Future work will use machine learning surrogate models and airborne geophysical surveys to scale up our analyses from the site- to basin-scale. This work addresses a gap in our understanding of solute transport during extreme floods and provides actionable information to mitigate both flood damage and groundwater depletion.&lt;/p&gt;
+&lt;body&gt;
 &lt;figure&gt;
   &lt;video width=&#34;1224&#34; height=&#34;964&#34; loop autoplay muted&gt;
     &lt;source src=&#34;voxel.mp4&#34; type=&#34;video/mp4&#34;&gt;
@@ -50,28 +61,16 @@
   &lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;/body&gt;
-&lt;p&gt;Over the coming decades, increased interannual variability in precipitation &amp;ndash; wetter wet years and drier dry years &amp;ndash; will place increased demand on California&amp;rsquo;s network of reservoirs and dams. Though we need additional water storage capacity to store water from rainy years for use during drought years, events like the Oroville Dam disaster highlight the fact that California’s water storage infrastructure is already maxed out. Managed aquifer recharge (MAR) projects &amp;ndash; in which water is intentionally stored in aquifers for later extraction &amp;ndash; have been proposed as a tool to combat this problem; in California’s Central Valley, excess precipitation diverted to MAR sites could recharge aquifers with up to 1.5 km&lt;sup&gt;3&lt;/sup&gt; of water per year, approximately 11% of annual groundwater withdrawals.&lt;/p&gt;
-&lt;p&gt;However, identifying the most promising MAR sites remains an ongoing challenge. We are using ParFlow &amp;ndash; an integrated hydrologic model capable of simulating both saturated and unsaturated flow &amp;ndash; to understand the processes that control groundwater recharge.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>A new tool to measure groundwater velocity</title>
-      <link>https://zperzan.github.io/pastwork/wellstics/</link>
+      <link>https://zperzan.github.io/pastresearch/wellstics/</link>
       <pubDate>Fri, 01 Oct 2021 00:00:00 +0000</pubDate>
-      <guid>https://zperzan.github.io/pastwork/wellstics/</guid>
+      <guid>https://zperzan.github.io/pastresearch/wellstics/</guid>
       <description>&lt;p&gt;Groundwater velocity is inherently difficult to measure, especially at sites with limited infrastructure. Most modern groundwater velocity sensors are expensive ($1,110 to $18,000). More than that, they can only be installed in wells 2 inches in diameter or larger, which are expensive and time-consuming to install.&lt;/p&gt;
 &lt;p&gt;We&amp;rsquo;ve developed a new sensor system that can be installed in narrow wells (as small as 8 mm ID), like &lt;a href=&#34;https://www.solinst.com/products/direct-push-equipment/615-drive-point-piezometers/datasheet/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Solinst drive-point piezometers&lt;/a&gt;. These piezometer systems can be installed by hand (even in cobble!) and we&amp;rsquo;ve successfully used the system to measure groundwater velocity several sites. Read more about it in our recent &lt;a href=&#34;https://doi.org/10.1029/2022WR033223&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;paper&lt;/a&gt; in Water Resources Research!&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Biogeochemical cycling in high-elevation floodplains</title>
-      <link>https://zperzan.github.io/research/riverton/</link>
-      <pubDate>Fri, 01 Oct 2021 00:00:00 +0000</pubDate>
-      <guid>https://zperzan.github.io/research/riverton/</guid>
-      <description>&lt;p&gt;A long history of uranium mining and weapons development throughout the Cold War has left many mining, milling and testing sites contaminated with radioactive materials like uranium, thorium, and radium, as well as other non-radioactive heavy metals including vanadium, molybdenum, selenium and arsenic. There are nearly 100 such locations &lt;a href=&#34;https://www.energy.gov/lm/sites/lm-sites&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;across the western U.S.&lt;/a&gt; managed by the Department of Energy. The groundwater contaminant plumes at many sites are not dissipating as expected and contamination may persist beyond the 100-year timeframe required for regulatory compliance.&lt;/p&gt;
-&lt;p&gt;The contaminant plumes at many floodplain mill sites are subject to strong seasonal fluctuations, but the processes behind these variations are not well understood. We are studying uranium transport and the concurrent biogeochemical cycling that occurs during hydrologic perturbations, with research centered around a series of field experiments using artificial groundwater tracers. The tracer tests have immediate relevance to water quality concerns at the field site &amp;ndash; a uranium-contaminated floodplain in Riverton, Wyoming &amp;ndash; but has much broader implications as well. Isotopically labeled nitrate allows us to track denitrification and the production of nitrous oxide (a powerful greenhouse gas), deuterated water (D&lt;sub&gt;2&lt;/sub&gt;O) could map plant water uptake, and dye infiltration patterns can answer questions regarding unsaturated zone flow.&lt;/p&gt;
 </description>
     </item>
     
@@ -84,188 +83,186 @@
 &lt;p&gt;Weather Underground has a security policy that blocks automated requests from viewing data stored in each table. This is where &lt;a href=&#34;https://www.selenium.dev/documentation/en/webdriver/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Selenium WebDriver&lt;/a&gt; comes in. WebDriver is an toolbox for natively running web browsers, so when you render a page with WebDriver, Weather Underground thinks a regular user is accessing their website and you can access the full source code.&lt;/p&gt;
 &lt;p&gt;To run the script, the first thing to do is ensure that &lt;a href=&#34;https://chromedriver.chromium.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ChromeDriver&lt;/a&gt; is installed. Note that you have to match the ChromeDriver version to whichever version of Chrome is installed on your machine. It&amp;rsquo;s also possible to use something other than Chrome, for example &lt;a href=&#34;https://github.com/mozilla/geckodriver/releases&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;geckodriver&lt;/a&gt; for Firefox or &lt;a href=&#34;https://webkit.org/blog/6900/webdriver-support-in-safari-10/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;safaridriver&lt;/a&gt; for Safari.&lt;/p&gt;
 &lt;p&gt;Next, update the path to chromedriver in &lt;code&gt;scrape_wunderground.py&lt;/code&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# Set the absolute path to chromedriver
-chromedriver_path = &#39;/path/to/chromedriver&#39;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;As long as BeautifulSoup and Selenium are installed, the script should work fine after that. However, there are a few important points to note about processing the data once it&amp;rsquo;s downloaded:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Set the absolute path to chromedriver&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;chromedriver_path&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;/path/to/chromedriver&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;As long as BeautifulSoup and Selenium are installed, the script should work fine after that. However, there are a few important points to note about processing the data once it&amp;rsquo;s downloaded:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;All data is listed in local time. So summer data is in daylight savings time and winter data is in standard time.&lt;/li&gt;
 &lt;li&gt;Depending on the quality of the station,&lt;/li&gt;
 &lt;li&gt;All pressure data is reported as sea-level pressure. Depending on the weather station, it may be possible to back-calculate to absolute pressure; some manufacturers (e.g., Ambient Weather WS-2902) use a constant offset whereas others (e.g., Davis Vantage Pro2) perform a more complicated barometric pressure reduction using the station&amp;rsquo;s 12-hr temperature and humidity history.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;The full Python script is available &lt;a href=&#34;https://github.com/zperzan/scrape_wunderground&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt; but is also included below.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;quot;&amp;quot;&amp;quot;Module to scrape 5-min personal weather station data from Weather Underground.
-
-Usage is:
-&amp;gt;&amp;gt;&amp;gt; python scrape_wunderground.py   STATION    DATE
-
-where station is a personal weather station (e.g., KCAJAMES3) and date is in the 
-format YYYY-MM-DD. 
-
-Alternatively, each function below can be imported and used in a separate python
-script. Note that a working version of chromedriver must be installed and the absolute 
-path to executable has to be updated below (&amp;quot;chromedriver_path&amp;quot;).
-
-Zach Perzan, 2021-07-28&amp;quot;&amp;quot;&amp;quot;
-
-import time
-import sys
-
-import numpy as np
-import pandas as pd
-from bs4 import BeautifulSoup as BS
-from selenium import webdriver
-
-
-# Set the absolute path to chromedriver
-chromedriver_path = &#39;/path/to/chromedriver&#39;
-
-
-def render_page(url):
-    &amp;quot;&amp;quot;&amp;quot;Given a url, render it with chromedriver and return the html source
-    
-    Parameters
-    ----------
-        url : str
-            url to render
-    
-    Returns
-    -------
-        r : 
-            rendered page source
-    &amp;quot;&amp;quot;&amp;quot;
-    
-    driver = webdriver.Chrome(chromedriver_path)
-    driver.get(url)
-    time.sleep(3) # Could potentially decrease the sleep time
-    r = driver.page_source
-    driver.quit()
-
-    return r
-
-
-def scrape_wunderground(station, date):
-    &amp;quot;&amp;quot;&amp;quot;Given a PWS station ID and date, scrape that day&#39;s data from Weather 
-    Underground and return it as a dataframe.
-    
-    Parameters
-    ----------
-        station : str
-            The personal weather station ID
-        date : str
-            The date for which to acquire data, formatted as &#39;YYYY-MM-DD&#39;
-            
-    Returns
-    -------
-        df : dataframe or None
-            A dataframe of weather observations, with index as pd.DateTimeIndex 
-            and columns as the observed data
-    &amp;quot;&amp;quot;&amp;quot;
-    
-    # Render the url and open the page source as BS object
-    url = &#39;https://www.wunderground.com/dashboard/pws/%s/table/%s/%s/daily&#39; % (station,
-                                                                               date, date)
-    r = render_page(url)
-    soup = BS(r, &amp;quot;html.parser&amp;quot;,)
-
-    container = soup.find(&#39;lib-history-table&#39;)
-    
-    # Check that lib-history-table is found
-    if container is None:
-        raise ValueError(&amp;quot;could not find lib-history-table in html source for %s&amp;quot; % url)
-    
-    # Get the timestamps and data from two separate &#39;tbody&#39; tags
-    all_checks = container.find_all(&#39;tbody&#39;)
-    time_check = all_checks[0]
-    data_check = all_checks[1]
-
-    # Iterate through &#39;tr&#39; tags and get the timestamps
-    hours = []
-    for i in time_check.find_all(&#39;tr&#39;):
-        trial = i.get_text()
-        hours.append(trial)
-
-    # For data, locate both value and no-value (&amp;quot;--&amp;quot;) classes
-    classes = [&#39;wu-value wu-value-to&#39;, &#39;wu-unit-no-value ng-star-inserted&#39;]
-
-    # Iterate through span tags and get data
-    data = []
-    for i in data_check.find_all(&#39;span&#39;, class_=classes):
-        trial = i.get_text()
-        data.append(trial)
-
-    columns = [&#39;Temperature&#39;, &#39;Dew Point&#39;, &#39;Humidity&#39;, &#39;Wind Speed&#39;, 
-               &#39;Wind Gust&#39;, &#39;Pressure&#39;, &#39;Precip. Rate&#39;, &#39;Precip. Accum.&#39;]
-
-    # Convert NaN values (stings of &#39;--&#39;) to np.nan
-    data_nan = [np.nan if x == &#39;--&#39; else x for x in data]
-
-    # Convert list of data to an array
-    data_array = np.array(data_nan, dtype=float)
-    data_array = data_array.reshape(-1, len(columns))
-
-    # Prepend date to HH:MM strings
-    timestamps = [&#39;%s %s&#39; % (date, t) for t in hours]
-
-    # Convert to dataframe
-    df = pd.DataFrame(index=timestamps, data=data_array, columns=columns)
-    df.index = pd.to_datetime(df.index)
-    
-    return df
-
-
-def scrape_multiattempt(station, date, attempts=4, wait_time=5.0):
-    &amp;quot;&amp;quot;&amp;quot;Try to scrape data from Weather Underground. If there is an error on the 
-    first attempt, try again.
-    
-    Parameters
-    ----------
-        station : str
-            The personal weather station ID
-        date : str
-            The date for which to acquire data, formatted as &#39;YYYY-MM-DD&#39;
-        attempts : int, default 4
-            Maximum number of times to try accessing before failuer
-        wait_time : float, default 5.0
-            Amount of time to wait in between attempts
-            
-    Returns
-    -------
-        df : dataframe or None
-            A dataframe of weather observations, with index as pd.DateTimeIndex 
-            and columns as the observed data
-    &amp;quot;&amp;quot;&amp;quot;
-    
-    # Try to download data limited number of attempts
-    for n in range(attempts):
-        try:
-            df = scrape_wunderground(station, date)
-        except:
-            # if unsuccessful, pause and retry
-            time.sleep(wait_time)
-        else: 
-            # if successful, then break
-            break
-    # If all attempts failed, return empty df
-    else:
-        df = pd.DataFrame()
-        
-    return df
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&amp;#34;Module to scrape 5-min personal weather station data from Weather Underground.
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;Usage is:
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;&amp;gt;&amp;gt;&amp;gt; python scrape_wunderground.py   STATION    DATE
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;where station is a personal weather station (e.g., KCAJAMES3) and date is in the 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;format YYYY-MM-DD. 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;Alternatively, each function below can be imported and used in a separate python
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;script. Note that a working version of chromedriver must be installed and the absolute 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;path to executable has to be updated below (&amp;#34;chromedriver_path&amp;#34;).
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;Zach Perzan, 2021-07-28&amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;time&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;sys&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;numpy&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;np&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;pandas&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;pd&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;bs4&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;BeautifulSoup&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;BS&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;selenium&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;webdriver&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Set the absolute path to chromedriver&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;chromedriver_path&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;/path/to/chromedriver&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;render_page&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;url&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&amp;#34;Given a url, render it with chromedriver and return the html source
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;    Parameters
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;    ----------
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;        url : str
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;            url to render
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;    Returns
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;    -------
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;        r : 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;            rendered page source
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;    &amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;driver&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;webdriver&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Chrome&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;chromedriver_path&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;driver&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;get&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;url&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;time&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;sleep&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;# Could potentially decrease the sleep time&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;r&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;driver&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;page_source&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;driver&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;quit&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;r&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;scrape_wunderground&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;station&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;date&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&amp;#34;Given a PWS station ID and date, scrape that day&amp;#39;s data from Weather 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;    Underground and return it as a dataframe.
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;    Parameters
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;    ----------
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;        station : str
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;            The personal weather station ID
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;        date : str
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;            The date for which to acquire data, formatted as &amp;#39;YYYY-MM-DD&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;            
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;    Returns
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;    -------
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;        df : dataframe or None
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;            A dataframe of weather observations, with index as pd.DateTimeIndex 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;            and columns as the observed data
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;    &amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# Render the url and open the page source as BS object&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;url&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;https://www.wunderground.com/dashboard/pws/&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;%s&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;/table/&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;%s&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;%s&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;/daily&amp;#39;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;%&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;station&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                                                                               &lt;span class=&#34;n&#34;&gt;date&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;date&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;r&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;render_page&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;url&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;soup&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;BS&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;r&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;html.parser&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;container&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;soup&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;find&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;lib-history-table&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# Check that lib-history-table is found&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;container&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;is&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;None&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;raise&lt;/span&gt; &lt;span class=&#34;ne&#34;&gt;ValueError&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;could not find lib-history-table in html source for &lt;/span&gt;&lt;span class=&#34;si&#34;&gt;%s&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;%&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;url&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# Get the timestamps and data from two separate &amp;#39;tbody&amp;#39; tags&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;all_checks&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;container&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;find_all&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;tbody&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;time_check&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;all_checks&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;data_check&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;all_checks&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# Iterate through &amp;#39;tr&amp;#39; tags and get the timestamps&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;hours&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;time_check&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;find_all&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;tr&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;trial&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;get_text&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;hours&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;append&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;trial&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# For data, locate both value and no-value (&amp;#34;--&amp;#34;) classes&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;classes&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;wu-value wu-value-to&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;wu-unit-no-value ng-star-inserted&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# Iterate through span tags and get data&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;data&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;data_check&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;find_all&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;span&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;class_&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;classes&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;trial&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;get_text&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;data&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;append&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;trial&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;columns&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;Temperature&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;Dew Point&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;Humidity&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;Wind Speed&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;               &lt;span class=&#34;s1&#34;&gt;&amp;#39;Wind Gust&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;Pressure&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;Precip. Rate&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;Precip. Accum.&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# Convert NaN values (stings of &amp;#39;--&amp;#39;) to np.nan&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;data_nan&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;nan&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;x&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;--&amp;#39;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;else&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;x&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;x&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;data&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# Convert list of data to an array&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;data_array&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;array&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;data_nan&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;dtype&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;float&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;data_array&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;data_array&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;reshape&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;len&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;columns&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# Prepend date to HH:MM strings&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;timestamps&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;%s&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt; &lt;/span&gt;&lt;span class=&#34;si&#34;&gt;%s&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;%&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;date&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;t&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;hours&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# Convert to dataframe&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;df&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;pd&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DataFrame&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;index&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;timestamps&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;data&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;data_array&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;columns&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;columns&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;df&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;index&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;pd&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;to_datetime&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;df&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;index&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;df&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;scrape_multiattempt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;station&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;date&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;attempts&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;wait_time&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;5.0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&amp;#34;Try to scrape data from Weather Underground. If there is an error on the 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;    first attempt, try again.
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;    Parameters
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;    ----------
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;        station : str
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;            The personal weather station ID
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;        date : str
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;            The date for which to acquire data, formatted as &amp;#39;YYYY-MM-DD&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;        attempts : int, default 4
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;            Maximum number of times to try accessing before failuer
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;        wait_time : float, default 5.0
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;            Amount of time to wait in between attempts
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;            
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;    Returns
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;    -------
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;        df : dataframe or None
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;            A dataframe of weather observations, with index as pd.DateTimeIndex 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;            and columns as the observed data
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;    &amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# Try to download data limited number of attempts&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;n&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;attempts&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;try&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;df&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;scrape_wunderground&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;station&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;date&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;except&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;c1&#34;&gt;# if unsuccessful, pause and retry&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;time&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;sleep&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;wait_time&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;else&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;c1&#34;&gt;# if successful, then break&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;k&#34;&gt;break&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# If all attempts failed, return empty df&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;else&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;df&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;pd&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DataFrame&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;df&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     
     <item>
       <title>Data-driven water quality modeling</title>
-      <link>https://zperzan.github.io/research/sensors/</link>
+      <link>https://zperzan.github.io/currentresearch/sensors/</link>
       <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
-      <guid>https://zperzan.github.io/research/sensors/</guid>
-      <description>&lt;p&gt;Traditionally, hydrologic modeling has relied on a suite of process-based models developed by many different researchers over years or even decades. These models contain a wealth of domain knowledge about contaminant transport &amp;ndash; the physics of water flow and the chemistry of water-rock interactions &amp;ndash; but they are relatively fixed and not designed to handle new streams of incoming data; a calibrated reactive transport model, for example, has to be completely re-calibrated from the beginning if new observations are not in agreement with model predictions.&lt;/p&gt;
-&lt;p&gt;Recent advances in data science and &lt;em&gt;in situ&lt;/em&gt; sensors &amp;ndash; when combined with robust biogeochemical models &amp;ndash; offer a unique opportunity to address this challenge. We have installed a network of solar-powered environmental sensors at sites in Colorado and Wyoming that provide continuous, high-frequency measurements of hydrologic conditions, microbial metabolic activity and key biogeochemical constituents. Remote connection via cellular modem allows us to access this data and update models in real time.&lt;/p&gt;
+      <guid>https://zperzan.github.io/currentresearch/sensors/</guid>
+      <description>&lt;p&gt;Traditionally, hydrologic modeling has relied on a suite of process-based models developed by many different researchers over years or even decades. These models contain a wealth of domain knowledge about contaminant transport &amp;mdash; the physics of water flow and the chemistry of water-rock interactions &amp;mdash; but they are relatively fixed and not designed to handle new streams of incoming data; a calibrated reactive transport model, for example, has to be completely re-calibrated if new observations are not in agreement with model predictions.&lt;/p&gt;
+&lt;p&gt;Recent advances in data science and &lt;em&gt;in situ&lt;/em&gt; sensors &amp;mdash; when combined with robust biogeochemical models &amp;mdash; offer a unique opportunity to address this challenge. We have installed a network of solar-powered environmental sensors at sites in Colorado and Wyoming that provide continuous, high-frequency measurements of hydrologic conditions, microbial metabolic activity and key biogeochemical constituents. Remote connection via cellular modem allows us to access this data and update models in real time.&lt;/p&gt;
 &lt;p&gt;We are using several techniques to combine the knowledge contained within (process-based) reactive transport models with the flexibility and adaptability of modern machine learning/deep learning models. This includes:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Assimilating sensor data into a basic reactive transport model with an ensemble Kalman filter&lt;/li&gt;
-&lt;li&gt;Training an LSTM (and now transformers) with data from reactive transport model simulations, then using transfer learning to apply the model to real-world data&lt;/li&gt;
+&lt;li&gt;Training an LSTM with data from reactive transport model simulations, then using transfer learning to apply the model to real-world data&lt;/li&gt;
 &lt;li&gt;The same as above, but using sensor data from other sites across the world&lt;/li&gt;
 &lt;li&gt;Augementing sensor training data with generative adverarial networks (GAN) then building a GRU, LSTM, or sequence-to-sequence model&lt;/li&gt;
 &lt;/ol&gt;
@@ -282,9 +279,9 @@ def scrape_multiattempt(station, date, attempts=4, wait_time=5.0):
     
     <item>
       <title>Reimagining the nitrogen cycle</title>
-      <link>https://zperzan.github.io/pastwork/ednr/</link>
+      <link>https://zperzan.github.io/pastresearch/ednr/</link>
       <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
-      <guid>https://zperzan.github.io/pastwork/ednr/</guid>
+      <guid>https://zperzan.github.io/pastresearch/ednr/</guid>
       <description>&lt;p&gt;Nitrogen is one of the most ubiquitous, costly and challenging environmental pollutants of the 21st century. In addition to clean water issues, the 21st century will require more efficient fertilizer production to meet the needs of a growing population. As part of an interdisciplinary research team, we aim to tackle these two challenges by converting waterborne nitrogen pollutants into high-purity fertilizer.&lt;/p&gt;
 &lt;p&gt;Collaborators in the Dept. of Chemical Engineering have developed a new methodology for exactly this purpose: electrodialysis and nitrate reduction (EDNR). The next step is to build and optimize a device that in a real-world setting. In collaboration with our industry partners (the New York City Dept. of Environmental Protection, San Francisco Water Power Sewer, Jasper Ridge Biological Preserve, and others), we aim to deploy EDNR systems in both urban and rural settings.&lt;/p&gt;
 </description>
@@ -299,17 +296,7 @@ def scrape_multiattempt(station, date, attempts=4, wait_time=5.0):
     </item>
     
     <item>
-      <title>Novel biosensors for monitoring trace contaminants</title>
-      <link>https://zperzan.github.io/research/qube/</link>
-      <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>https://zperzan.github.io/research/qube/</guid>
-      <description>&lt;p&gt;Most contaminants in water (nitrate, arsenic, mercury and lead, to name a few) can only be measured by manually grabbing a water sample and analyzing it in the lab. This is a time-intensive process. A few companies offer optical sensors for &lt;em&gt;in situ&lt;/em&gt; geochemical measurements, but those are limited to gasses like CO&lt;sub&gt;2&lt;/sub&gt; (e.g., &lt;a href=&#34;https://www.vaisala.com/en/measurement/carbon-dioxide-co2-measurements&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vaisala&lt;/a&gt;) and O&lt;sub&gt;2&lt;/sub&gt; (e.g., &lt;a href=&#34;https://www.presens.de/products/detail/oxybaser-series&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PreSens&lt;/a&gt;). Others use electrochemistry to quantify concentrations of many different species (e.g., &lt;a href=&#34;https://aishome.com/in-situ-2/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Analytical Instrument Systems, Inc.&lt;/a&gt;), but data from those systems is hard to interpret and it can be impossible to deconvolve multiple overlapping signals.&lt;/p&gt;
-&lt;p&gt;We&amp;rsquo;re working with &lt;a href=&#34;https://www.qbisci.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Quantitative BioSciences, Inc.&lt;/a&gt; to develop and deploy sensor systems that use customized biosensors strains to measure a suite of contaminants. Current sensing capabilities include arsenic, lead, mercury, cadmium, nitrate, nitrite, ammonium, phosphorus, and more. We&amp;rsquo;ve deployed these systems remotely (ie, fully solar-powered and autonomous) and in harsh environments (ie, subject to driving wind, snow and temperatures from -10 to 110° F).&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Teaching an RNN to write Movie Scripts</title>
+      <title>Teaching an RNN to write movie scripts</title>
       <link>https://zperzan.github.io/projects/script-generator/</link>
       <pubDate>Thu, 25 Oct 2018 00:00:00 +0000</pubDate>
       <guid>https://zperzan.github.io/projects/script-generator/</guid>
@@ -330,7 +317,13 @@ def scrape_multiattempt(station, date, attempts=4, wait_time=5.0):
 
 
 
-&lt;div class=&#34;gallery&#34;&gt;
+
+
+
+
+
+
+&lt;div class=&#34;gallery-grid&#34;&gt;
 
   
   
@@ -344,9 +337,13 @@ def scrape_multiattempt(station, date, attempts=4, wait_time=5.0):
         
       
     
+  
+  
+  &lt;div class=&#34;gallery-item gallery-item--medium&#34;&gt;
     &lt;a data-fancybox=&#34;gallery-tarantino&#34; href=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample2.jpg&#34; data-caption=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34;&gt;
-      &lt;img src=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample2_hu8f2ae577097e28cb24b40b2fead3709a_78458_0x190_resize_q75_h2_lanczos.webp&#34; loading=&#34;lazy&#34; alt=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34; width=&#34;215&#34; height=&#34;190&#34;&gt;
+      &lt;img src=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample2_hu8f2ae577097e28cb24b40b2fead3709a_78458_750x750_fit_q75_h2_lanczos.webp&#34; loading=&#34;lazy&#34; alt=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34; width=&#34;750&#34; height=&#34;663&#34;&gt;
     &lt;/a&gt;
+  &lt;/div&gt;
   
     
     
@@ -357,9 +354,13 @@ def scrape_multiattempt(station, date, attempts=4, wait_time=5.0):
         
       
     
+  
+  
+  &lt;div class=&#34;gallery-item gallery-item--medium&#34;&gt;
     &lt;a data-fancybox=&#34;gallery-tarantino&#34; href=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample3.jpg&#34; data-caption=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34;&gt;
-      &lt;img src=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample3_hu8f2ae577097e28cb24b40b2fead3709a_81169_0x190_resize_q75_h2_lanczos.webp&#34; loading=&#34;lazy&#34; alt=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34; width=&#34;215&#34; height=&#34;190&#34;&gt;
+      &lt;img src=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample3_hu8f2ae577097e28cb24b40b2fead3709a_81169_750x750_fit_q75_h2_lanczos.webp&#34; loading=&#34;lazy&#34; alt=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34; width=&#34;750&#34; height=&#34;663&#34;&gt;
     &lt;/a&gt;
+  &lt;/div&gt;
   
     
     
@@ -370,9 +371,13 @@ def scrape_multiattempt(station, date, attempts=4, wait_time=5.0):
         
       
     
+  
+  
+  &lt;div class=&#34;gallery-item gallery-item--medium&#34;&gt;
     &lt;a data-fancybox=&#34;gallery-tarantino&#34; href=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample4.jpg&#34; data-caption=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34;&gt;
-      &lt;img src=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample4_hu8f2ae577097e28cb24b40b2fead3709a_81305_0x190_resize_q75_h2_lanczos.webp&#34; loading=&#34;lazy&#34; alt=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34; width=&#34;215&#34; height=&#34;190&#34;&gt;
+      &lt;img src=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample4_hu8f2ae577097e28cb24b40b2fead3709a_81305_750x750_fit_q75_h2_lanczos.webp&#34; loading=&#34;lazy&#34; alt=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34; width=&#34;750&#34; height=&#34;663&#34;&gt;
     &lt;/a&gt;
+  &lt;/div&gt;
   
     
     
@@ -383,9 +388,13 @@ def scrape_multiattempt(station, date, attempts=4, wait_time=5.0):
         
       
     
+  
+  
+  &lt;div class=&#34;gallery-item gallery-item--medium&#34;&gt;
     &lt;a data-fancybox=&#34;gallery-tarantino&#34; href=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample5.jpg&#34; data-caption=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34;&gt;
-      &lt;img src=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample5_hu8f2ae577097e28cb24b40b2fead3709a_80077_0x190_resize_q75_h2_lanczos.webp&#34; loading=&#34;lazy&#34; alt=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34; width=&#34;215&#34; height=&#34;190&#34;&gt;
+      &lt;img src=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample5_hu8f2ae577097e28cb24b40b2fead3709a_80077_750x750_fit_q75_h2_lanczos.webp&#34; loading=&#34;lazy&#34; alt=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34; width=&#34;750&#34; height=&#34;663&#34;&gt;
     &lt;/a&gt;
+  &lt;/div&gt;
   
     
     
@@ -396,9 +405,13 @@ def scrape_multiattempt(station, date, attempts=4, wait_time=5.0):
         
       
     
+  
+  
+  &lt;div class=&#34;gallery-item gallery-item--medium&#34;&gt;
     &lt;a data-fancybox=&#34;gallery-tarantino&#34; href=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample6.jpg&#34; data-caption=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words. The only change&#34;&gt;
-      &lt;img src=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample6_hu8f2ae577097e28cb24b40b2fead3709a_80887_0x190_resize_q75_h2_lanczos.webp&#34; loading=&#34;lazy&#34; alt=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words. The only change&#34; width=&#34;215&#34; height=&#34;190&#34;&gt;
+      &lt;img src=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample6_hu8f2ae577097e28cb24b40b2fead3709a_80887_750x750_fit_q75_h2_lanczos.webp&#34; loading=&#34;lazy&#34; alt=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words. The only change&#34; width=&#34;750&#34; height=&#34;663&#34;&gt;
     &lt;/a&gt;
+  &lt;/div&gt;
   
     
     
@@ -409,9 +422,13 @@ def scrape_multiattempt(station, date, attempts=4, wait_time=5.0):
         
       
     
+  
+  
+  &lt;div class=&#34;gallery-item gallery-item--medium&#34;&gt;
     &lt;a data-fancybox=&#34;gallery-tarantino&#34; href=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample7.jpg&#34; data-caption=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34;&gt;
-      &lt;img src=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample7_hu8f2ae577097e28cb24b40b2fead3709a_83587_0x190_resize_q75_h2_lanczos.webp&#34; loading=&#34;lazy&#34; alt=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34; width=&#34;215&#34; height=&#34;190&#34;&gt;
+      &lt;img src=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample7_hu8f2ae577097e28cb24b40b2fead3709a_83587_750x750_fit_q75_h2_lanczos.webp&#34; loading=&#34;lazy&#34; alt=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34; width=&#34;750&#34; height=&#34;663&#34;&gt;
     &lt;/a&gt;
+  &lt;/div&gt;
   
     
     
@@ -422,9 +439,13 @@ def scrape_multiattempt(station, date, attempts=4, wait_time=5.0):
         
       
     
+  
+  
+  &lt;div class=&#34;gallery-item gallery-item--medium&#34;&gt;
     &lt;a data-fancybox=&#34;gallery-tarantino&#34; href=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample8.jpg&#34; data-caption=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34;&gt;
-      &lt;img src=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample8_hu8f2ae577097e28cb24b40b2fead3709a_80904_0x190_resize_q75_h2_lanczos.webp&#34; loading=&#34;lazy&#34; alt=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34; width=&#34;215&#34; height=&#34;190&#34;&gt;
+      &lt;img src=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample8_hu8f2ae577097e28cb24b40b2fead3709a_80904_750x750_fit_q75_h2_lanczos.webp&#34; loading=&#34;lazy&#34; alt=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34; width=&#34;750&#34; height=&#34;663&#34;&gt;
     &lt;/a&gt;
+  &lt;/div&gt;
   
     
     
@@ -435,12 +456,17 @@ def scrape_multiattempt(station, date, attempts=4, wait_time=5.0):
         
       
     
+  
+  
+  &lt;div class=&#34;gallery-item gallery-item--medium&#34;&gt;
     &lt;a data-fancybox=&#34;gallery-tarantino&#34; href=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample9.jpg&#34; data-caption=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34;&gt;
-      &lt;img src=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample9_hu8f2ae577097e28cb24b40b2fead3709a_80850_0x190_resize_q75_h2_lanczos.webp&#34; loading=&#34;lazy&#34; alt=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34; width=&#34;215&#34; height=&#34;190&#34;&gt;
+      &lt;img src=&#34;https://zperzan.github.io/media/albums/tarantino/TextSample9_hu8f2ae577097e28cb24b40b2fead3709a_80850_750x750_fit_q75_h2_lanczos.webp&#34; loading=&#34;lazy&#34; alt=&#34;Sample text generated by the model. All formatting (line length, capitalization, line breaks, etc) are from the model itself. The only alteration was to blur out specific curse words.&#34; width=&#34;750&#34; height=&#34;663&#34;&gt;
     &lt;/a&gt;
+  &lt;/div&gt;
   
 
 &lt;/div&gt;
+
 &lt;p&gt;A few observations:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;The model is great at picking up on the general structure of a screenplay; characters exchange dialog and occasionally you get camera and scene instructions &amp;ndash; &amp;ldquo;CU of Mickey&amp;rdquo; (ie, a close up shot of Mickey) and &amp;ldquo;INT. - BARTHOUSE - DAY&amp;rdquo; (ie, an interior shot at the &amp;ldquo;barthouse&amp;rdquo; during the day).&lt;/li&gt;
@@ -465,9 +491,9 @@ Thomas Dehaene must have had the same thought regarding Hallmark movies, as he j
     
     <item>
       <title>The spillover effect of drinking water violations</title>
-      <link>https://zperzan.github.io/pastwork/bottled-water/</link>
+      <link>https://zperzan.github.io/pastresearch/bottled-water/</link>
       <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
-      <guid>https://zperzan.github.io/pastwork/bottled-water/</guid>
+      <guid>https://zperzan.github.io/pastresearch/bottled-water/</guid>
       <description>&lt;p&gt;The ongoing water crisis in Flint, Michigan, was &amp;ndash; and still is &amp;ndash; a major news story that exposed governmental oversight and brought the question of safe drinking water into the news. A switch in the municipal drinking water supply, combined with insufficient water treatment, exposed over 100,000 Flint residents to elevated levels of coliform bacteria, lead and trihalomethans (THMs). Reporting on the crisis made national headlines and caused many Americans to reconsider the safety of their tap water. Even though the crisis affected a small, working-class city, we can see that bottled water sales spiked around the same time period in other states all across the country.&lt;/p&gt;
 &lt;p&gt;We are examining consumer spending habits and public sentiment data to analyze how many Americans distrust their tap and rely on bottled water as an alternate drinking water supply. Recent research has shown that U.S. households who perceive the tap as unsafe spend $5.65 billion per year on alternate water supplies&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, despite the fact that bottled water is less regulated than tap water and isn&amp;rsquo;t any safer on average.&lt;/p&gt;
 &lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
@@ -483,9 +509,9 @@ Thomas Dehaene must have had the same thought regarding Hallmark movies, as he j
     
     <item>
       <title>Studying paleoclimate through New England cave sediments</title>
-      <link>https://zperzan.github.io/pastwork/weybridge-cave/</link>
+      <link>https://zperzan.github.io/pastresearch/weybridge-cave/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
-      <guid>https://zperzan.github.io/pastwork/weybridge-cave/</guid>
+      <guid>https://zperzan.github.io/pastresearch/weybridge-cave/</guid>
       <description>&lt;p&gt;As part of my undergraduate thesis at Middlebury College, I worked with Will Amidon and Jeff Munroe to search for potential paleoclimate records in New England caves. We found a sequence of sediments in Weybridge Cave, Vermont, and used luminescence and paleomagnetic technqiues to show that the sediments span from 35 to 70 ka. This is significantly older than any surface sediments in New England, which were all deposited after the last glacial maximum (~26 ka).&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; We combined the Weybridge Cave record with other sedimentary records from the region to calculate rates of Laurentide Ice Sheet advance during the last glaciation. Read the full details at:&lt;/p&gt;
 &lt;p&gt;Munroe, J., Perzan, Z., and Amidon, W., 2016. Cave sediments constrain the latest Pleistocene advance of the Laurentide ice sheet in the Champlain Valley, Vermont, USA. Journal of Quaternary Science, 31 (8), pp. 893-904.&lt;/p&gt;
 &lt;p&gt;During this research, I was lucky enough to be the first to use Middlebury&amp;rsquo;s new luminescence geochronology lab and spent many hours toiling away in the dark room figuring out our brand new instrument. Given the potential for partial bleaching and the fact that most samples were at or near saturation, New England cave sediemnts probably weren&amp;rsquo;t the easiest samples to start out with.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
@@ -527,6 +553,10 @@ Thomas Dehaene must have had the same thought regarding Hallmark movies, as he j
 
 
 
+
+
+
+
 &lt;figure  id=&#34;figure-full-map-of-maze-cave-viewed-from-the-side-a-single-map-consists-of-several-20-50-different-individual-scans-from-the-lidar-unit-that-are-then-merged-together-during-post-processing&#34;&gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Full map of Maze Cave, viewed from the side. A single map consists of several (20-50) different individual scans from the LiDAR unit that are then merged together during post-processing.&#34; srcset=&#34;
@@ -540,26 +570,8 @@ Thomas Dehaene must have had the same thought regarding Hallmark movies, as he j
   &lt;/div&gt;&lt;figcaption&gt;
       Full map of Maze Cave, viewed from the side. A single map consists of several (20-50) different individual scans from the LiDAR unit that are then merged together during post-processing.
     &lt;/figcaption&gt;&lt;/figure&gt;
+
 &lt;p&gt;The BLM was interested in detailed cave maps for practical reasons &amp;ndash; in case of a rescue, for example &amp;ndash; as well as for basic research purposes. Precise cross-sections of lava tubes can be used to infer the velocity and viscocity of lava that once flowed through the caves, while a time series of LiDAR scans can be used to better understand cave wall deformation and cave collapse.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>An example conference paper</title>
-      <link>https://zperzan.github.io/publication/example/</link>
-      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
-      <guid>https://zperzan.github.io/publication/example/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code, math, and images&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
