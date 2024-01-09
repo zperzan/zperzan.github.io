@@ -5,12 +5,52 @@
     <link>https://zperzan.github.io/software/</link>
       <atom:link href="https://zperzan.github.io/software/index.xml" rel="self" type="application/rss+xml" />
     <description>Software</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 06 May 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 30 Sep 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://zperzan.github.io/media/icon_hud1d0979e3910d321b321c3c963a9ae6e_14691_512x512_fill_lanczos_center_3.png</url>
       <title>Software</title>
       <link>https://zperzan.github.io/software/</link>
     </image>
+    
+    <item>
+      <title>CrunchFlow</title>
+      <link>https://zperzan.github.io/software/crunchflow/</link>
+      <pubDate>Sat, 30 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/software/crunchflow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ParFlow</title>
+      <link>https://zperzan.github.io/software/parflow/</link>
+      <pubDate>Wed, 30 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/software/parflow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ParCrunchFlow</title>
+      <link>https://zperzan.github.io/software/parcrunchflow/</link>
+      <pubDate>Sun, 30 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/software/parcrunchflow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EcoSLIM</title>
+      <link>https://zperzan.github.io/software/ecoslim/</link>
+      <pubDate>Fri, 30 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/software/ecoslim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MIN3P</title>
+      <link>https://zperzan.github.io/software/min3p/</link>
+      <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/software/min3p/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>python-crunchflow</title>

@@ -10,12 +10,32 @@
     <lastmod>2023-10-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
+    <loc>https://zperzan.github.io/software/crunchflow/</loc>
+    <lastmod>2023-09-30T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://zperzan.github.io/software/</loc>
+    <lastmod>2023-09-30T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://zperzan.github.io/software/parflow/</loc>
+    <lastmod>2023-08-30T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://zperzan.github.io/software/parcrunchflow/</loc>
+    <lastmod>2023-07-30T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://zperzan.github.io/currentresearch/floodplains/</loc>
     <lastmod>2022-10-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://zperzan.github.io/currentresearch/</loc>
     <lastmod>2022-10-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://zperzan.github.io/software/ecoslim/</loc>
+    <lastmod>2022-09-30T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://zperzan.github.io/currentresearch/recharge/</loc>
@@ -28,6 +48,10 @@
   </url><url>
     <loc>https://zperzan.github.io/pastresearch/</loc>
     <lastmod>2021-10-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://zperzan.github.io/software/min3p/</loc>
+    <lastmod>2021-09-30T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://zperzan.github.io/projects/</loc>
@@ -83,10 +107,6 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://zperzan.github.io/tag/reactive-transport/</loc>
-    <lastmod>2021-05-06T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://zperzan.github.io/software/</loc>
     <lastmod>2021-05-06T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>

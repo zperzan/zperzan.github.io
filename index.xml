@@ -21,6 +21,30 @@
     </item>
     
     <item>
+      <title>CrunchFlow</title>
+      <link>https://zperzan.github.io/software/crunchflow/</link>
+      <pubDate>Sat, 30 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/software/crunchflow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ParFlow</title>
+      <link>https://zperzan.github.io/software/parflow/</link>
+      <pubDate>Wed, 30 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/software/parflow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ParCrunchFlow</title>
+      <link>https://zperzan.github.io/software/parcrunchflow/</link>
+      <pubDate>Sun, 30 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/software/parcrunchflow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Biogeochemical cycling in high-elevation floodplains</title>
       <link>https://zperzan.github.io/currentresearch/floodplains/</link>
       <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
@@ -28,6 +52,14 @@
       <description>&lt;p&gt;Floodplains are complex, heterogeneous systems that retain, transmit and transform nutrients and contaminants as they move between land and surface water. Moreover, an array of biogeochemical and hydrologic processes interact within these heterogeneous environments, from preferential flow along root channels to microbially mediated reactions. In the face of this complexity, identifying the dominant processes that control floodplain solute exports &amp;mdash; and hence surface water quality &amp;mdash; is difficult.&lt;/p&gt;
 &lt;p&gt;We are using both measurements and modeling to understand the dominant processes that govern nutrient and contaminant cycling within floodplains. Our work focuses on select field sites across the western U.S. in which we have installed sensor arrays and collected manual samples. We then pair these measurements with reactive transport models to identify and understand the drivers behind our observations.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>EcoSLIM</title>
+      <link>https://zperzan.github.io/software/ecoslim/</link>
+      <pubDate>Fri, 30 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/software/ecoslim/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -72,6 +104,14 @@
       <description>&lt;p&gt;Groundwater velocity is inherently difficult to measure, especially at sites with limited infrastructure. Most modern groundwater velocity sensors are expensive ($1,110 to $18,000). More than that, they can only be installed in wells 2 inches in diameter or larger, which are expensive and time-consuming to install.&lt;/p&gt;
 &lt;p&gt;We&amp;rsquo;ve developed a new sensor system that can be installed in narrow wells (as small as 8 mm ID), like &lt;a href=&#34;https://www.solinst.com/products/direct-push-equipment/615-drive-point-piezometers/datasheet/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Solinst drive-point piezometers&lt;/a&gt;. These piezometer systems can be installed by hand (even in cobble!) and we&amp;rsquo;ve successfully used the system to measure groundwater velocity several sites. Read more about it in our recent &lt;a href=&#34;https://doi.org/10.1029/2022WR033223&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;paper&lt;/a&gt; in Water Resources Research!&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>MIN3P</title>
+      <link>https://zperzan.github.io/software/min3p/</link>
+      <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/software/min3p/</guid>
+      <description></description>
     </item>
     
     <item>
