@@ -1,15 +1,15 @@
 {
-  "name": "Zach Perzan",
-  "short_name": "Zach Perzan",
+  "name": "Environmental Geochemistry Group",
+  "short_name": "Environmental Geochemistry Group",
   "lang": "en-us",
   "theme_color": "#1565c0",
   "background_color": "#1565c0",
   "icons": [{
-    "src": "/media/icon_hud1d0979e3910d321b321c3c963a9ae6e_14691_192x192_fill_lanczos_center_3.png",
+    "src": "/media/icon_hu8261505534899478384.png",
     "sizes": "192x192",
     "type": "image/png"
     }, {
-    "src": "/media/icon_hud1d0979e3910d321b321c3c963a9ae6e_14691_512x512_fill_lanczos_center_3.png",
+    "src": "/media/icon_hu1348805595484356841.png",
     "sizes": "512x512",
     "type": "image/png"
      }],

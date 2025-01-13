@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>sensitivity analysis | Zach Perzan</title>
+    <title>Sensitivity Analysis | Environmental Geochemistry Group</title>
     <link>https://zperzan.github.io/tag/sensitivity-analysis/</link>
       <atom:link href="https://zperzan.github.io/tag/sensitivity-analysis/index.xml" rel="self" type="application/rss+xml" />
-    <description>sensitivity analysis</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 30 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <description>Sensitivity Analysis</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 30 Dec 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://zperzan.github.io/media/icon_hud1d0979e3910d321b321c3c963a9ae6e_14691_512x512_fill_lanczos_center_3.png</url>
-      <title>sensitivity analysis</title>
+      <url>https://zperzan.github.io/media/icon_hu1348805595484356841.png</url>
+      <title>Sensitivity Analysis</title>
       <link>https://zperzan.github.io/tag/sensitivity-analysis/</link>
     </image>
     
     <item>
       <title>pyDGSA</title>
       <link>https://zperzan.github.io/software/pydgsa/</link>
-      <pubDate>Wed, 30 Sep 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 30 Dec 2023 00:00:00 +0000</pubDate>
       <guid>https://zperzan.github.io/software/pydgsa/</guid>
       <description></description>
     </item>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zach Perzan | Environmental Geochemistry Group</title>
+    <link>https://zperzan.github.io/authors/zach/</link>
+      <atom:link href="https://zperzan.github.io/authors/zach/index.xml" rel="self" type="application/rss+xml" />
+    <description>Zach Perzan</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language>
+    <image>
+      <url>https://zperzan.github.io/authors/zach/avatar_hu534275522870414034.jpg</url>
+      <title>Zach Perzan</title>
+      <link>https://zperzan.github.io/authors/zach/</link>
+    </image>
+    
+    <item>
+      <title>Zach Perzan</title>
+      <link>https://zperzan.github.io/authors/zach/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/authors/zach/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m an environmental geochemist who strives to understand the fundamental processes that control nutrient and contaminant cycling within the Earth’s critical zone. To address these questions, I pair numerical models with novel data streams &amp;mdash; geophysical surveys and custom-built &lt;em&gt;in situ&lt;/em&gt; sensors &amp;mdash; and analyze the results using a suite of data science and machine learning techniques. You can find a copy of my CV &lt;a href=&#34;../../files/cv.pdf&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This broad topic includes research projects in several different areas:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Understanding focused groundwater recharge processes through stochastic modeling&lt;/li&gt;
+&lt;li&gt;Identifying controls on seasonal nutrient cycling in arid floodplains&lt;/li&gt;
+&lt;li&gt;Using custom-built &lt;em&gt;in situ&lt;/em&gt; sensors to monitor the impacts of transient floods on groundwater quality&lt;/li&gt;
+&lt;li&gt;Developing new sensor hardware to measure trace contaminants in water&lt;/li&gt;
+&lt;li&gt;Combining numerical models and sensor data to create data-driven water quality forecasts&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

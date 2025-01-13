@@ -2,6 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://zperzan.github.io/tag/crunchflow/</loc>
+    <lastmod>2024-05-06T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://zperzan.github.io/tag/python/</loc>
+    <lastmod>2024-05-06T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://zperzan.github.io/software/python-crunchflow/</loc>
+    <lastmod>2024-05-06T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://zperzan.github.io/tag/reactive-transport/</loc>
+    <lastmod>2024-05-06T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://zperzan.github.io/software/</loc>
+    <lastmod>2024-05-06T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://zperzan.github.io/tags/</loc>
+    <lastmod>2024-05-06T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://zperzan.github.io/software/pydgsa/</loc>
+    <lastmod>2023-12-30T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://zperzan.github.io/tag/sensitivity-analysis/</loc>
+    <lastmod>2023-12-30T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://zperzan.github.io/software/ecoslim/</loc>
+    <lastmod>2023-11-30T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://zperzan.github.io/</loc>
     <lastmod>2023-10-03T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -14,10 +50,6 @@
     <lastmod>2023-09-30T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://zperzan.github.io/software/</loc>
-    <lastmod>2023-09-30T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
     <loc>https://zperzan.github.io/software/parflow/</loc>
     <lastmod>2023-08-30T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -26,16 +58,16 @@
     <lastmod>2023-07-30T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
+    <loc>https://zperzan.github.io/people/</loc>
+    <lastmod>2022-10-24T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://zperzan.github.io/currentresearch/floodplains/</loc>
     <lastmod>2022-10-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://zperzan.github.io/currentresearch/</loc>
     <lastmod>2022-10-01T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://zperzan.github.io/software/ecoslim/</loc>
-    <lastmod>2022-09-30T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://zperzan.github.io/currentresearch/recharge/</loc>
@@ -59,10 +91,6 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://zperzan.github.io/projects/scrape-weather-underground/</loc>
-    <lastmod>2021-07-25T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://zperzan.github.io/tags/</loc>
     <lastmod>2021-07-25T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
@@ -94,32 +122,8 @@
     <lastmod>2021-07-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://zperzan.github.io/tag/crunchflow/</loc>
-    <lastmod>2021-05-06T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://zperzan.github.io/tag/python/</loc>
-    <lastmod>2021-05-06T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://zperzan.github.io/software/python-crunchflow/</loc>
-    <lastmod>2021-05-06T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://zperzan.github.io/tag/reactive-transport/</loc>
-    <lastmod>2021-05-06T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
     <loc>https://zperzan.github.io/pastresearch/ednr/</loc>
     <lastmod>2021-05-01T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://zperzan.github.io/software/pydgsa/</loc>
-    <lastmod>2020-09-30T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://zperzan.github.io/tag/sensitivity-analysis/</loc>
-    <lastmod>2020-09-30T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://zperzan.github.io/tag/lstm/</loc>
@@ -190,7 +194,13 @@
     <lastmod>2015-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
+    <loc>https://zperzan.github.io/authors/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://zperzan.github.io/categories/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://zperzan.github.io/authors/chanelk/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://zperzan.github.io/opportunities/</loc>
@@ -200,6 +210,12 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://zperzan.github.io/publications/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://zperzan.github.io/authors/poppenho/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://zperzan.github.io/authors/zach/</loc>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
