@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Piper Irvin | Environmental Geochemistry Group</title>
+    <link>https://zperzan.github.io/authors/irvin/</link>
+      <atom:link href="https://zperzan.github.io/authors/irvin/index.xml" rel="self" type="application/rss+xml" />
+    <description>Piper Irvin</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language>
+    <image>
+      <url>https://zperzan.github.io/authors/irvin/avatar_hu_6c8bee145a3bcc79.jpg</url>
+      <title>Piper Irvin</title>
+      <link>https://zperzan.github.io/authors/irvin/</link>
+    </image>
+    
+    <item>
+      <title>Piper Irvin</title>
+      <link>https://zperzan.github.io/authors/irvin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/authors/irvin/</guid>
+      <description>&lt;p&gt;Piper graduated from UNLV in 2025 with a BA degree in Anthropology and a BS degree in Earth and Environmental Science. She is currently pursuing an MS degree in Geoscience. Her research focuses on the speciation and mobility of sediment-bound phosphorus in the Las Vegas Wash and the underlying implications for harmful algal bloom formation on Lake Mead.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
