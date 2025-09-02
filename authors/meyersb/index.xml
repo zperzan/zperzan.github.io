@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Brittany Meyers | Environmental Geochemistry Group</title>
+    <link>https://zperzan.github.io/authors/meyersb/</link>
+      <atom:link href="https://zperzan.github.io/authors/meyersb/index.xml" rel="self" type="application/rss+xml" />
+    <description>Brittany Meyers</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language>
+    <image>
+      <url>https://zperzan.github.io/authors/meyersb/avatar_hu_a8f7bfb8f6912eb2.jpg</url>
+      <title>Brittany Meyers</title>
+      <link>https://zperzan.github.io/authors/meyersb/</link>
+    </image>
+    
+    <item>
+      <title>Brittany Meyers</title>
+      <link>https://zperzan.github.io/authors/meyersb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/authors/meyersb/</guid>
+      <description>&lt;p&gt;Brittany graduated from the University of Nevada, Las Vegas in 2024 with a BS in Earth and Environmental Sciences with a minor in Professional Writing after receiving her AS in General Science from the College of Southern Nevada in 2022. She is currently enrolled in the UNLV Geoscience Graduate Program, pursuing a Master&amp;rsquo;s Degree in Geoscience with a focus on Hydrology. Her research is focused on phosphorus movement through the hyporheic zone of the Las Vegas Wash using field sampling and reactive transport modeling.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
