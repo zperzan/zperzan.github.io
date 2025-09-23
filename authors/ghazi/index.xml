@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Babak Ghazi | Environmental Geochemistry Group</title>
+    <link>https://zperzan.github.io/authors/ghazi/</link>
+      <atom:link href="https://zperzan.github.io/authors/ghazi/index.xml" rel="self" type="application/rss+xml" />
+    <description>Babak Ghazi</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language>
+    <image>
+      <url>https://zperzan.github.io/authors/ghazi/avatar_hu_e4f71c441d8be84.jpg</url>
+      <title>Babak Ghazi</title>
+      <link>https://zperzan.github.io/authors/ghazi/</link>
+    </image>
+    
+    <item>
+      <title>Babak Ghazi</title>
+      <link>https://zperzan.github.io/authors/ghazi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/authors/ghazi/</guid>
+      <description>&lt;p&gt;Babak completed his graduate studies in Earth and Environmental Related Science at Nicolaus Copernicus University in Toruń, Poland, in 2024. He is currently a researcher in the UNLV Geoscience Department, with a focus on Hydrology. His research focuses on analyzing groundwater-surface water interactions by integrating climate, land use, and geological data, particularly for implementation of managed aquifer recharge.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
