@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kenny Truong | Environmental Geochemistry Group</title>
+    <link>https://zperzan.github.io/authors/truongd/</link>
+      <atom:link href="https://zperzan.github.io/authors/truongd/index.xml" rel="self" type="application/rss+xml" />
+    <description>Kenny Truong</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language>
+    <image>
+      <url>https://zperzan.github.io/authors/truongd/avatar_hu_c030dbb6964a46f0.jpg</url>
+      <title>Kenny Truong</title>
+      <link>https://zperzan.github.io/authors/truongd/</link>
+    </image>
+    
+    <item>
+      <title>Kenny Truong</title>
+      <link>https://zperzan.github.io/authors/truongd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://zperzan.github.io/authors/truongd/</guid>
+      <description>&lt;p&gt;Kenny graduated from Bucknell University in 2026 with a BA degree in Geology and Environmental Sciences. He is currently enrolled at UNLV and pursuing a PhD in Geoscience. Kenny&amp;rsquo;s research interests are in geochemical interactions within the surface-groundwater movement through the unsaturated zone.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
